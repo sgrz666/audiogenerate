@@ -98,7 +98,7 @@
 1. **标签不是金标准。** 约一半切片仍为 `needs_review`；`automatic` 也只表示自动推定。同名“播音员4”不能跨卷合并为同一真人，`global_speaker_id` 是原标注编号而非已确认身份。组织训练集时先按 `speaker_scope`/`speaker_key` 核对。
 2. **文本需校对。** 6903 条为自动转写未校对，64 条是不可靠占位。训练/评测前应做回转写或人工抽检，不能直接当作标准答案。
 3. **重复与缺口。** 各包保留 manifest 中全部轮次，包括题号、提示、重复朗读和待核片段，未额外清洗或去重。四级包的 `repeat_index_missing` 为 183，其余包为 0；统计重复播放时需注意。
-4. **音频参数不统一由本仓库保证。** 抽样实测为 44.1 kHz / 16-bit / 单声道；批量使用时以每行 `sample_rate_hz`、`channels`、`sample_width_bits` 为准。
+4. **音频参数已逐文件核对。** 7046 个 WAV 全部为 44.1 kHz / 16-bit / 单声道；批量使用时仍建议以每行 `sample_rate_hz`、`channels`、`sample_width_bits` 为准。
 5. **切分口径。** `source_start_s`/`source_end_s` 是原始整卷时间，`speech_start_in_clip_s`/`speech_end_in_clip_s` 是片段内位置；首尾留白随片段保留，未按任务书的语速计算口径再次裁剪。
 
 ## 分发、校验与许可
