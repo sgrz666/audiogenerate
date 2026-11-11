@@ -1,0 +1,63 @@
+{
+ "repo": "openbmb/VoxCPM2",
+ "name": "VoxCPM2",
+ "revision": "7936080b41163874f38610f46f438e2c0757f9fd",
+ "files": [
+  {
+   "path": ".gitattributes",
+   "size": 1519,
+   "blob_oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+   "lfs_sha256": null
+  },
+  {
+   "path": "README.md",
+   "size": 7903,
+   "blob_oid": "8d79f2bfb65aef510fe19cf67113bbaef976e8bf",
+   "lfs_sha256": null
+  },
+  {
+   "path": "audiovae.pth",
+   "size": 376951122,
+   "blob_oid": "036ef0b5ced85736b842e31d35bd39606845d830",
+   "lfs_sha256": "94b5d51e107e0507d4acc976cfdadb64edd6fd06d1f751dadbf2fd1594274bf1"
+  },
+  {
+   "path": "config.json",
+   "size": 4336,
+   "blob_oid": "792f1c223ed607f9e508c0a0deb15dd9532483be",
+   "lfs_sha256": null
+  },
+  {
+   "path": "model.safetensors",
+   "size": 4580080592,
+   "blob_oid": "d53929032ba7405f13a6236df11cd12da17d995a",
+   "lfs_sha256": "f7f964cfa9da23653baec6e6f7750719977ad944ed9f95fe52fe3a620506891d"
+  },
+  {
+   "path": "special_tokens_map.json",
+   "size": 1632,
+   "blob_oid": "8619dda6f3eb6d60d0a1bb274820054e46f41699",
+   "lfs_sha256": null
+  },
+  {
+   "path": "tokenization_voxcpm2.py",
+   "size": 2895,
+   "blob_oid": "e7d768677298d058fa6ef8b160e3ca4430997fad",
+   "lfs_sha256": null
+  },
+  {
+   "path": "tokenizer.json",
+   "size": 3676772,
+   "blob_oid": "41a5c2a8dba4058dd1ad73fb898abf5e4f64f0f9",
+   "lfs_sha256": null
+  },
+  {
+   "path": "tokenizer_config.json",
+   "size": 5059,
+   "blob_oid": "fecf4cdae73b57053cac2ad34c67febbe4e4f08b",
+   "lfs_sha256": null
+  }
+ ],
+ "n_files": 9,
+ "total_bytes": 4960731830
+}

@@ -1,0 +1,43 @@
+{
+  "package_name": "07_中文听力_六级_真题4-5及大纲样卷",
+  "created_date": "2026-11-10",
+  "level": 6,
+  "exam_keys": [
+    "HSK6-4",
+    "HSK6-5",
+    "HSK6-outline"
+  ],
+  "volumes": 3,
+  "questions": 150,
+  "audio_files": 445,
+  "text_files": 445,
+  "audio_bytes": 365468240,
+  "duration_s": 4143.408844,
+  "speaker_labels": {
+    "旁白": 289,
+    "男播音": 77,
+    "女播音": 73,
+    "说话人待核": 6
+  },
+  "speaker_assignment_status": {
+    "automatic": 229,
+    "needs_review": 216
+  },
+  "text_review_status": {
+    "automatic_unproofread": 420,
+    "unreliable_placeholder": 5,
+    "needs_review": 20
+  },
+  "repeat_index_missing": 0,
+  "excluded": [
+    "原始整卷录音",
+    "整题WAV",
+    "MFA/ASR缓存及模型",
+    "旧版本切片",
+    "备份文件",
+    "原文标点修订前版本"
+  ],
+  "scope_note": "保留当前manifest全部轮次，包括题号、提示、重复朗读及待核片段；未额外清洗或去重。",
+  "source_archive_sha256": "4bba0058dc968425615f71f34b4006c2139f1f00c7e38fa06b390be9c0cf8f7f",
+  "offline_review_page": "index.html"
+}

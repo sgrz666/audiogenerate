@@ -1,0 +1,57 @@
+{
+ "repo": "FunAudioLLM/CosyVoice-ttsfrd",
+ "name": "CosyVoice-ttsfrd",
+ "revision": "8c0f9244a4f7622bf8017cad347ed334f0b8f735",
+ "files": [
+  {
+   "path": ".gitattributes",
+   "size": 1852,
+   "blob_oid": "26e47dc9dc271d27108f12e11dd56d580b273763",
+   "lfs_sha256": null
+  },
+  {
+   "path": "README.md",
+   "size": 8695,
+   "blob_oid": "7ce714746a2f7d951d9520a7e4f05a8c823761f0",
+   "lfs_sha256": null
+  },
+  {
+   "path": "asset/dingding.png",
+   "size": 122824,
+   "blob_oid": "e407a9d3c0fc5a7fcac46aef09181a0bef330d37",
+   "lfs_sha256": "7f04815e2e676d31b089af6fa270135f3214f2193d5e0ad98b491d007d48f1c6"
+  },
+  {
+   "path": "configuration.json",
+   "size": 47,
+   "blob_oid": "5e812fae901c12933ac69ebf3eb79d0eb49bbab4",
+   "lfs_sha256": null
+  },
+  {
+   "path": "resource.zip",
+   "size": 338914555,
+   "blob_oid": "245cf15ee6bc4c3eab8a6ef71a8db9032d302fe9",
+   "lfs_sha256": "dcb3970fd4f52d036f245493360d97d0da1014f917deb4b9d83a3ded97483113"
+  },
+  {
+   "path": "ttsfrd-0.4.2-cp310-cp310-linux_x86_64.whl",
+   "size": 4044429,
+   "blob_oid": "aba23a0228f85f0fe4b441c6fae4210daaa2586d",
+   "lfs_sha256": "149514a05c2a7a01076170d2923efd231fc579f8e48403ab523814c8256efe14"
+  },
+  {
+   "path": "ttsfrd-0.4.2-cp38-cp38-linux_x86_64.whl",
+   "size": 4044404,
+   "blob_oid": "4da21697af4a955071214fc7c7d3d53728d17f11",
+   "lfs_sha256": "52dfa13538984a35664185b36809c64800ead605d0371b288816c9782cfdd1ec"
+  },
+  {
+   "path": "ttsfrd_dependency-0.1-py3-none-any.whl",
+   "size": 1144992,
+   "blob_oid": "4453b95ae9e934bd6e3dad5d5a557c96683eef56",
+   "lfs_sha256": "060a53f0650d12839983afdcfb052b049d7cf5c62344a00fee3a7344582aaf6f"
+  }
+ ],
+ "n_files": 8,
+ "total_bytes": 348281798
+}

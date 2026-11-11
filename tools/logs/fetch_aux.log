@@ -1,0 +1,5 @@
+2026-11-11 10:55:55 [aux manifest] 7 files 2.77 GiB -> /data/shangguanrz/projectsss/speakgenerate/tools/manifests/IndexTTS-2.5-aux.json
+2026-11-11 10:55:55 [aux] snapshot facebook/w2v-bert-2.0 -> /data/shangguanrz/projectsss/speakgenerate/model/IndexTTS-2.5/hf_cache/w2v-bert-2.0
+2026-11-11 10:58:30     BAD MISSING semantic_codec_model.safetensors
+2026-11-11 10:58:30 [aux verify] 6/7 OK coverage=85.7%
+2026-11-11 10:58:30 [aux verify] FAIL

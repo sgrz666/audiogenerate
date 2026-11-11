@@ -1,0 +1,65 @@
+{
+ "IndexTTS-2.5": {
+  "repo": "IndexTeam/IndexTTS-2.5",
+  "revision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+  "n_files": 22,
+  "n_ok": 22,
+  "coverage": 1.0,
+  "bytes": 5491182363,
+  "bad": []
+ },
+ "VoxCPM2": {
+  "repo": "openbmb/VoxCPM2",
+  "revision": "7936080b41163874f38610f46f438e2c0757f9fd",
+  "n_files": 9,
+  "n_ok": 9,
+  "coverage": 1.0,
+  "bytes": 4960731830,
+  "bad": []
+ },
+ "Fun-CosyVoice3-0.5B-2512": {
+  "repo": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+  "revision": "29e01c4e8d000f4bcd70751be16fa94bf3d85a18",
+  "n_files": 20,
+  "n_ok": 20,
+  "coverage": 1.0,
+  "bytes": 9747516745,
+  "bad": []
+ },
+ "Qwen3-TTS-12Hz-1.7B-Base": {
+  "repo": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+  "n_files": 13,
+  "n_ok": 13,
+  "coverage": 1.0,
+  "bytes": 4544229700,
+  "bad": []
+ },
+ "FireRedTTS3": {
+  "repo": "FireRedTeam/FireRedTTS3",
+  "revision": "dcf1bdcd1b8b25b382fa84c3e34eb82e3054a610",
+  "n_files": 12,
+  "n_ok": 12,
+  "coverage": 1.0,
+  "bytes": 20776632480,
+  "bad": []
+ },
+ "CosyVoice-ttsfrd": {
+  "repo": "FunAudioLLM/CosyVoice-ttsfrd",
+  "revision": "8c0f9244a4f7622bf8017cad347ed334f0b8f735",
+  "n_files": 8,
+  "n_ok": 8,
+  "coverage": 1.0,
+  "bytes": 348281798,
+  "bad": []
+ },
+ "Qwen3-TTS-Tokenizer-12Hz": {
+  "repo": "Qwen/Qwen3-TTS-Tokenizer-12Hz",
+  "revision": "7dd38ad4e9bad454aae9cd937d0cd577604fe229",
+  "n_files": 6,
+  "n_ok": 6,
+  "coverage": 1.0,
+  "bytes": 682300739,
+  "bad": []
+ }
+}

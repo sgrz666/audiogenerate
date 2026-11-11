@@ -1,0 +1,38 @@
+[
+  {
+    "exam_key": "HSK6-1",
+    "level": 6,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK6-1.mp3",
+    "source_sha256": "e708be185861d7296deaa6f4f180a6048ff38be8a3b502f9cea9cf8e7284dbab",
+    "question_count": 50,
+    "samples": 162,
+    "duration_s": 1392.796,
+    "audio_bytes": 122851736,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK6-2",
+    "level": 6,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK6-2.mp3",
+    "source_sha256": "e64de6cb3f1850c3be13249b42512aa5a641cf75a2ee19f37c148d1833464ae8",
+    "question_count": 50,
+    "samples": 155,
+    "duration_s": 1354.799,
+    "audio_bytes": 119500086,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK6-3",
+    "level": 6,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK6-3.mp3",
+    "source_sha256": "437ee3bfa7093871b2d495965d7b3a2f00f3abee5ff2b13d16f3650447f548b5",
+    "question_count": 50,
+    "samples": 150,
+    "duration_s": 1394.737,
+    "audio_bytes": 123022400,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  }
+]

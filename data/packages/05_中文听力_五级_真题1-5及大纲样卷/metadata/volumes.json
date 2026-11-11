@@ -1,0 +1,74 @@
+[
+  {
+    "exam_key": "HSK5-1",
+    "level": 5,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK5-1.mp3",
+    "source_sha256": "0b36d99560c0dcf13a4ce47aa7d4c9e38a9029b406146b6df757fe19a0a44ca6",
+    "question_count": 45,
+    "samples": 195,
+    "duration_s": 934.735,
+    "audio_bytes": 82452204,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK5-2",
+    "level": 5,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK5-2.mp3",
+    "source_sha256": "ca2d649c46af93460d0c9b0cc19429b4e98c2536955250830f9139d6fc23c21d",
+    "question_count": 45,
+    "samples": 199,
+    "duration_s": 945.913,
+    "audio_bytes": 83438280,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK5-3",
+    "level": 5,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK5-3.mp3",
+    "source_sha256": "603f2b2def586824b3042b244578d794b6a22a8a631bf0d8ceab8d5a7193a430",
+    "question_count": 45,
+    "samples": 203,
+    "duration_s": 954.699,
+    "audio_bytes": 84213394,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK5-4",
+    "level": 5,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK5-4.mp3",
+    "source_sha256": "4187cca83981505e790951b211159726902af88cc902f5028d63e4c8c1f88c15",
+    "question_count": 45,
+    "samples": 193,
+    "duration_s": 962.793,
+    "audio_bytes": 84926850,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK5-5",
+    "level": 5,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK5-5.mp3",
+    "source_sha256": "b6b045a2da87f022630c4173a7834db22488a511267f3625d0f0bdeb11c42f87",
+    "question_count": 45,
+    "samples": 186,
+    "duration_s": 938.262,
+    "audio_bytes": 82762888,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK5-outline",
+    "level": 5,
+    "source_kind": "大纲样卷",
+    "source_audio_filename": "HSK考试大纲（五级）样卷听力音频.wav",
+    "source_sha256": "fa826d1084089ce728f98ed25c51b6d902db7afe860cdaf2b75fc5a6270bca53",
+    "question_count": 45,
+    "samples": 204,
+    "duration_s": 886.88,
+    "audio_bytes": 78231792,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  }
+]

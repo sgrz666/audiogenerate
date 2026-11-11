@@ -1,0 +1,74 @@
+[
+  {
+    "exam_key": "HSK3-1",
+    "level": 3,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK3-1.mp3",
+    "source_sha256": "b2d2d76209a004ae0ddb10b3caa2621e950fc617d71925065d07e32046eea1c3",
+    "question_count": 40,
+    "samples": 309,
+    "duration_s": 1267.672,
+    "audio_bytes": 111822278,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK3-2",
+    "level": 3,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK3-2.mp3",
+    "source_sha256": "8910b2bd6957c3296db35eea5bc1e0419705bcc48fbf99281ca0d53d14421ae1",
+    "question_count": 40,
+    "samples": 299,
+    "duration_s": 1287.124,
+    "audio_bytes": 113537486,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK3-3",
+    "level": 3,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK3-3.mp3",
+    "source_sha256": "11312609ad12aca621415bd05bf9a26a7a92e07e6804175001ad1e835e258015",
+    "question_count": 40,
+    "samples": 300,
+    "duration_s": 1208.863,
+    "audio_bytes": 106634928,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK3-4",
+    "level": 3,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK3-4.mp3",
+    "source_sha256": "11f358bcc81dc3f031571f72c432beaa5c91cc0ae6c50b440d6a89a9b35de7b2",
+    "question_count": 40,
+    "samples": 329,
+    "duration_s": 1130.96,
+    "audio_bytes": 99765158,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK3-5",
+    "level": 3,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK3-5.mp3",
+    "source_sha256": "06e8aa4cbe4553f763c370ef09f8f6f288d05827b01c2df00603fe6754827167",
+    "question_count": 40,
+    "samples": 306,
+    "duration_s": 1272.685,
+    "audio_bytes": 112264298,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK3-outline",
+    "level": 3,
+    "source_kind": "大纲样卷",
+    "source_audio_filename": "HSK考试大纲（三级）样卷听力音频.wav",
+    "source_sha256": "02d109828bd9e134e90d1a1ac4918bcc90b70f29755cf2d7d194201d1b8f3616",
+    "question_count": 40,
+    "samples": 363,
+    "duration_s": 1271.372,
+    "audio_bytes": 112151000,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  }
+]

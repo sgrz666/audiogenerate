@@ -1,0 +1,5 @@
+2026-11-11 11:05:05 [fetch] hf_transfer enabled
+2026-11-11 11:05:06 [fetch] huggingface_hub 0.34.4
+2026-11-11 11:05:06 [start] Qwen/Qwen3-TTS-Tokenizer-12Hz -> /data/shangguanrz/projectsss/speakgenerate/model/Qwen3-TTS-Tokenizer-12Hz expect 0.64 GiB (6 files) rev=7dd38ad4e9ba
+2026-11-11 11:05:27 [done] Qwen3-TTS-Tokenizer-12Hz 0.64 GiB on disk
+2026-11-11 11:05:27 [fetch] all repos downloaded

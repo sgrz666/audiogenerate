@@ -1,0 +1,45 @@
+{
+ "repo": "Qwen/Qwen3-TTS-Tokenizer-12Hz",
+ "name": "Qwen3-TTS-Tokenizer-12Hz",
+ "revision": "7dd38ad4e9bad454aae9cd937d0cd577604fe229",
+ "files": [
+  {
+   "path": ".gitattributes",
+   "size": 1519,
+   "blob_oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+   "lfs_sha256": null
+  },
+  {
+   "path": "README.md",
+   "size": 3482,
+   "blob_oid": "4e1410167eaaf8d5589352711ac86acbcdde3d21",
+   "lfs_sha256": null
+  },
+  {
+   "path": "config.json",
+   "size": 2336,
+   "blob_oid": "06cc8dc4c5ec8a1929086b71b98c313020d9268b",
+   "lfs_sha256": null
+  },
+  {
+   "path": "configuration.json",
+   "size": 76,
+   "blob_oid": "ab58e2eaf53cd14a1a2a7527d9261ceea93a24cd",
+   "lfs_sha256": null
+  },
+  {
+   "path": "model.safetensors",
+   "size": 682293092,
+   "blob_oid": "026d66bfb5d730dcfd56450c5e9e51b3ef4e0712",
+   "lfs_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+  },
+  {
+   "path": "preprocessor_config.json",
+   "size": 234,
+   "blob_oid": "ba40914f4f49ab98a8ca545d4892ef7291a39592",
+   "lfs_sha256": null
+  }
+ ],
+ "n_files": 6,
+ "total_bytes": 682300739
+}

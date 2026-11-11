@@ -1,0 +1,1277 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "中文合成语音评价结果 v1.0",
+  "description": "校验结果结构及部分状态约束。不能验证实际听感、目标真实性、问题归因、时间区间排序或ID引用关系。",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "reviews": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/review"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "reviews"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "dimension": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "assessed",
+            "uncertain",
+            "not_assessable",
+            "not_applicable"
+          ]
+        },
+        "score": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        },
+        "target_match": {
+          "type": "string",
+          "enum": [
+            "met",
+            "not_met",
+            "uncertain",
+            "not_specified",
+            "not_applicable"
+          ]
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "issue_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "status",
+        "score",
+        "target_match",
+        "confidence",
+        "reason",
+        "issue_ids"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "assessed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "score": {
+                "type": "integer"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "score": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "issue": {
+      "type": "object",
+      "properties": {
+        "issue_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dimension": {
+          "type": "string",
+          "enum": [
+            "content_pronunciation",
+            "speaking_rate",
+            "pauses_boundaries",
+            "intonation",
+            "emotion",
+            "naturalness",
+            "audio_quality",
+            "voice_consistency"
+          ]
+        },
+        "severity": {
+          "type": "string",
+          "enum": [
+            "critical",
+            "major",
+            "minor"
+          ]
+        },
+        "certainty": {
+          "type": "string",
+          "enum": [
+            "confirmed",
+            "uncertain"
+          ]
+        },
+        "start_s": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "end_s": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "time_precision": {
+          "type": "string",
+          "enum": [
+            "measured",
+            "approximate",
+            "unavailable"
+          ]
+        },
+        "text_anchor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observed_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "suggestion": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "issue_id",
+        "dimension",
+        "severity",
+        "certainty",
+        "start_s",
+        "end_s",
+        "time_precision",
+        "text_anchor",
+        "observed_text",
+        "evidence",
+        "suggestion"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "time_precision": {
+                "const": "unavailable"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "start_s": {
+                "type": "null"
+              },
+              "end_s": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "start_s": {
+                "type": "number"
+              },
+              "end_s": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "metric": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "definition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "name",
+        "value",
+        "unit",
+        "definition",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "audio_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "audio_access": {
+          "type": "string",
+          "enum": [
+            "available",
+            "partial",
+            "unavailable"
+          ]
+        },
+        "coverage": {
+          "type": "object",
+          "properties": {
+            "scope": {
+              "type": "string",
+              "enum": [
+                "full",
+                "partial",
+                "none"
+              ]
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source_text_available": {
+              "type": "boolean"
+            },
+            "reference_audio_used": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "scope",
+            "description",
+            "source_text_available",
+            "reference_audio_used"
+          ],
+          "additionalProperties": false
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "usable",
+            "revise",
+            "human_review",
+            "unavailable"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dimensions": {
+          "type": "object",
+          "properties": {
+            "content_pronunciation": {
+              "allOf": [
+                {
+                  "$ref": "#/$defs/dimension"
+                },
+                {
+                  "properties": {
+                    "status": {
+                      "enum": [
+                        "assessed",
+                        "uncertain",
+                        "not_assessable"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "speaking_rate": {
+              "$ref": "#/$defs/dimension"
+            },
+            "pauses_boundaries": {
+              "$ref": "#/$defs/dimension"
+            },
+            "intonation": {
+              "$ref": "#/$defs/dimension"
+            },
+            "emotion": {
+              "$ref": "#/$defs/dimension"
+            },
+            "naturalness": {
+              "$ref": "#/$defs/dimension"
+            },
+            "audio_quality": {
+              "$ref": "#/$defs/dimension"
+            },
+            "voice_consistency": {
+              "$ref": "#/$defs/dimension"
+            }
+          },
+          "required": [
+            "content_pronunciation",
+            "speaking_rate",
+            "pauses_boundaries",
+            "intonation",
+            "emotion",
+            "naturalness",
+            "audio_quality",
+            "voice_consistency"
+          ],
+          "additionalProperties": false
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/issue"
+          }
+        },
+        "measured_metrics_used": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/metric"
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "next_actions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "audio_id",
+        "audio_access",
+        "coverage",
+        "decision",
+        "summary",
+        "dimensions",
+        "issues",
+        "measured_metrics_used",
+        "limitations",
+        "next_actions"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "audio_access": {
+                "const": "unavailable"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "unavailable"
+              },
+              "coverage": {
+                "properties": {
+                  "scope": {
+                    "const": "none"
+                  }
+                }
+              },
+              "dimensions": {
+                "properties": {
+                  "content_pronunciation": {
+                    "properties": {
+                      "status": {
+                        "const": "not_assessable"
+                      },
+                      "score": {
+                        "type": "null"
+                      }
+                    }
+                  },
+                  "speaking_rate": {
+                    "properties": {
+                      "status": {
+                        "const": "not_assessable"
+                      },
+                      "score": {
+                        "type": "null"
+                      }
+                    }
+                  },
+                  "pauses_boundaries": {
+                    "properties": {
+                      "status": {
+                        "const": "not_assessable"
+                      },
+                      "score": {
+                        "type": "null"
+                      }
+                    }
+                  },
+                  "intonation": {
+                    "properties": {
+                      "status": {
+                        "const": "not_assessable"
+                      },
+                      "score": {
+                        "type": "null"
+                      }
+                    }
+                  },
+                  "emotion": {
+                    "properties": {
+                      "status": {
+                        "const": "not_assessable"
+                      },
+                      "score": {
+                        "type": "null"
+                      }
+                    }
+                  },
+                  "naturalness": {
+                    "properties": {
+                      "status": {
+                        "const": "not_assessable"
+                      },
+                      "score": {
+                        "type": "null"
+                      }
+                    }
+                  },
+                  "audio_quality": {
+                    "properties": {
+                      "status": {
+                        "const": "not_assessable"
+                      },
+                      "score": {
+                        "type": "null"
+                      }
+                    }
+                  },
+                  "voice_consistency": {
+                    "properties": {
+                      "status": {
+                        "const": "not_assessable"
+                      },
+                      "score": {
+                        "type": "null"
+                      }
+                    }
+                  }
+                }
+              },
+              "issues": {
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "decision": {
+                "const": "usable"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "audio_access": {
+                "const": "available"
+              },
+              "coverage": {
+                "properties": {
+                  "scope": {
+                    "const": "full"
+                  },
+                  "source_text_available": {
+                    "const": true
+                  }
+                }
+              },
+              "dimensions": {
+                "properties": {
+                  "content_pronunciation": {
+                    "properties": {
+                      "target_match": {
+                        "enum": [
+                          "met",
+                          "not_specified",
+                          "not_applicable"
+                        ]
+                      },
+                      "status": {
+                        "const": "assessed"
+                      },
+                      "score": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 4,
+                        "maximum": 5
+                      }
+                    }
+                  },
+                  "speaking_rate": {
+                    "properties": {
+                      "target_match": {
+                        "enum": [
+                          "met",
+                          "not_specified",
+                          "not_applicable"
+                        ]
+                      },
+                      "status": {
+                        "enum": [
+                          "assessed",
+                          "not_applicable"
+                        ]
+                      },
+                      "score": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 4,
+                        "maximum": 5
+                      }
+                    }
+                  },
+                  "pauses_boundaries": {
+                    "properties": {
+                      "target_match": {
+                        "enum": [
+                          "met",
+                          "not_specified",
+                          "not_applicable"
+                        ]
+                      },
+                      "status": {
+                        "enum": [
+                          "assessed",
+                          "not_applicable"
+                        ]
+                      },
+                      "score": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 4,
+                        "maximum": 5
+                      }
+                    }
+                  },
+                  "intonation": {
+                    "properties": {
+                      "target_match": {
+                        "enum": [
+                          "met",
+                          "not_specified",
+                          "not_applicable"
+                        ]
+                      },
+                      "status": {
+                        "enum": [
+                          "assessed",
+                          "not_applicable"
+                        ]
+                      },
+                      "score": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 4,
+                        "maximum": 5
+                      }
+                    }
+                  },
+                  "emotion": {
+                    "properties": {
+                      "target_match": {
+                        "enum": [
+                          "met",
+                          "not_specified",
+                          "not_applicable"
+                        ]
+                      },
+                      "status": {
+                        "enum": [
+                          "assessed",
+                          "not_applicable"
+                        ]
+                      },
+                      "score": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 4,
+                        "maximum": 5
+                      }
+                    }
+                  },
+                  "naturalness": {
+                    "properties": {
+                      "target_match": {
+                        "enum": [
+                          "met",
+                          "not_specified",
+                          "not_applicable"
+                        ]
+                      },
+                      "status": {
+                        "enum": [
+                          "assessed",
+                          "not_applicable"
+                        ]
+                      },
+                      "score": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 4,
+                        "maximum": 5
+                      }
+                    }
+                  },
+                  "audio_quality": {
+                    "properties": {
+                      "target_match": {
+                        "enum": [
+                          "met",
+                          "not_specified",
+                          "not_applicable"
+                        ]
+                      },
+                      "status": {
+                        "enum": [
+                          "assessed",
+                          "not_applicable"
+                        ]
+                      },
+                      "score": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 4,
+                        "maximum": 5
+                      }
+                    }
+                  },
+                  "voice_consistency": {
+                    "properties": {
+                      "target_match": {
+                        "enum": [
+                          "met",
+                          "not_specified",
+                          "not_applicable"
+                        ]
+                      },
+                      "status": {
+                        "enum": [
+                          "assessed",
+                          "not_applicable"
+                        ]
+                      },
+                      "score": {
+                        "type": [
+                          "integer",
+                          "null"
+                        ],
+                        "minimum": 4,
+                        "maximum": 5
+                      }
+                    }
+                  }
+                }
+              },
+              "issues": {
+                "items": {
+                  "properties": {
+                    "severity": {
+                      "const": "minor"
+                    },
+                    "certainty": {
+                      "const": "confirmed"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "decision": {
+                "const": "unavailable"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "audio_access": {
+                "const": "unavailable"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "coverage": {
+                "properties": {
+                  "scope": {
+                    "const": "none"
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "audio_access": {
+                "const": "unavailable"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "audio_access": {
+                "const": "partial"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "coverage": {
+                "properties": {
+                  "scope": {
+                    "const": "partial"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "coverage": {
+                "properties": {
+                  "source_text_available": {
+                    "const": false
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "content_pronunciation": {
+                    "properties": {
+                      "status": {
+                        "const": "not_assessable"
+                      },
+                      "score": {
+                        "type": "null"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "content_pronunciation": {
+                    "properties": {
+                      "status": {
+                        "const": "assessed"
+                      },
+                      "score": {
+                        "type": "integer",
+                        "maximum": 3
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "content_pronunciation": {
+                    "properties": {
+                      "target_match": {
+                        "const": "not_met"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "speaking_rate": {
+                    "properties": {
+                      "status": {
+                        "const": "assessed"
+                      },
+                      "score": {
+                        "type": "integer",
+                        "maximum": 3
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "speaking_rate": {
+                    "properties": {
+                      "target_match": {
+                        "const": "not_met"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "pauses_boundaries": {
+                    "properties": {
+                      "status": {
+                        "const": "assessed"
+                      },
+                      "score": {
+                        "type": "integer",
+                        "maximum": 3
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "pauses_boundaries": {
+                    "properties": {
+                      "target_match": {
+                        "const": "not_met"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "intonation": {
+                    "properties": {
+                      "status": {
+                        "const": "assessed"
+                      },
+                      "score": {
+                        "type": "integer",
+                        "maximum": 3
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "intonation": {
+                    "properties": {
+                      "target_match": {
+                        "const": "not_met"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "emotion": {
+                    "properties": {
+                      "status": {
+                        "const": "assessed"
+                      },
+                      "score": {
+                        "type": "integer",
+                        "maximum": 3
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "emotion": {
+                    "properties": {
+                      "target_match": {
+                        "const": "not_met"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "naturalness": {
+                    "properties": {
+                      "status": {
+                        "const": "assessed"
+                      },
+                      "score": {
+                        "type": "integer",
+                        "maximum": 3
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "naturalness": {
+                    "properties": {
+                      "target_match": {
+                        "const": "not_met"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "audio_quality": {
+                    "properties": {
+                      "status": {
+                        "const": "assessed"
+                      },
+                      "score": {
+                        "type": "integer",
+                        "maximum": 3
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "audio_quality": {
+                    "properties": {
+                      "target_match": {
+                        "const": "not_met"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "voice_consistency": {
+                    "properties": {
+                      "status": {
+                        "const": "assessed"
+                      },
+                      "score": {
+                        "type": "integer",
+                        "maximum": 3
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "dimensions": {
+                "properties": {
+                  "voice_consistency": {
+                    "properties": {
+                      "target_match": {
+                        "const": "not_met"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "decision": {
+                "const": "revise"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

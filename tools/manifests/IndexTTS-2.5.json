@@ -1,0 +1,141 @@
+{
+ "repo": "IndexTeam/IndexTTS-2.5",
+ "name": "IndexTTS-2.5",
+ "revision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+ "files": [
+  {
+   "path": ".gitattributes",
+   "size": 1589,
+   "blob_oid": "60a39adde0ee17874295ead2cb83a360ae03b32b",
+   "lfs_sha256": null
+  },
+  {
+   "path": "LICENSE",
+   "size": 10553,
+   "blob_oid": "b96dffb19fc6e0e048edf010f1cd0d54e8ce103c",
+   "lfs_sha256": null
+  },
+  {
+   "path": "README.md",
+   "size": 4272,
+   "blob_oid": "7a58eb771ef86135b363c26ace868810ce1a2acc",
+   "lfs_sha256": null
+  },
+  {
+   "path": "codec.pth",
+   "size": 607290935,
+   "blob_oid": "182ed85fad1ffba7fde3bf0b54e465b07ec16c8d",
+   "lfs_sha256": "d15cbed16a40f478438c961fb043f68dfa6353bf56c966761315db3433e9722c"
+  },
+  {
+   "path": "config.yaml",
+   "size": 2860,
+   "blob_oid": "b3f15b22f394f2327de574e9b5801c1d9654e203",
+   "lfs_sha256": null
+  },
+  {
+   "path": "feat1.pt",
+   "size": 57170,
+   "blob_oid": "3efb1545f32405073471a40277094678d7ef40ac",
+   "lfs_sha256": "f219cb447d80216ba615666da2ff8d63ac544eee26657f3a7b278692bf7a67c4"
+  },
+  {
+   "path": "feat2.pt",
+   "size": 374866,
+   "blob_oid": "42b51075f698aea46002f1f503962137b5158130",
+   "lfs_sha256": "9c4292e96dee535aea9a6206e9a0c856dd578dde9212acdb16dd3ada4d12bf80"
+  },
+  {
+   "path": "gpt.pth",
+   "size": 3259599833,
+   "blob_oid": "c888a2647673d320c05d5ef134d84788b0d7b5d0",
+   "lfs_sha256": "43a8f4c30eccdf201958d3b9713511482c19d56dc20b0b1c4ee1e6b080b19d85"
+  },
+  {
+   "path": "multilingual_zh_ja_yue_char_del.tiktoken",
+   "size": 907395,
+   "blob_oid": "ac47fe685d24565030965a94c0d98e00e0331eaa",
+   "lfs_sha256": null
+  },
+  {
+   "path": "qwen0.6bemo4-merge/Modelfile",
+   "size": 360,
+   "blob_oid": "b1bed86c7c360343f16d4580b7fb6a19182da273",
+   "lfs_sha256": null
+  },
+  {
+   "path": "qwen0.6bemo4-merge/added_tokens.json",
+   "size": 707,
+   "blob_oid": "b54f9135e44c1e81047e8d05cb027af8bc039eed",
+   "lfs_sha256": null
+  },
+  {
+   "path": "qwen0.6bemo4-merge/chat_template.jinja",
+   "size": 550,
+   "blob_oid": "d153f82f7ba7ddc6bfb46217304f0b5c8cc96044",
+   "lfs_sha256": null
+  },
+  {
+   "path": "qwen0.6bemo4-merge/config.json",
+   "size": 727,
+   "blob_oid": "2b9955706f283df53046c7eaa9bc4137139c11aa",
+   "lfs_sha256": null
+  },
+  {
+   "path": "qwen0.6bemo4-merge/generation_config.json",
+   "size": 117,
+   "blob_oid": "520e468ea8345d57d70ba673ca62c2056c3c616b",
+   "lfs_sha256": null
+  },
+  {
+   "path": "qwen0.6bemo4-merge/merges.txt",
+   "size": 1671853,
+   "blob_oid": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+   "lfs_sha256": null
+  },
+  {
+   "path": "qwen0.6bemo4-merge/model.safetensors",
+   "size": 1192135096,
+   "blob_oid": "90c4706d7c97351fa91f5645b527b8a53be298e5",
+   "lfs_sha256": "11293257a8df593c154a8ecd5fc039f3076de35411e35f06d41b471e136f6641"
+  },
+  {
+   "path": "qwen0.6bemo4-merge/special_tokens_map.json",
+   "size": 616,
+   "blob_oid": "17305b3603dfb19ccc0f658ec2cd2cd3adff4a58",
+   "lfs_sha256": null
+  },
+  {
+   "path": "qwen0.6bemo4-merge/tokenizer.json",
+   "size": 11422654,
+   "blob_oid": "cd71f61a15a522601badb3dc960d800d9cb3766c",
+   "lfs_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  {
+   "path": "qwen0.6bemo4-merge/tokenizer_config.json",
+   "size": 5433,
+   "blob_oid": "275ab4b74f4d4206ca5dcb2213961d380063ffb2",
+   "lfs_sha256": null
+  },
+  {
+   "path": "qwen0.6bemo4-merge/vocab.json",
+   "size": 2776833,
+   "blob_oid": "4783fe10ac3adce15ac8f358ef5462739852c569",
+   "lfs_sha256": null
+  },
+  {
+   "path": "s2mel.pth",
+   "size": 414908601,
+   "blob_oid": "956998bc33bfeba8a0b902272be96e821ad6354d",
+   "lfs_sha256": "9b1b0003fc189c94cc349758d7ebc25f903b7eb2de4602879959cc64ce816456"
+  },
+  {
+   "path": "wav2vec2bert_stats.pt",
+   "size": 9343,
+   "blob_oid": "1a8ecb924668659f3b1a9c35b02b2f8839fd8c5a",
+   "lfs_sha256": "c9c176c2b8850ab2e3ba828bbfa969deaf4566ce55db5f2687b8430b87526ad2"
+  }
+ ],
+ "n_files": 22,
+ "total_bytes": 5491182363
+}

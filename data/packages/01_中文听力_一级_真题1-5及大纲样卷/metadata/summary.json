@@ -1,0 +1,46 @@
+{
+  "package_name": "01_中文听力_一级_真题1-5及大纲样卷",
+  "created_date": "2026-11-10",
+  "level": 1,
+  "exam_keys": [
+    "HSK1-1",
+    "HSK1-2",
+    "HSK1-3",
+    "HSK1-4",
+    "HSK1-5",
+    "HSK1-outline"
+  ],
+  "volumes": 6,
+  "questions": 120,
+  "audio_files": 526,
+  "text_files": 526,
+  "audio_bytes": 139618656,
+  "duration_s": 1582.715556,
+  "speaker_labels": {
+    "旁白": 207,
+    "男播音": 152,
+    "女播音": 149,
+    "说话人待核": 18
+  },
+  "speaker_assignment_status": {
+    "automatic": 271,
+    "needs_review": 255
+  },
+  "text_review_status": {
+    "automatic_unproofread": 511,
+    "unreliable_placeholder": 13,
+    "needs_review": 2
+  },
+  "repeat_index_missing": 0,
+  "excluded": [
+    "原始整卷录音",
+    "整题WAV",
+    "MFA/ASR缓存及模型",
+    "旧版本切片",
+    "备份文件",
+    "原文标点修订前版本"
+  ],
+  "scope_note": "保留当前manifest全部轮次，包括题号、提示、重复朗读及待核片段；未额外清洗或去重。",
+  "source_archive_sha256": "4bba0058dc968425615f71f34b4006c2139f1f00c7e38fa06b390be9c0cf8f7f",
+  "offline_review_page": "index.html"
+}

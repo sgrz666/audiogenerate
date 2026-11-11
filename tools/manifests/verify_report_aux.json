@@ -1,0 +1,56 @@
+{
+ "n_files": 7,
+ "n_ok": 7,
+ "bad": [],
+ "files": [
+  {
+   "path": "bigvgan/bigvgan_generator.pt",
+   "expect_size": 449228171,
+   "actual_size": 449228171,
+   "hash_kind": "sha256",
+   "status": "OK"
+  },
+  {
+   "path": "bigvgan/config.json",
+   "expect_size": 1405,
+   "actual_size": 1405,
+   "hash_kind": "sha1",
+   "status": "OK"
+  },
+  {
+   "path": "campplus_cn_common.bin",
+   "expect_size": 28036335,
+   "actual_size": 28036335,
+   "hash_kind": "sha256",
+   "status": "OK"
+  },
+  {
+   "path": "semantic_codec_model.safetensors",
+   "expect_size": 177183712,
+   "actual_size": 177183712,
+   "hash_kind": "sha256",
+   "status": "OK"
+  },
+  {
+   "path": "w2v-bert-2.0/config.json",
+   "expect_size": 1874,
+   "actual_size": 1874,
+   "hash_kind": "sha1",
+   "status": "OK"
+  },
+  {
+   "path": "w2v-bert-2.0/model.safetensors",
+   "expect_size": 2322063736,
+   "actual_size": 2322063736,
+   "hash_kind": "sha256",
+   "status": "OK"
+  },
+  {
+   "path": "w2v-bert-2.0/preprocessor_config.json",
+   "expect_size": 275,
+   "actual_size": 275,
+   "hash_kind": "sha1",
+   "status": "OK"
+  }
+ ]
+}

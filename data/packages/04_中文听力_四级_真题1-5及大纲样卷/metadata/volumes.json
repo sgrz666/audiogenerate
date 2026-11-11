@@ -1,0 +1,74 @@
+[
+  {
+    "exam_key": "HSK4-1",
+    "level": 4,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK4-1.mp3",
+    "source_sha256": "17847a2ac41a1f0a3b9a4e87b46996080bb5499f51e08a16aaae826c2eea96c8",
+    "question_count": 45,
+    "samples": 183,
+    "duration_s": 898.532,
+    "audio_bytes": 79264798,
+    "source_manifest": "turn_cuts_manifest.json"
+  },
+  {
+    "exam_key": "HSK4-2",
+    "level": 4,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK4-2.mp3",
+    "source_sha256": "d3884829f8ec9988537e07eca28f704ac9c0bc482c97a0634070e5fcb309d9fe",
+    "question_count": 45,
+    "samples": 196,
+    "duration_s": 878.932,
+    "audio_bytes": 77530414,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK4-3",
+    "level": 4,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK4-3.mp3",
+    "source_sha256": "decd02cdda82c48994f2c9ec686824bc07389f8e0afe3db41632f463cd0b7794",
+    "question_count": 45,
+    "samples": 198,
+    "duration_s": 843.977,
+    "audio_bytes": 74447482,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK4-4",
+    "level": 4,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK4-4.mp3",
+    "source_sha256": "b3bb1a66b8f0ca93ff17ce86da48dc1cef84ddd2f1128dc10b13e5dc61549b4c",
+    "question_count": 45,
+    "samples": 201,
+    "duration_s": 867.6,
+    "audio_bytes": 76531180,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK4-5",
+    "level": 4,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK4-5.mp3",
+    "source_sha256": "d391c2ae3e9c12764a1375a422c99c37b2d3274399d2ff22d5d3ea87a05146a3",
+    "question_count": 45,
+    "samples": 188,
+    "duration_s": 839.302,
+    "audio_bytes": 74034696,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK4-outline",
+    "level": 4,
+    "source_kind": "大纲样卷",
+    "source_audio_filename": "HSK考试大纲（四级）样卷听力音频.wav",
+    "source_sha256": "b6b2b89c6034ea8b8f01a7a03468d3e2069610c504e8b66a9c884bb1b4a7d77c",
+    "question_count": 45,
+    "samples": 190,
+    "duration_s": 809.628,
+    "audio_bytes": 71417556,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  }
+]

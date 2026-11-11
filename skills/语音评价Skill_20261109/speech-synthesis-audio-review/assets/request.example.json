@@ -1,0 +1,28 @@
+{
+  "task": "请按附带 SKILL.md 评价实际音频，输出规定 JSON。此文件是填写示例，音频文件需要另行附上。",
+  "clips": [
+    {
+      "audio_id": "demo_001_v1",
+      "audio_file": "demo_001_v1.wav",
+      "source_text": "你明天下午有时间吗？我们一起去图书馆吧。",
+      "requirements": {
+        "scenario": "中文听力材料中的日常对话",
+        "speaker_role": "女播音",
+        "voice_reference_id": null,
+        "speaking_rate": {
+          "description": "语速适中、句内稳定，避免局部突然加速或拖慢",
+          "target_value": null,
+          "unit": null,
+          "definition": null,
+          "tolerance": null
+        },
+        "pauses": "在问句与下一句之间自然停顿，不在词语内部断开",
+        "intonation": "第一句自然询问，第二句温和提议，不要求每个句尾都上扬",
+        "emotion": "平和、友好、适度，不使用夸张表演式情绪",
+        "audio_quality": "声音清晰，无明显电流感、爆音、异常断裂或失真"
+      },
+      "reference_audio": [],
+      "measured_metrics": []
+    }
+  ]
+}

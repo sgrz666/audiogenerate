@@ -1,0 +1,38 @@
+[
+  {
+    "exam_key": "HSK6-4",
+    "level": 6,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK6-4.mp3",
+    "source_sha256": "285187e214145cc1992c96a5e51fcadabb0c77764660e77c9c5511c290443828",
+    "question_count": 50,
+    "samples": 150,
+    "duration_s": 1375.358,
+    "audio_bytes": 121313170,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK6-5",
+    "level": 6,
+    "source_kind": "2018真题",
+    "source_audio_filename": "HSK6-5.mp3",
+    "source_sha256": "a7af7cc50b793ac6a5f75a4aaa8ce03841568d4d6b212a9c2f1c695e14059870",
+    "question_count": 50,
+    "samples": 149,
+    "duration_s": 1431.12,
+    "audio_bytes": 126231342,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  },
+  {
+    "exam_key": "HSK6-outline",
+    "level": 6,
+    "source_kind": "大纲样卷",
+    "source_audio_filename": "HSK考试大纲（六级）样卷听力音频.wav",
+    "source_sha256": "9b430fa5da0161afccf2f18f11fd385fd91a3ce995956bd09a4875e12f6309bf",
+    "question_count": 50,
+    "samples": 146,
+    "duration_s": 1336.931,
+    "audio_bytes": 117923728,
+    "source_manifest": "turn_cuts_manifest_batch.json"
+  }
+]

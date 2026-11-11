@@ -1,0 +1,129 @@
+{
+ "repo": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+ "name": "Fun-CosyVoice3-0.5B-2512",
+ "revision": "29e01c4e8d000f4bcd70751be16fa94bf3d85a18",
+ "files": [
+  {
+   "path": ".gitattributes",
+   "size": 1574,
+   "blob_oid": "cb90d04a72c0b51e3a115db0a9342dd88af903a4",
+   "lfs_sha256": null
+  },
+  {
+   "path": "CosyVoice-BlankEN/config.json",
+   "size": 659,
+   "blob_oid": "463b055262b6c66c4629a74a4b300bfe2ed31d3c",
+   "lfs_sha256": null
+  },
+  {
+   "path": "CosyVoice-BlankEN/generation_config.json",
+   "size": 242,
+   "blob_oid": "dfc11073787daf1b0f9c0f1499487ab5f4c93738",
+   "lfs_sha256": null
+  },
+  {
+   "path": "CosyVoice-BlankEN/merges.txt",
+   "size": 1402109,
+   "blob_oid": "90d3d82d027eadcc6a5e77c38eb82d43fc51b53b",
+   "lfs_sha256": null
+  },
+  {
+   "path": "CosyVoice-BlankEN/model.safetensors",
+   "size": 988097824,
+   "blob_oid": "3dff8ababe3dbf3bd7a556f5f143503ab2ef3c98",
+   "lfs_sha256": "130282af0dfa9fe5840737cc49a0d339d06075f83c5a315c3372c9a0740d0b96"
+  },
+  {
+   "path": "CosyVoice-BlankEN/tokenizer_config.json",
+   "size": 1287,
+   "blob_oid": "ff55d7b9eb1384e5d4d7e75dc0f564c1a8833d6e",
+   "lfs_sha256": null
+  },
+  {
+   "path": "CosyVoice-BlankEN/vocab.json",
+   "size": 2776833,
+   "blob_oid": "4783fe10ac3adce15ac8f358ef5462739852c569",
+   "lfs_sha256": null
+  },
+  {
+   "path": "README.md",
+   "size": 11982,
+   "blob_oid": "d816a921470cff1b6926d31c89e4ec7dea185f32",
+   "lfs_sha256": null
+  },
+  {
+   "path": "asset/dingding.png",
+   "size": 122824,
+   "blob_oid": "e407a9d3c0fc5a7fcac46aef09181a0bef330d37",
+   "lfs_sha256": "7f04815e2e676d31b089af6fa270135f3214f2193d5e0ad98b491d007d48f1c6"
+  },
+  {
+   "path": "campplus.onnx",
+   "size": 28303423,
+   "blob_oid": "7b08523b2e28e437cfb1a0312723a5ab0bac287e",
+   "lfs_sha256": "a6ac6a63997761ae2997373e2ee1c47040854b4b759ea41ec48e4e42df0f4d73"
+  },
+  {
+   "path": "config.json",
+   "size": 2,
+   "blob_oid": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+   "lfs_sha256": null
+  },
+  {
+   "path": "configuration.json",
+   "size": 47,
+   "blob_oid": "5e812fae901c12933ac69ebf3eb79d0eb49bbab4",
+   "lfs_sha256": null
+  },
+  {
+   "path": "cosyvoice3.yaml",
+   "size": 6934,
+   "blob_oid": "2eda7e5007d99f6b17fbe7bd751cf54e3cde29ea",
+   "lfs_sha256": null
+  },
+  {
+   "path": "flow.decoder.estimator.fp32.onnx",
+   "size": 1326216933,
+   "blob_oid": "3f880eeae966a725cd7c875b8e4c929bf2035489",
+   "lfs_sha256": "9b51b9533a55937762b262bf2cf9c6220ce40760f76d6532cb16a6a6d84059a8"
+  },
+  {
+   "path": "flow.pt",
+   "size": 1329116148,
+   "blob_oid": "074b96e9cfbf3e511067528bde8e76a308f94904",
+   "lfs_sha256": "a6fab32a7825e5b0bc855ddd948f8db9370b0a786fbc249caa4595e95b608e4b"
+  },
+  {
+   "path": "hift.pt",
+   "size": 83202622,
+   "blob_oid": "c5088ac4f7db1314a4efe06ca60e9f47ea2a1900",
+   "lfs_sha256": "b279d7641eb97ae55b3b540cfba4f953c26492a2df758328a89a4d007ab87a65"
+  },
+  {
+   "path": "llm.pt",
+   "size": 2024669519,
+   "blob_oid": "d9813d1f616910e9117d612e6e725b0350f98115",
+   "lfs_sha256": "69f43bd545131c30e98947fb360ea8b4dc9916d8e83dded7757c7ea4f5a24970"
+  },
+  {
+   "path": "llm.rl.pt",
+   "size": 2024682701,
+   "blob_oid": "bc852bfe713ca73dcb2d900145731e6ce2c4a3c2",
+   "lfs_sha256": "74d34b01a80c7154670ae75ac372d1b1712c78bceae9f467eb9f1f6f61ec764f"
+  },
+  {
+   "path": "speech_tokenizer_v3.batch.onnx",
+   "size": 969451579,
+   "blob_oid": "3a4fb34ea654cdfc4e4228b2d485c196af2985fa",
+   "lfs_sha256": "b156b8a7bbff436585e153f4637b9a368009005ac66efa108a6c8bfb34e5ee43"
+  },
+  {
+   "path": "speech_tokenizer_v3.onnx",
+   "size": 969451503,
+   "blob_oid": "91daac1b6f0bbcb54b8885dc7a1cbf054de22f94",
+   "lfs_sha256": "23236a74175dbdda47afc66dbadd5bcb41303c467a57c261cb8539ad9db9208d"
+  }
+ ],
+ "n_files": 20,
+ "total_bytes": 9747516745
+}

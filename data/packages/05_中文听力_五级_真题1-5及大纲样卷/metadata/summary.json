@@ -1,0 +1,47 @@
+{
+  "package_name": "05_中文听力_五级_真题1-5及大纲样卷",
+  "created_date": "2026-11-10",
+  "level": 5,
+  "exam_keys": [
+    "HSK5-1",
+    "HSK5-2",
+    "HSK5-3",
+    "HSK5-4",
+    "HSK5-5",
+    "HSK5-outline"
+  ],
+  "volumes": 6,
+  "questions": 270,
+  "audio_files": 1180,
+  "text_files": 1180,
+  "audio_bytes": 496025408,
+  "duration_s": 5623.282177,
+  "speaker_labels": {
+    "旁白": 588,
+    "女播音": 228,
+    "男播音": 267,
+    "说话人待核": 52,
+    "播音员4（待确认）": 45
+  },
+  "speaker_assignment_status": {
+    "needs_review": 563,
+    "automatic": 617
+  },
+  "text_review_status": {
+    "automatic_unproofread": 1158,
+    "needs_review": 16,
+    "unreliable_placeholder": 6
+  },
+  "repeat_index_missing": 0,
+  "excluded": [
+    "原始整卷录音",
+    "整题WAV",
+    "MFA/ASR缓存及模型",
+    "旧版本切片",
+    "备份文件",
+    "原文标点修订前版本"
+  ],
+  "scope_note": "保留当前manifest全部轮次，包括题号、提示、重复朗读及待核片段；未额外清洗或去重。",
+  "source_archive_sha256": "4bba0058dc968425615f71f34b4006c2139f1f00c7e38fa06b390be9c0cf8f7f",
+  "offline_review_page": "index.html"
+}

@@ -1,0 +1,33 @@
+# 模型权重（只保留 model/README.md）
+model/*/
+!model/README.md
+
+# 数据音频、转写与标注表（仓库只保留数据集介绍与分包统计）
+data/**/data/
+data/**/*.wav
+data/**/*.mp3
+data/**/*.flac
+data/**/*.m4a
+data/**/*.txt
+data/**/index.html
+data/**/checksums.sha256
+data/**/metadata/samples.*
+data/**/metadata/questions.*
+
+# 下载缓存、临时目录与凭据
+.tmp/
+.cache/
+.hf_cache/
+*.part
+*bdcookie*
+bdjar.txt
+.note/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.swp

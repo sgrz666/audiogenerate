@@ -1,0 +1,81 @@
+{
+ "repo": "FireRedTeam/FireRedTTS3",
+ "name": "FireRedTTS3",
+ "revision": "dcf1bdcd1b8b25b382fa84c3e34eb82e3054a610",
+ "files": [
+  {
+   "path": ".gitattributes",
+   "size": 1585,
+   "blob_oid": "bf0b769820d75ad8297fcd9558568cbea40fdf8a",
+   "lfs_sha256": null
+  },
+  {
+   "path": "README.md",
+   "size": 33433,
+   "blob_oid": "55288c8bfd93d3898034cab40af601a5bb07aff1",
+   "lfs_sha256": null
+  },
+  {
+   "path": "campp/campplus_voxceleb.bin",
+   "size": 29357703,
+   "blob_oid": "37582124d5109654402f7a52b8bb0fba1c0f51b8",
+   "lfs_sha256": "5b1a88b6f8d85826fabef804779c3372b42f3af21457fa48bd5c097c0686b2de"
+  },
+  {
+   "path": "fireredtts3_base/config.json",
+   "size": 420,
+   "blob_oid": "10f7f323437ed09772fb92c0719fc44b068d59c1",
+   "lfs_sha256": null
+  },
+  {
+   "path": "fireredtts3_base/model.safetensors",
+   "size": 8482608484,
+   "blob_oid": "a3cbb99a6e22ed26219e2d0c0b76eff12d26ea42",
+   "lfs_sha256": "d6ceed109a04207ef48bc669fb68248d3a44d990fcf2b9641990a6134d2ebb8a"
+  },
+  {
+   "path": "fireredtts3_instruct/config.json",
+   "size": 403,
+   "blob_oid": "561d49a3e57431ffe044a8cf68137953a21097c4",
+   "lfs_sha256": null
+  },
+  {
+   "path": "fireredtts3_instruct/model.safetensors",
+   "size": 8475259708,
+   "blob_oid": "5321efb248fd8766b9f875287a5b4b0e53feb73f",
+   "lfs_sha256": "a145074153202871f759f52480bbf022bdb70c062a1da90a94b797db8511d889"
+  },
+  {
+   "path": "redae/config.json",
+   "size": 853,
+   "blob_oid": "f0a55f0f5585220610e4bef9818839ca6a761932",
+   "lfs_sha256": null
+  },
+  {
+   "path": "redae/model.safetensors",
+   "size": 3775160672,
+   "blob_oid": "e0cfdbe3795bf901fb9f798b19d0d71594b53822",
+   "lfs_sha256": "0723e87fdaf46d377f01aa32ce56b43f43f9b249415bc8b8f81040eaa8b14abe"
+  },
+  {
+   "path": "text_tokenizer/tokenizer.json",
+   "size": 11422654,
+   "blob_oid": "cd71f61a15a522601badb3dc960d800d9cb3766c",
+   "lfs_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  {
+   "path": "text_tokenizer/tokenizer_config.json",
+   "size": 9732,
+   "blob_oid": "417d038a63fa3de29cfde265caedae14d1a58d92",
+   "lfs_sha256": null
+  },
+  {
+   "path": "text_tokenizer/vocab.json",
+   "size": 2776833,
+   "blob_oid": "4783fe10ac3adce15ac8f358ef5462739852c569",
+   "lfs_sha256": null
+  }
+ ],
+ "n_files": 12,
+ "total_bytes": 20776632480
+}

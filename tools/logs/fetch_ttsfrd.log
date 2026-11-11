@@ -1,0 +1,5 @@
+2026-11-11 11:07:49 [fetch] hf_transfer enabled
+2026-11-11 11:07:49 [fetch] huggingface_hub 0.34.4
+2026-11-11 11:07:49 [start] FunAudioLLM/CosyVoice-ttsfrd -> /data/shangguanrz/projectsss/speakgenerate/model/CosyVoice-ttsfrd expect 0.32 GiB (8 files) rev=8c0f9244a4f7
+2026-11-11 11:08:07 [done] CosyVoice-ttsfrd 0.32 GiB on disk
+2026-11-11 11:08:07 [fetch] all repos downloaded

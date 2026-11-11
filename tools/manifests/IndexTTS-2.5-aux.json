@@ -1,0 +1,63 @@
+{
+ "dest": "/data/shangguanrz/projectsss/speakgenerate/model/IndexTTS-2.5/hf_cache",
+ "files": [
+  {
+   "repo": "nvidia/bigvgan_v2_22khz_80band_256x",
+   "remote": "bigvgan_generator.pt",
+   "local": "bigvgan/bigvgan_generator.pt",
+   "size": 449228171,
+   "blob_oid": "8d615250f07a44490d74033318fd330be67f4a86",
+   "lfs_sha256": "e95ba25972d3de0628d99cd156e9315a9c018899bf739988959ebe3544080ced"
+  },
+  {
+   "repo": "nvidia/bigvgan_v2_22khz_80band_256x",
+   "remote": "config.json",
+   "local": "bigvgan/config.json",
+   "size": 1405,
+   "blob_oid": "635bd8975629bd6d4b51c409986944a281cfe7be",
+   "lfs_sha256": null
+  },
+  {
+   "repo": "funasr/campplus",
+   "remote": "campplus_cn_common.bin",
+   "local": "campplus_cn_common.bin",
+   "size": 28036335,
+   "blob_oid": "ccc729ec7f373f8d2351be91c9efdc7b21c00384",
+   "lfs_sha256": "3388cf5fd3493c9ac9c69851d8e7a8badcfb4f3dc631020c4961371646d5ada8"
+  },
+  {
+   "repo": "amphion/MaskGCT",
+   "remote": "semantic_codec/model.safetensors",
+   "local": "semantic_codec_model.safetensors",
+   "size": 177183712,
+   "blob_oid": "d8fb89f71594050e263aed319b2440b362e2eeef",
+   "lfs_sha256": "ec947271175d8cad75ec37e83aa487e27c97a0f72a303393772da5ffa84bddf2"
+  },
+  {
+   "repo": "facebook/w2v-bert-2.0",
+   "remote": "config.json",
+   "local": "w2v-bert-2.0/config.json",
+   "size": 1874,
+   "blob_oid": "a383a594dac18459628cd2837168cd276342a31a",
+   "lfs_sha256": null
+  },
+  {
+   "repo": "facebook/w2v-bert-2.0",
+   "remote": "model.safetensors",
+   "local": "w2v-bert-2.0/model.safetensors",
+   "size": 2322063736,
+   "blob_oid": "cb7c6d08fe4cc20b2748c5525de64964d50190fa",
+   "lfs_sha256": "eb890c9660ed6e3414b6812e27257b8ce5454365d5490d3ad581ea60b93be043"
+  },
+  {
+   "repo": "facebook/w2v-bert-2.0",
+   "remote": "preprocessor_config.json",
+   "local": "w2v-bert-2.0/preprocessor_config.json",
+   "size": 275,
+   "blob_oid": "5db61951cdf5edab6337fd84ee619500c27aaa3d",
+   "lfs_sha256": null
+  }
+ ],
+ "n_files": 7,
+ "total_bytes": 2976515508
+}
