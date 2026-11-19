@@ -1,0 +1,47 @@
+{
+ "task": {
+  "kind": "intonation",
+  "audio_id": "P2-intonation-fireredtts3_base-NARRATOR-I1-exclamatory",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/fireredtts3_base/NARRATOR/P2-intonation-fireredtts3_base-NARRATOR-I1-exclamatory.wav",
+  "source_text": "他昨天买了一本新书！",
+  "requirements": "目标语气：exclamatory。只判断声音本身；不要因为文本里有问号就假定句尾上扬。在 JSON 里加顶级字段 type_choice，取值 陈述/疑问/感叹/无法判断。",
+  "target": "exclamatory",
+  "config_id": "fireredtts3_base"
+ },
+ "raw": "{\"audio_id\":\"P2-intonation-fireredtts3_base-NARRATOR-I1-exclamatory\",\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":4,\"pauses_boundaries\":4,\"intonation\":2,\"emotion\":4,\"naturalness\":4,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[\"他昨天买了一本新书！\",{\"dimension\":\"intonation\",\"severity\":\"major\",\"certainty\":\"uncertain\",\"start_s\":null,\"end_s\":null,\"time_precision\":\"unavailable\",\"text_anchor\":\"他昨天买了一本新书！\",\\\"observed_text\\\":null,\\\"evidence\\\":\\\"句尾缺乏明显上扬，听起来像陈述而非感叹\\\"}],\"emotion_choice\":\"无法判断\",\"type_choice\":\"无法判断\",\"pause_present\":\"无法判断\",\"target_reading\":\"\"}",
+ "ts": 1794569834.4480906,
+ "status": "ok_retry",
+ "error": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 428 (char 427)",
+ "raw_retry": "{\"audio_id\":\"P2-intonation-fireredtts3_base-NARRATOR-I1-exclamatory\",\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":null,\"pauses_boundaries\":null,\"intonation\":2,\"emotion\":null,\"naturalness\":null,\"audio_quality\":null,\"voice_consistency\":null},\"issues\":[\"他昨天买了一本新书！\",{\"start_s\":null,\"end_s\":null,\"time_precision\":\"unavailable\",\"text_anchor\":\"他昨天买了一本新书！\",\"observed_text\":\"无明显句尾上扬，整体语调平稳\",\"evidence\":\"目标为感叹句但实际语调接近陈述\",\"suggestion\":\"建议加强句尾语气变化以符合 exclamatory 要求\"}],\"emotion_choice\":\"无法判断\",\"type_choice\":\"陈述\",\"pause_present\":\"无法判断\",\"target_reading\":\"null\"}",
+ "parsed": {
+  "audio_id": "P2-intonation-fireredtts3_base-NARRATOR-I1-exclamatory",
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": null,
+   "pauses_boundaries": null,
+   "intonation": 2,
+   "emotion": null,
+   "naturalness": null,
+   "audio_quality": null,
+   "voice_consistency": null
+  },
+  "issues": [
+   "他昨天买了一本新书！",
+   {
+    "start_s": null,
+    "end_s": null,
+    "time_precision": "unavailable",
+    "text_anchor": "他昨天买了一本新书！",
+    "observed_text": "无明显句尾上扬，整体语调平稳",
+    "evidence": "目标为感叹句但实际语调接近陈述",
+    "suggestion": "建议加强句尾语气变化以符合 exclamatory 要求"
+   }
+  ],
+  "emotion_choice": "无法判断",
+  "type_choice": "陈述",
+  "pause_present": "无法判断",
+  "target_reading": "null"
+ },
+ "tag": "run"
+}

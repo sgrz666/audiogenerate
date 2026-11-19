@@ -1,0 +1,230 @@
+{
+ "normalization": {
+  "rate_err_good": 5,
+  "rate_err_bad": 25,
+  "note": "project thresholds; native-only"
+ },
+ "trackB_weights": {
+  "speaking_rate_control": 0.25,
+  "pause_control": 0.2,
+  "intonation_control": 0.15,
+  "emotion_control": 0.15,
+  "pronunciation_correction": 0.15,
+  "vram_efficiency": 0.1
+ },
+ "configs": [
+  {
+   "config_id": "voxcpm2",
+   "family": "VoxCPM2",
+   "variant": "base",
+   "rate_n_native": 0,
+   "rate_n_text_fallback": 45,
+   "control_census": {
+    "rate": {
+     "text_fallback": 45
+    },
+    "pause": {
+     "text_fallback": 27
+    },
+    "intonation": {
+     "text_fallback": 27
+    },
+    "emotion": {
+     "text_fallback": 36
+    },
+    "pronunciation": {
+     "text_fallback": 18
+    }
+   },
+   "mean_rtf": 0.6789,
+   "max_peak_vram_gib": 5.579,
+   "fits_24gb": true,
+   "stability_mean_cpm_cv_pct": 10.06,
+   "stability_n": 18,
+   "trackB_subscores": {
+    "speaking_rate_control": null
+   },
+   "trackB_not_tested": [
+    "emotion_control",
+    "intonation_control",
+    "pause_control",
+    "pronunciation_correction"
+   ],
+   "trackB_objective_partial": null,
+   "trackB_weight_coverage": 0,
+   "trackB_full_score": null
+  },
+  {
+   "config_id": "indextts25",
+   "family": "IndexTTS-2.5",
+   "variant": "base",
+   "rate_mean_rel_err_pct": 4.33,
+   "rate_within_5pct": 0.6,
+   "rate_n_native": 45,
+   "rate_n_text_fallback": 0,
+   "control_census": {
+    "rate": {
+     "native": 45
+    },
+    "pause": {
+     "text_fallback": 27
+    },
+    "intonation": {
+     "text_fallback": 27
+    },
+    "emotion": {
+     "native": 36
+    },
+    "pronunciation": {
+     "native": 18
+    }
+   },
+   "mean_rtf": 1.0341,
+   "max_peak_vram_gib": 5.456,
+   "fits_24gb": true,
+   "stability_mean_cpm_cv_pct": 3.78,
+   "stability_n": 18,
+   "trackB_subscores": {
+    "speaking_rate_control": 1.0
+   },
+   "trackB_not_tested": [
+    "emotion_control",
+    "intonation_control",
+    "pause_control",
+    "pronunciation_correction"
+   ],
+   "trackB_objective_partial": 1.0,
+   "trackB_weight_coverage": 0.25,
+   "trackB_full_score": null
+  },
+  {
+   "config_id": "cosyvoice3",
+   "family": "CosyVoice3-0.5B",
+   "variant": "base",
+   "status": "not_tested"
+  },
+  {
+   "config_id": "qwen3tts_base",
+   "family": "Qwen3-TTS-1.7B",
+   "variant": "Base",
+   "rate_n_native": 0,
+   "rate_n_text_fallback": 45,
+   "control_census": {
+    "rate": {
+     "text_fallback": 45
+    },
+    "pause": {
+     "text_fallback": 27
+    },
+    "intonation": {
+     "text_fallback": 27
+    },
+    "emotion": {
+     "text_fallback": 36
+    },
+    "pronunciation": {
+     "text_fallback": 18
+    }
+   },
+   "mean_rtf": 1.7486,
+   "max_peak_vram_gib": 4.329,
+   "fits_24gb": true,
+   "stability_mean_cpm_cv_pct": 5.95,
+   "stability_n": 18,
+   "trackB_subscores": {
+    "speaking_rate_control": null
+   },
+   "trackB_not_tested": [
+    "emotion_control",
+    "intonation_control",
+    "pause_control",
+    "pronunciation_correction"
+   ],
+   "trackB_objective_partial": null,
+   "trackB_weight_coverage": 0,
+   "trackB_full_score": null
+  },
+  {
+   "config_id": "fireredtts3_base",
+   "family": "FireRedTTS3",
+   "variant": "Base",
+   "rate_n_native": 0,
+   "rate_n_text_fallback": 45,
+   "control_census": {
+    "rate": {
+     "text_fallback": 45
+    },
+    "pause": {
+     "text_fallback": 27
+    },
+    "intonation": {
+     "text_fallback": 27
+    },
+    "emotion": {
+     "text_fallback": 36
+    },
+    "pronunciation": {
+     "text_fallback": 18
+    }
+   },
+   "mean_rtf": 0.9193,
+   "max_peak_vram_gib": 14.105,
+   "fits_24gb": true,
+   "stability_mean_cpm_cv_pct": 2.57,
+   "stability_n": 18,
+   "trackB_subscores": {
+    "speaking_rate_control": null
+   },
+   "trackB_not_tested": [
+    "emotion_control",
+    "intonation_control",
+    "pause_control",
+    "pronunciation_correction"
+   ],
+   "trackB_objective_partial": null,
+   "trackB_weight_coverage": 0,
+   "trackB_full_score": null
+  },
+  {
+   "config_id": "fireredtts3_instruct",
+   "family": "FireRedTTS3",
+   "variant": "Instruct",
+   "rate_n_native": 0,
+   "rate_n_text_fallback": 45,
+   "control_census": {
+    "rate": {
+     "text_fallback": 45
+    },
+    "pause": {
+     "text_fallback": 27
+    },
+    "intonation": {
+     "text_fallback": 27
+    },
+    "emotion": {
+     "text_fallback": 36
+    },
+    "pronunciation": {
+     "text_fallback": 18
+    }
+   },
+   "mean_rtf": 0.8897,
+   "max_peak_vram_gib": 14.077,
+   "fits_24gb": true,
+   "stability_mean_cpm_cv_pct": 4.1,
+   "stability_n": 18,
+   "trackB_subscores": {
+    "speaking_rate_control": null
+   },
+   "trackB_not_tested": [
+    "emotion_control",
+    "intonation_control",
+    "pause_control",
+    "pronunciation_correction"
+   ],
+   "trackB_objective_partial": null,
+   "trackB_weight_coverage": 0,
+   "trackB_full_score": null
+  }
+ ]
+}

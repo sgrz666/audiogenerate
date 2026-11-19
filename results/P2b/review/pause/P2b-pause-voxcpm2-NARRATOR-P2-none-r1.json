@@ -1,0 +1,35 @@
+{
+ "task": {
+  "kind": "pause",
+  "audio_id": "P2b-pause-voxcpm2-NARRATOR-P2-none-r1",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/voxcpm2/NARRATOR/P2b-pause-voxcpm2-NARRATOR-P2-none-r1.wav",
+  "source_text": "他先去了图书馆然后去了食堂最后回了宿舍。",
+  "requirements": "只评价停顿与边界：标点处是否有可感知停顿、是否出现词内断开/异常断音、衔接是否自然。在 JSON 里加顶级字段 pause_present，取值 有/无/无法判断。",
+  "target": "none",
+  "config_id": "voxcpm2"
+ },
+ "raw": "{\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":5,\"pauses_boundaries\":3,\"intonation\":4,\"emotion\":4,\"naturalness\":4,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[\"然后去了食堂最后回了宿舍处衔接稍显生硬，停顿位置与书面标点略有出入\"],\"emotion_choice\":\"平静\",\"type_choice\":\"陈述\",\"pause_present\":\"有\",\"target_reading\":\"无\"}",
+ "ts": 1794570071.0329025,
+ "parsed": {
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 5,
+   "pauses_boundaries": 3,
+   "intonation": 4,
+   "emotion": 4,
+   "naturalness": 4,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [
+   "然后去了食堂最后回了宿舍处衔接稍显生硬，停顿位置与书面标点略有出入"
+  ],
+  "emotion_choice": "平静",
+  "type_choice": "陈述",
+  "pause_present": "有",
+  "target_reading": "无"
+ },
+ "status": "ok",
+ "tag": "run"
+}

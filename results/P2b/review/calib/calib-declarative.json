@@ -1,0 +1,37 @@
+{
+ "task": {
+  "kind": "calib",
+  "audio_id": "calib-declarative",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/FEMALE/P2-intonation-indextts25-FEMALE-I2-declarative.wav",
+  "source_text": "这道题其实一点都不难。",
+  "requirements": "判断实际听感最像哪种句型；在 JSON 里加 type_choice。",
+  "expected": {
+   "type_choice_in": [
+    "陈述",
+    "declarative"
+   ]
+  }
+ },
+ "raw": "{\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":4,\"pauses_boundaries\":4,\"intonation\":4,\"emotion\":3,\"naturalness\":4,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"emotion_choice\":\"平静\",\"type_choice\":\"陈述\",\"pause_present\":\"有\",\"target_reading\":\"\"}",
+ "ts": 1794569502.0873215,
+ "parsed": {
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 4,
+   "pauses_boundaries": 4,
+   "intonation": 4,
+   "emotion": 3,
+   "naturalness": 4,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "emotion_choice": "平静",
+  "type_choice": "陈述",
+  "pause_present": "有",
+  "target_reading": ""
+ },
+ "status": "ok",
+ "tag": "calibration"
+}

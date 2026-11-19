@@ -1,0 +1,35 @@
+{
+ "task": {
+  "kind": "intonation",
+  "audio_id": "P2-intonation-voxcpm2-NARRATOR-I3-interrogative",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/voxcpm2/NARRATOR/P2-intonation-voxcpm2-NARRATOR-I3-interrogative.wav",
+  "source_text": "我们终于完成了这个任务吗？",
+  "requirements": "目标语气：interrogative。只判断声音本身；不要因为文本里有问号就假定句尾上扬。在 JSON 里加顶级字段 type_choice，取值 陈述/疑问/感叹/无法判断。",
+  "target": "interrogative",
+  "config_id": "voxcpm2"
+ },
+ "raw": "{\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":null,\"pauses_boundaries\":null,\"intonation\":3,\"emotion\":null,\"naturalness\":4,\"audio_quality\":5,\"voice_consistency\":null},\"issues\":[\"我们终于完成了这个任务吗？句尾语调未明显上扬，缺乏典型疑问语气。\"],\"emotion_choice\":\"无法判断\",\"type_choice\":\"疑问\",\"pause_present\":\"无法判断\",\"target_reading\":\"无\"}",
+ "ts": 1794569655.2966652,
+ "parsed": {
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": null,
+   "pauses_boundaries": null,
+   "intonation": 3,
+   "emotion": null,
+   "naturalness": 4,
+   "audio_quality": 5,
+   "voice_consistency": null
+  },
+  "issues": [
+   "我们终于完成了这个任务吗？句尾语调未明显上扬，缺乏典型疑问语气。"
+  ],
+  "emotion_choice": "无法判断",
+  "type_choice": "疑问",
+  "pause_present": "无法判断",
+  "target_reading": "无"
+ },
+ "status": "ok",
+ "tag": "run"
+}

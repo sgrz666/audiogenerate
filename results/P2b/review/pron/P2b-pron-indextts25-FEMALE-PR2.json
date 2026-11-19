@@ -1,0 +1,33 @@
+{
+ "task": {
+  "kind": "pron",
+  "audio_id": "P2b-pron-indextts25-FEMALE-PR2",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/FEMALE/P2b-pron-indextts25-FEMALE-PR2.wav",
+  "source_text": "这个箱子太重了，请你重新搬一次。",
+  "requirements": "重点核对多音字目标：‘太重’的‘重’和‘重新’的‘重’（zhòng/chóng）。只报告实际听到的读音，不要按文本猜测；并判断是否有逐字读字母/增字/漏字。在 JSON 里加顶级字段 target_reading，按目标字顺序写拼音。",
+  "target": "PR2",
+  "config_id": "indextts25"
+ },
+ "raw": "{\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":4,\"pauses_boundaries\":4,\"intonation\":4,\"emotion\":\"平静\",\"naturalness\":4,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"target_reading\":\"zhòng/chóng\",\"emotion_choice\":\"平静\",\"type_choice\":\"陈述\",\"pause_present\":\"有\"}",
+ "ts": 1794570533.1213963,
+ "parsed": {
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 4,
+   "pauses_boundaries": 4,
+   "intonation": 4,
+   "emotion": "平静",
+   "naturalness": 4,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "target_reading": "zhòng/chóng",
+  "emotion_choice": "平静",
+  "type_choice": "陈述",
+  "pause_present": "有"
+ },
+ "status": "ok",
+ "tag": "run"
+}

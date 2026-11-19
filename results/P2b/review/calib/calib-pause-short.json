@@ -1,0 +1,37 @@
+{
+ "task": {
+  "kind": "calib",
+  "audio_id": "calib-pause-short",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pause-indextts25-NARRATOR-P1-none-r1.wav",
+  "source_text": "春天来了花都开了小草也绿了。",
+  "requirements": "重点听分句处是否几乎没有停顿；在 JSON 里加 pause_present。",
+  "expected": {
+   "pause_present_in": [
+    "无"
+   ],
+   "soft": true
+  }
+ },
+ "raw": "{\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":4,\"pauses_boundaries\":2,\"intonation\":4,\"emotion\":\"平静\",\"naturalness\":3,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[\"春天来了花都开了小草也绿了。分句间停顿过短，衔接生硬。\"],\"pause_present\":\"无\",\"target_reading\":\"\"}",
+ "ts": 1794569486.823261,
+ "parsed": {
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 4,
+   "pauses_boundaries": 2,
+   "intonation": 4,
+   "emotion": "平静",
+   "naturalness": 3,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [
+   "春天来了花都开了小草也绿了。分句间停顿过短，衔接生硬。"
+  ],
+  "pause_present": "无",
+  "target_reading": ""
+ },
+ "status": "ok",
+ "tag": "calibration"
+}

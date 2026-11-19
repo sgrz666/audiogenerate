@@ -1,0 +1,35 @@
+{
+ "task": {
+  "kind": "intonation",
+  "audio_id": "P2-intonation-voxcpm2-NARRATOR-I1-exclamatory",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/voxcpm2/NARRATOR/P2-intonation-voxcpm2-NARRATOR-I1-exclamatory.wav",
+  "source_text": "他昨天买了一本新书！",
+  "requirements": "目标语气：exclamatory。只判断声音本身；不要因为文本里有问号就假定句尾上扬。在 JSON 里加顶级字段 type_choice，取值 陈述/疑问/感叹/无法判断。",
+  "target": "exclamatory",
+  "config_id": "voxcpm2"
+ },
+ "raw": "{\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":null,\"pauses_boundaries\":null,\"intonation\":2,\"emotion\":null,\"naturalness\":null,\"audio_quality\":null,\"voice_consistency\":null},\"issues\":[\"感叹句缺乏明显句尾上扬，听起来像陈述句。\"],\"emotion_choice\":\"无法判断\",\"type_choice\":\"陈述\",\"pause_present\":\"无法判断\",\"target_reading\":\"书！\"}",
+ "ts": 1794569661.0743737,
+ "parsed": {
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": null,
+   "pauses_boundaries": null,
+   "intonation": 2,
+   "emotion": null,
+   "naturalness": null,
+   "audio_quality": null,
+   "voice_consistency": null
+  },
+  "issues": [
+   "感叹句缺乏明显句尾上扬，听起来像陈述句。"
+  ],
+  "emotion_choice": "无法判断",
+  "type_choice": "陈述",
+  "pause_present": "无法判断",
+  "target_reading": "书！"
+ },
+ "status": "ok",
+ "tag": "run"
+}

@@ -1,0 +1,32 @@
+{
+ "task": {
+  "kind": "pause",
+  "audio_id": "P2b-pause-indextts25-NARRATOR-P3-none-r1",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pause-indextts25-NARRATOR-P3-none-r1.wav",
+  "source_text": "如果你明天有空我们就一起去看看那场电影。",
+  "requirements": "只评价停顿与边界：标点处是否有可感知停顿、是否出现词内断开/异常断音、衔接是否自然。在 JSON 里加顶级字段 pause_present，取值 有/无/无法判断。",
+  "target": "none",
+  "config_id": "indextts25"
+ },
+ "raw": "{\"audio_id\":\"P2b-pause-indextts25-NARRATOR-P3-none-r1\",\"pause_present\":\"有\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":5,\"pauses_boundaries\":5,\"intonation\":5,\"emotion\":\"无法判断\",\"naturalness\":5,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"emotion_choice\":\"无法判断\",\"type_choice\":\"陈述\",\"pause_present\":\"有\"}",
+ "ts": 1794570119.8428657,
+ "parsed": {
+  "audio_id": "P2b-pause-indextts25-NARRATOR-P3-none-r1",
+  "pause_present": "有",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 5,
+   "pauses_boundaries": 5,
+   "intonation": 5,
+   "emotion": "无法判断",
+   "naturalness": 5,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "emotion_choice": "无法判断",
+  "type_choice": "陈述"
+ },
+ "status": "ok",
+ "tag": "run"
+}

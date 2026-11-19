@@ -1,0 +1,53 @@
+[
+ {
+  "voice_id": "MALE",
+  "speaker_label": "男播音",
+  "ref_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/refs/MALE_HSK5-1_Q17_U03.wav",
+  "ref_sample_id": "HSK5-1_Q17_U03",
+  "ref_exam_key": "HSK5-1",
+  "ref_level": 5,
+  "ref_text": "这儿夏天就是这样不过雷震雨来得快去得也快一会儿就停了",
+  "ref_duration_s": 7.179,
+  "ref_speaker_similarity": 0.8348,
+  "ref_assignment_status": "needs_review",
+  "ref_text_review_status": "automatic_unproofread",
+  "anchor_sample_id": "HSK4-1_Q01_U03",
+  "anchor_status": "user_confirmed",
+  "n_candidates": 481,
+  "identity_caveat": "说话人身份仅由 3 条 user_confirmed 锚点 + 嵌入相似度推定，跨试卷是否为同一真人尚未人工确认"
+ },
+ {
+  "voice_id": "FEMALE",
+  "speaker_label": "女播音",
+  "ref_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/refs/FEMALE_HSK3-1_Q40_U09.wav",
+  "ref_sample_id": "HSK3-1_Q40_U09",
+  "ref_exam_key": "HSK3-1",
+  "ref_level": 3,
+  "ref_text": "我不小心把护照忘在出租车上了,那位司机给我送了回来。",
+  "ref_duration_s": 7.128,
+  "ref_speaker_similarity": 0.834,
+  "ref_assignment_status": "automatic",
+  "ref_text_review_status": "automatic_unproofread",
+  "anchor_sample_id": "HSK4-1_Q09_U03",
+  "anchor_status": "user_confirmed",
+  "n_candidates": 331,
+  "identity_caveat": "说话人身份仅由 3 条 user_confirmed 锚点 + 嵌入相似度推定，跨试卷是否为同一真人尚未人工确认"
+ },
+ {
+  "voice_id": "NARRATOR",
+  "speaker_label": "旁白",
+  "ref_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/refs/NARRATOR_HSK4-2_Q44_U01.wav",
+  "ref_sample_id": "HSK4-2_Q44_U01",
+  "ref_exam_key": "HSK4-2",
+  "ref_level": 4,
+  "ref_text": "第四十四到四十五题是根据下面一段话。",
+  "ref_duration_s": 5.12,
+  "ref_speaker_similarity": 0.7675,
+  "ref_assignment_status": "automatic",
+  "ref_text_review_status": "automatic_unproofread",
+  "anchor_sample_id": "HSK4-1_Q13_U04",
+  "anchor_status": "user_confirmed",
+  "n_candidates": 53,
+  "identity_caveat": "说话人身份仅由 3 条 user_confirmed 锚点 + 嵌入相似度推定，跨试卷是否为同一真人尚未人工确认"
+ }
+]

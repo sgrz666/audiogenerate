@@ -1,0 +1,35 @@
+{
+ "task": {
+  "kind": "intonation",
+  "audio_id": "P2-intonation-voxcpm2-NARRATOR-I2-interrogative",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/voxcpm2/NARRATOR/P2-intonation-voxcpm2-NARRATOR-I2-interrogative.wav",
+  "source_text": "这道题其实一点都不难吗？",
+  "requirements": "目标语气：interrogative。只判断声音本身；不要因为文本里有问号就假定句尾上扬。在 JSON 里加顶级字段 type_choice，取值 陈述/疑问/感叹/无法判断。",
+  "target": "interrogative",
+  "config_id": "voxcpm2"
+ },
+ "raw": "{\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":4,\"pauses_boundaries\":4,\"intonation\":2,\"emotion\":4,\"naturalness\":4,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[\"这道题 其实一点都不难吗？句尾没有明显上扬，听起来像陈述而非疑问。\"],\"emotion_choice\":\"平静\",\"type_choice\":\"疑问\",\"pause_present\":\"有\",\"target_reading\":\"多音字实际读音，没有就空字符串\"}",
+ "ts": 1794569649.179539,
+ "parsed": {
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 4,
+   "pauses_boundaries": 4,
+   "intonation": 2,
+   "emotion": 4,
+   "naturalness": 4,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [
+   "这道题 其实一点都不难吗？句尾没有明显上扬，听起来像陈述而非疑问。"
+  ],
+  "emotion_choice": "平静",
+  "type_choice": "疑问",
+  "pause_present": "有",
+  "target_reading": "多音字实际读音，没有就空字符串"
+ },
+ "status": "ok",
+ "tag": "run"
+}

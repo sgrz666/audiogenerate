@@ -1,0 +1,37 @@
+{
+ "task": {
+  "kind": "calib",
+  "audio_id": "calib-happy",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/FEMALE/P2-emotion-indextts25-FEMALE-E1-happy.wav",
+  "source_text": "这件事终于有了结果。",
+  "requirements": "判断实际听感最像哪种情绪；在 JSON 里加 emotion_choice。",
+  "expected": {
+   "emotion_choice_in": [
+    "高兴",
+    "happy"
+   ]
+  }
+ },
+ "raw": "{\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":5,\"pauses_boundaries\":5,\"intonation\":5,\"emotion\":5,\"naturalness\":5,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"emotion_choice\":\"高兴\",\"type_choice\":\"陈述\",\"pause_present\":\"有\",\"target_reading\":\"\"}",
+ "ts": 1794569491.7842114,
+ "parsed": {
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 5,
+   "pauses_boundaries": 5,
+   "intonation": 5,
+   "emotion": 5,
+   "naturalness": 5,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "emotion_choice": "高兴",
+  "type_choice": "陈述",
+  "pause_present": "有",
+  "target_reading": ""
+ },
+ "status": "ok",
+ "tag": "calibration"
+}

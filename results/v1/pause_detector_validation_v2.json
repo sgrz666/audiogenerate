@@ -1,0 +1,43 @@
+{
+ "params": {
+  "method": "librosa.effects.split",
+  "top_db": 30,
+  "frame_length": 400,
+  "hop_length": 160,
+  "min_gap_s": 0.1
+ },
+ "injection": {
+  "where": "midpoint of longest voiced span",
+  "inject_at_s": 3.03,
+  "longest_voiced_s": [
+   2.44,
+   3.62
+  ],
+  "injected_s": 0.2,
+  "gaps": [
+   {
+    "start": 1.13,
+    "end": 1.29,
+    "dur": 0.16
+   },
+   {
+    "start": 2.13,
+    "end": 2.44,
+    "dur": 0.31
+   },
+   {
+    "start": 3.05,
+    "end": 3.23,
+    "dur": 0.18
+   }
+  ],
+  "matched_gap": {
+   "start": 3.05,
+   "end": 3.23,
+   "dur": 0.18
+  },
+  "recovered_s": 0.18,
+  "abs_error_s": 0.02
+ },
+ "limitation": "shallow pauses can be missed; adjacent low-energy regions can merge; score uses speech-span delta, not gap count"
+}

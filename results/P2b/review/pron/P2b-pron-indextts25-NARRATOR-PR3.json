@@ -1,0 +1,36 @@
+{
+ "task": {
+  "kind": "pron",
+  "audio_id": "P2b-pron-indextts25-NARRATOR-PR3",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pron-indextts25-NARRATOR-PR3.wav",
+  "source_text": "你得把作业写完，才能出去玩得开心。",
+  "requirements": "重点核对多音字目标：‘你得’的‘得’和‘玩得’的‘得’（děi/dé/de）。只报告实际听到的读音，不要按文本猜测；并判断是否有逐字读字母/增字/漏字。在 JSON 里加顶级字段 target_reading，按目标字顺序写拼音。",
+  "target": "PR3",
+  "config_id": "indextts25"
+ },
+ "raw": "{\"audio_id\":\"P2b-pron-indextts25-NARRATOR-PR3\",\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":4,\"speaking_rate\":null,\"pauses_boundaries\":null,\"intonation\":null,\"emotion\":null,\"naturalness\":null,\"audio_quality\":null,\"voice_consistency\":null},\"issues\":[\"你得把作业写完，才能出去玩得开心。‘得’字在‘你得’和‘玩得’处实际读音不明确，疑似未区分 děi/dé/de 多音字要求。\"],\"emotion_choice\":\"无法判断\",\"type_choice\":\"陈述\",\"pause_present\":\"无法判断\",\"target_reading\":\"dei/de\"}",
+ "ts": 1794570552.946309,
+ "parsed": {
+  "audio_id": "P2b-pron-indextts25-NARRATOR-PR3",
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 4,
+   "speaking_rate": null,
+   "pauses_boundaries": null,
+   "intonation": null,
+   "emotion": null,
+   "naturalness": null,
+   "audio_quality": null,
+   "voice_consistency": null
+  },
+  "issues": [
+   "你得把作业写完，才能出去玩得开心。‘得’字在‘你得’和‘玩得’处实际读音不明确，疑似未区分 děi/dé/de 多音字要求。"
+  ],
+  "emotion_choice": "无法判断",
+  "type_choice": "陈述",
+  "pause_present": "无法判断",
+  "target_reading": "dei/de"
+ },
+ "status": "ok",
+ "tag": "run"
+}

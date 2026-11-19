@@ -23,6 +23,27 @@ data/**/metadata/questions.*
 bdjar.txt
 .note/
 
+# 实验产出音频（体积大，仅保留清单/报告/统计）
+audio/**/*.wav
+audio/**/*.mp3
+audio/**/*.flac
+audio/**/*.m4a
+P2_听评包/audio/
+整理汇报/音频/**/*.wav
+整理汇报/音频/**/*.mp3
+results/**/*.wav
+results/**/*.mp3
+
+# 第三方仓库副本与虚拟环境（可复现，不入库）
+repos/
+envs/
+logs/
+
+# 编辑器残留的备份文件
+*.bak
+*.bak_*
+*.py.bak*
+
 # Python 缓存
 __pycache__/
 *.py[cod]

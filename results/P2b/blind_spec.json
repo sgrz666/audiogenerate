@@ -1,0 +1,242 @@
+[
+ {
+  "blind_id": "pron_PR1",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pron-indextts25-NARRATOR-PR1.wav",
+  "source_text": "他骑车去银行，路上走了很长时间。",
+  "target": "读音提示后：行 háng / 长 cháng",
+  "kind": "pron",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "pron_PR2",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pron-indextts25-NARRATOR-PR2.wav",
+  "source_text": "这个箱子太重了，请你重新搬一次。",
+  "target": "读音提示后：重 zhòng / 重 chóng",
+  "kind": "pron",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "pron_PR3",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pron-indextts25-NARRATOR-PR3.wav",
+  "source_text": "你得把作业写完，才能出去玩得开心。",
+  "target": "读音提示后：得 děi / 得 de",
+  "kind": "pron",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "pron_PR4",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pron-indextts25-NARRATOR-PR4.wav",
+  "source_text": "他还有一本书没还给我，说明天还。",
+  "target": "读音提示后：还 hái / 还 huán / 还 huán",
+  "kind": "pron",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "pron_PR5",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pron-indextts25-NARRATOR-PR5.wav",
+  "source_text": "我们都去过首都，那里的人都很热情。",
+  "target": "读音提示后：都 dōu / 都 dū / 都 dōu",
+  "kind": "pron",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "pron_PR6",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pron-indextts25-NARRATOR-PR6.wav",
+  "source_text": "我觉得睡觉以前应该少看手机。",
+  "target": "读音提示后：觉 jué / 觉 jiào",
+  "kind": "pron",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "pronneg_PR1",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pronneg-indextts25-NARRATOR-PR1.wav",
+  "source_text": "他骑车去银行，路上走了很长时间。",
+  "target": "故意错读负对照（不计入正样本）",
+  "kind": "pron_neg",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "pronneg_PR4",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pronneg-indextts25-NARRATOR-PR4.wav",
+  "source_text": "他还有一本书没还给我，说明天还。",
+  "target": "故意错读负对照（不计入正样本）",
+  "kind": "pron_neg",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "pause_voxcpm2_none",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/voxcpm2/NARRATOR/P2b-pause-voxcpm2-NARRATOR-P1-none-r1.wav",
+  "source_text": "春天来了花都开了小草也绿了。",
+  "target": "停顿设置：none（none=去逗号，period=逗号改句号）",
+  "kind": "pause",
+  "model": "voxcpm2"
+ },
+ {
+  "blind_id": "pause_voxcpm2_period",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/voxcpm2/NARRATOR/P2b-pause-voxcpm2-NARRATOR-P1-period-r1.wav",
+  "source_text": "春天来了。花都开了。小草也绿了。",
+  "target": "停顿设置：period（none=去逗号，period=逗号改句号）",
+  "kind": "pause",
+  "model": "voxcpm2"
+ },
+ {
+  "blind_id": "pause_indextts25_none",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pause-indextts25-NARRATOR-P1-none-r1.wav",
+  "source_text": "春天来了花都开了小草也绿了。",
+  "target": "停顿设置：none（none=去逗号，period=逗号改句号）",
+  "kind": "pause",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "pause_indextts25_period",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pause-indextts25-NARRATOR-P1-period-r1.wav",
+  "source_text": "春天来了。花都开了。小草也绿了。",
+  "target": "停顿设置：period（none=去逗号，period=逗号改句号）",
+  "kind": "pause",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "pause_qwen3tts_base_none",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/qwen3tts_base/NARRATOR/P2b-pause-qwen3tts_base-NARRATOR-P1-none-r1.wav",
+  "source_text": "春天来了花都开了小草也绿了。",
+  "target": "停顿设置：none（none=去逗号，period=逗号改句号）",
+  "kind": "pause",
+  "model": "qwen3tts_base"
+ },
+ {
+  "blind_id": "pause_qwen3tts_base_period",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/qwen3tts_base/NARRATOR/P2b-pause-qwen3tts_base-NARRATOR-P1-period-r1.wav",
+  "source_text": "春天来了。花都开了。小草也绿了。",
+  "target": "停顿设置：period（none=去逗号，period=逗号改句号）",
+  "kind": "pause",
+  "model": "qwen3tts_base"
+ },
+ {
+  "blind_id": "pause_fireredtts3_base_none",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/fireredtts3_base/NARRATOR/P2b-pause-fireredtts3_base-NARRATOR-P1-none-r1.wav",
+  "source_text": "春天来了花都开了小草也绿了。",
+  "target": "停顿设置：none（none=去逗号，period=逗号改句号）",
+  "kind": "pause",
+  "model": "fireredtts3_base"
+ },
+ {
+  "blind_id": "pause_fireredtts3_base_period",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/fireredtts3_base/NARRATOR/P2b-pause-fireredtts3_base-NARRATOR-P1-period-r1.wav",
+  "source_text": "春天来了。花都开了。小草也绿了。",
+  "target": "停顿设置：period（none=去逗号，period=逗号改句号）",
+  "kind": "pause",
+  "model": "fireredtts3_base"
+ },
+ {
+  "blind_id": "pause_fireredtts3_instruct_none",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/fireredtts3_instruct/NARRATOR/P2b-pause-fireredtts3_instruct-NARRATOR-P1-none-r1.wav",
+  "source_text": "春天来了花都开了小草也绿了。",
+  "target": "停顿设置：none（none=去逗号，period=逗号改句号）",
+  "kind": "pause",
+  "model": "fireredtts3_instruct"
+ },
+ {
+  "blind_id": "pause_fireredtts3_instruct_period",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/fireredtts3_instruct/NARRATOR/P2b-pause-fireredtts3_instruct-NARRATOR-P1-period-r1.wav",
+  "source_text": "春天来了。花都开了。小草也绿了。",
+  "target": "停顿设置：period（none=去逗号，period=逗号改句号）",
+  "kind": "pause",
+  "model": "fireredtts3_instruct"
+ },
+ {
+  "blind_id": "into_indextts25_declarative",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/NARRATOR/P2-intonation-indextts25-NARRATOR-I2-declarative.wav",
+  "source_text": "这道题其实一点都不难。",
+  "target": "语气：declarative",
+  "kind": "intonation",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "into_indextts25_interrogative",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/NARRATOR/P2-intonation-indextts25-NARRATOR-I2-interrogative.wav",
+  "source_text": "这道题其实一点都不难吗？",
+  "target": "语气：interrogative",
+  "kind": "intonation",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "into_indextts25_exclamatory",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/NARRATOR/P2-intonation-indextts25-NARRATOR-I2-exclamatory.wav",
+  "source_text": "这道题其实一点都不难！",
+  "target": "语气：exclamatory",
+  "kind": "intonation",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "into_fireredtts3_base_declarative",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/fireredtts3_base/NARRATOR/P2-intonation-fireredtts3_base-NARRATOR-I2-declarative.wav",
+  "source_text": "这道题其实一点都不难。",
+  "target": "语气：declarative",
+  "kind": "intonation",
+  "model": "fireredtts3_base"
+ },
+ {
+  "blind_id": "into_fireredtts3_base_interrogative",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/fireredtts3_base/NARRATOR/P2-intonation-fireredtts3_base-NARRATOR-I2-interrogative.wav",
+  "source_text": "这道题其实一点都不难吗？",
+  "target": "语气：interrogative",
+  "kind": "intonation",
+  "model": "fireredtts3_base"
+ },
+ {
+  "blind_id": "into_fireredtts3_base_exclamatory",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/fireredtts3_base/NARRATOR/P2-intonation-fireredtts3_base-NARRATOR-I2-exclamatory.wav",
+  "source_text": "这道题其实一点都不难！",
+  "target": "语气：exclamatory",
+  "kind": "intonation",
+  "model": "fireredtts3_base"
+ },
+ {
+  "blind_id": "emo_E1_calm",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/FEMALE/P2-emotion-indextts25-FEMALE-E1-calm.wav",
+  "source_text": "这件事终于有了结果。",
+  "target": "目标情绪：calm",
+  "kind": "emotion",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "emo_E1_happy",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/FEMALE/P2-emotion-indextts25-FEMALE-E1-happy.wav",
+  "source_text": "这件事终于有了结果。",
+  "target": "目标情绪：happy",
+  "kind": "emotion",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "emo_E1_sad",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/FEMALE/P2-emotion-indextts25-FEMALE-E1-sad.wav",
+  "source_text": "这件事终于有了结果。",
+  "target": "目标情绪：sad",
+  "kind": "emotion",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "emo_E1_angry",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/FEMALE/P2-emotion-indextts25-FEMALE-E1-angry.wav",
+  "source_text": "这件事终于有了结果。",
+  "target": "目标情绪：angry",
+  "kind": "emotion",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "emo_E2_happy",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/FEMALE/P2-emotion-indextts25-FEMALE-E2-happy.wav",
+  "source_text": "他把我的书弄坏了。",
+  "target": "目标情绪：happy",
+  "kind": "emotion",
+  "model": "indextts25"
+ },
+ {
+  "blind_id": "emo_E2_sad",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/FEMALE/P2-emotion-indextts25-FEMALE-E2-sad.wav",
+  "source_text": "他把我的书弄坏了。",
+  "target": "目标情绪：sad",
+  "kind": "emotion",
+  "model": "indextts25"
+ }
+]

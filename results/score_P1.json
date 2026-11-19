@@ -1,0 +1,290 @@
+{
+ "normalization": {
+  "cer_bad_threshold": 0.2,
+  "sim_lo": 0.5,
+  "sim_hi": 0.95,
+  "note": "project-selected thresholds, not model-official metrics"
+ },
+ "trackA_weights": {
+  "content_pronunciation": 0.3,
+  "voice_consistency": 0.25,
+  "naturalness": 0.2,
+  "intonation": 0.1,
+  "audio_quality": 0.1,
+  "stability": 0.05
+ },
+ "trackB_weights": {
+  "speaking_rate_control": 0.25,
+  "pause_control": 0.2,
+  "intonation_control": 0.15,
+  "emotion_control": 0.15,
+  "pronunciation_correction": 0.15,
+  "vram_efficiency": 0.1
+ },
+ "configs": [
+  {
+   "config_id": "voxcpm2",
+   "family": "VoxCPM2",
+   "variant": "base",
+   "phase": "P1",
+   "n_ok": 180,
+   "success_rate": 1.0,
+   "raw": {
+    "mean_cer": 0.0171,
+    "mean_spk_sim": 0.7348,
+    "mean_chars_per_min": 243.6854,
+    "mean_rtf": 0.65,
+    "max_peak_vram_gib": 5.579,
+    "fits_24gb": true,
+    "cer_status": "measured"
+   },
+   "audio_proxies_mean": {
+    "clipped_ratio": 0.0,
+    "head_tail_silence_ratio": 0.136438,
+    "dc_offset": 0.000359,
+    "peak": 0.585481
+   },
+   "trackA_subscores": {
+    "content_pronunciation": 0.9145,
+    "voice_consistency": 0.5217777777777779,
+    "audio_quality": 0.9983688888888889
+   },
+   "trackA_not_tested": [
+    "intonation",
+    "naturalness",
+    "stability"
+   ],
+   "trackB_not_tested": [
+    "emotion_control",
+    "intonation_control",
+    "pause_control",
+    "pronunciation_correction",
+    "speaking_rate_control"
+   ],
+   "trackA_objective_partial": 0.7764,
+   "trackA_weight_coverage": 0.65,
+   "trackA_full_score": null,
+   "trackB_full_score": null
+  },
+  {
+   "config_id": "indextts25",
+   "family": "IndexTTS-2.5",
+   "variant": "base",
+   "phase": "P1",
+   "n_ok": 180,
+   "success_rate": 1.0,
+   "raw": {
+    "mean_cer": 0.0101,
+    "mean_spk_sim": 0.8921,
+    "mean_chars_per_min": 234.6159,
+    "mean_rtf": 1.0411,
+    "max_peak_vram_gib": 5.491,
+    "fits_24gb": true,
+    "cer_status": "measured"
+   },
+   "audio_proxies_mean": {
+    "clipped_ratio": 1.1e-05,
+    "head_tail_silence_ratio": 0.043472,
+    "dc_offset": 0.000277,
+    "peak": 0.780076
+   },
+   "trackA_subscores": {
+    "content_pronunciation": 0.9495,
+    "voice_consistency": 0.8713333333333334,
+    "audio_quality": 0.9989211111111111
+   },
+   "trackA_not_tested": [
+    "intonation",
+    "naturalness",
+    "stability"
+   ],
+   "trackB_not_tested": [
+    "emotion_control",
+    "intonation_control",
+    "pause_control",
+    "pronunciation_correction",
+    "speaking_rate_control"
+   ],
+   "trackA_objective_partial": 0.927,
+   "trackA_weight_coverage": 0.65,
+   "trackA_full_score": null,
+   "trackB_full_score": null
+  },
+  {
+   "config_id": "cosyvoice3",
+   "family": "CosyVoice3-0.5B",
+   "variant": "base",
+   "phase": "P1",
+   "n_ok": 163,
+   "success_rate": 0.9006,
+   "raw": {
+    "mean_cer": 1.0057,
+    "mean_spk_sim": 0.6213,
+    "mean_chars_per_min": 403.8374,
+    "mean_rtf": 0.8045,
+    "max_peak_vram_gib": 3.559,
+    "fits_24gb": true,
+    "cer_status": "measured"
+   },
+   "audio_proxies_mean": {
+    "clipped_ratio": 0.0,
+    "head_tail_silence_ratio": 0.057306,
+    "dc_offset": 0.000425,
+    "peak": 0.778212
+   },
+   "trackA_subscores": {
+    "content_pronunciation": 0.0,
+    "voice_consistency": 0.2695555555555555,
+    "audio_quality": 0.9907386503067486
+   },
+   "trackA_not_tested": [
+    "intonation",
+    "naturalness",
+    "stability"
+   ],
+   "trackB_not_tested": [
+    "emotion_control",
+    "intonation_control",
+    "pause_control",
+    "pronunciation_correction",
+    "speaking_rate_control"
+   ],
+   "trackA_objective_partial": 0.2561,
+   "trackA_weight_coverage": 0.65,
+   "trackA_full_score": null,
+   "trackB_full_score": null
+  },
+  {
+   "config_id": "qwen3tts_base",
+   "family": "Qwen3-TTS-1.7B",
+   "variant": "Base",
+   "phase": "P1",
+   "n_ok": 180,
+   "success_rate": 1.0,
+   "raw": {
+    "mean_cer": 0.0111,
+    "mean_spk_sim": 0.6946,
+    "mean_chars_per_min": 250.3245,
+    "mean_rtf": 1.7583,
+    "max_peak_vram_gib": 4.442,
+    "fits_24gb": true,
+    "cer_status": "measured"
+   },
+   "audio_proxies_mean": {
+    "clipped_ratio": 0.0,
+    "head_tail_silence_ratio": 0.093974,
+    "dc_offset": 9.6e-05,
+    "peak": 0.452829
+   },
+   "trackA_subscores": {
+    "content_pronunciation": 0.9445,
+    "voice_consistency": 0.43244444444444446,
+    "audio_quality": 0.9974633333333335
+   },
+   "trackA_not_tested": [
+    "intonation",
+    "naturalness",
+    "stability"
+   ],
+   "trackB_not_tested": [
+    "emotion_control",
+    "intonation_control",
+    "pause_control",
+    "pronunciation_correction",
+    "speaking_rate_control"
+   ],
+   "trackA_objective_partial": 0.7557,
+   "trackA_weight_coverage": 0.65,
+   "trackA_full_score": null,
+   "trackB_full_score": null
+  },
+  {
+   "config_id": "fireredtts3_base",
+   "family": "FireRedTTS3",
+   "variant": "Base",
+   "phase": "P1",
+   "n_ok": 180,
+   "success_rate": 1.0,
+   "raw": {
+    "mean_cer": 0.0114,
+    "mean_spk_sim": 0.848,
+    "mean_chars_per_min": 230.9077,
+    "mean_rtf": 0.8933,
+    "max_peak_vram_gib": 14.111,
+    "fits_24gb": true,
+    "cer_status": "measured"
+   },
+   "audio_proxies_mean": {
+    "clipped_ratio": 0.0,
+    "head_tail_silence_ratio": 0.129147,
+    "dc_offset": 0.000202,
+    "peak": 0.501102
+   },
+   "trackA_subscores": {
+    "content_pronunciation": 0.943,
+    "voice_consistency": 0.7733333333333333,
+    "audio_quality": 0.9984355555555555
+   },
+   "trackA_not_tested": [
+    "intonation",
+    "naturalness",
+    "stability"
+   ],
+   "trackB_not_tested": [
+    "emotion_control",
+    "intonation_control",
+    "pause_control",
+    "pronunciation_correction",
+    "speaking_rate_control"
+   ],
+   "trackA_objective_partial": 0.8863,
+   "trackA_weight_coverage": 0.65,
+   "trackA_full_score": null,
+   "trackB_full_score": null
+  },
+  {
+   "config_id": "fireredtts3_instruct",
+   "family": "FireRedTTS3",
+   "variant": "Instruct",
+   "phase": "P1",
+   "n_ok": 180,
+   "success_rate": 1.0,
+   "raw": {
+    "mean_cer": 0.0166,
+    "mean_spk_sim": 0.7848,
+    "mean_chars_per_min": 237.9343,
+    "mean_rtf": 0.9036,
+    "max_peak_vram_gib": 14.082,
+    "fits_24gb": true,
+    "cer_status": "measured"
+   },
+   "audio_proxies_mean": {
+    "clipped_ratio": 0.0,
+    "head_tail_silence_ratio": 0.158287,
+    "dc_offset": 0.000286,
+    "peak": 0.525581
+   },
+   "trackA_subscores": {
+    "content_pronunciation": 0.917,
+    "voice_consistency": 0.6328888888888891,
+    "audio_quality": 0.98739
+   },
+   "trackA_not_tested": [
+    "intonation",
+    "naturalness",
+    "stability"
+   ],
+   "trackB_not_tested": [
+    "emotion_control",
+    "intonation_control",
+    "pause_control",
+    "pronunciation_correction",
+    "speaking_rate_control"
+   ],
+   "trackA_objective_partial": 0.8186,
+   "trackA_weight_coverage": 0.65,
+   "trackA_full_score": null,
+   "trackB_full_score": null
+  }
+ ]
+}

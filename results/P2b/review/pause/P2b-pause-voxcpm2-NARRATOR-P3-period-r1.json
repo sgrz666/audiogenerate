@@ -1,0 +1,31 @@
+{
+ "task": {
+  "kind": "pause",
+  "audio_id": "P2b-pause-voxcpm2-NARRATOR-P3-period-r1",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/voxcpm2/NARRATOR/P2b-pause-voxcpm2-NARRATOR-P3-period-r1.wav",
+  "source_text": "如果你明天有空。我们就一起去看看那场电影。",
+  "requirements": "只评价停顿与边界：标点处是否有可感知停顿、是否出现词内断开/异常断音、衔接是否自然。在 JSON 里加顶级字段 pause_present，取值 有/无/无法判断。",
+  "target": "period",
+  "config_id": "voxcpm2"
+ },
+ "raw": "{\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":5,\"pauses_boundaries\":5,\"intonation\":5,\"emotion\":\"平静\",\"naturalness\":5,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"pause_present\":\"有\",\"target_reading\":\"空\"}",
+ "ts": 1794570103.9551249,
+ "parsed": {
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 5,
+   "pauses_boundaries": 5,
+   "intonation": 5,
+   "emotion": "平静",
+   "naturalness": 5,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "pause_present": "有",
+  "target_reading": "空"
+ },
+ "status": "ok",
+ "tag": "run"
+}

@@ -1,123 +1,211 @@
-# 汉语听力考试语音合成（audiogenerate）
+# model-test —— 五模型零样本横向评测
 
-大学生创新训练项目。目标是在三个固定播音音色下，研究汉语听力考试音频的**语速、停顿、语气和基础情绪控制**，改善多音字、数字读法与播报自然度，并形成可复现的训练、推理和组卷流程。
+本目录是任务书第五节"先建零样本克隆基线、再选基座做 LoRA"的执行现场。
+**当前状态：脚手架与测试集已就绪，推理尚未产出任何结果。** 下面如实区分已验证与未验证。
 
-项目以开源语音合成模型为基础：先跑零样本克隆基线，横向比较候选基座，再选两个做 LoRA 适配；最终交付三个音色的适配参数、数据清单与标注说明、训练/推理脚本、组卷模板、简易页面和对比音频。
+## 一、本机 GPU 实况（与方案假设不同，已实测）
 
-任务书见 [`task/任务书-汉语听力考试语音合成-v8.docx`](task/任务书-汉语听力考试语音合成-v8.docx)（纯文本可用 `python tools/docx_text.py` 提取）。
+| 项目 | 方案假设 | 实测 |
+| --- | --- | --- |
+| 卡型 | RTX 4090 | **NVIDIA RTX 6000D** |
+| 显存 | 24 GB | **83.05 GiB** |
+| 计算能力 | — | sm_120（Blackwell），156 SM |
+| CUDA | — | **可用**，torch 2.8.0+cu128，matmul 实测通过 |
+| nvidia-smi | 可用 | **不可用**（NVML 版本不匹配） |
 
-## 当前进度（2026-11-11）
+`nvidia-smi` 报 `Driver/library version mismatch`：内核模块 580.173.02 vs 用户态库 580.178.04。
+**坏的只是 NVML 查询通路，CUDA 驱动 API 正常**，所以推理不受阻。
+此前 `model/README.md` 里"任何模型都跑不起来"的结论是错的，已就地更正。
 
-- **候选基座已就位**：5 个 TTS 基座 + 2 个必需配套仓库，主清单 90 个文件、IndexTTS 辅助件 7 个文件，均按 HF API 清单完成 size + sha256 / git-blob sha1 校验，覆盖率 100%，0 缺失、0 不匹配（权重合计约 46 GiB，磁盘含缓存约 47 GiB）。校验门做过反向探针，篡改/删文件都会报警。详见 [`model/README.md`](model/README.md) 与 [`tools/manifests/`](tools/manifests/)。
-- **数据已盘点**：7 个分包、36 套材料、7046 条切片、约 9.04 小时、2.87 GB；音频为 44.1 kHz / 16-bit / 单声道 WAV，逐条配同名 TXT 与标注表。详见 [`data/README.md`](data/README.md)。
-- **实验尚未开始**：本机 `nvidia-smi` 报 `Failed to initialize NVML: Driver/library version mismatch`（内核 NVRM 580.173.02，用户态库 580.178.04），共享节点上还有其他 GPU 作业，不能自行重载模块或重启，需等管理员处理。在此之前零样本克隆基线无法运行。
-- **仓库不含**：模型权重、数据音频/转写原文、下载凭据与临时目录。模型只保留清单与说明，数据只保留数据集介绍和分包统计。
+由此产生两条口径约束：
 
-## 目录结构
+1. **峰值显存不能用 nvidia-smi 测**，改用 `torch.cuda.max_memory_allocated()`，
+   每条记录写 `vram_method` 字段说明来源。
+2. 24 GB 是**目标约束**不是本机上限。评测照常跑，但每条结果都算 `fits_24gb`，
+   最后单独回答"这个配置能不能塞进 4090"，不把 83 GiB 上的宽松结果当成 24 GB 结论。
 
-```
-.
-├── README.md                     # 本文件
-├── data/
-│   ├── README.md                 # 数据集介绍：来源、规模、字段、标注状态、使用限制
-│   └── packages/                 # 7 个分包的 README + summary.json / volumes.json
-│       └── <分包名>/metadata/
-├── model/
-│   └── README.md                 # 5 个候选基座 + 2 个配套件的版本、大小、坑位说明
-├── task/
-│   └── 任务书-汉语听力考试语音合成-v8.docx
-├── tools/
-│   ├── fetch_models.py           # 建清单 / 下载 / 逐文件校验 HF 模型
-│   ├── fetch_aux.py              # IndexTTS-2.5 辅助模型预取与校验
-│   ├── negctl.py                 # 校验门的反向探针（注入篡改/缺失）
-│   ├── hf_probe.py / hf_tree.py  # HF API 探测与仓库树查看
-│   ├── docx_text.py              # 仅用标准库提取 docx 文本
-│   ├── bd_pull_parallel.py       # 百度网盘分包下载器（分块/并发/续传/双校验）
-│   ├── manifests/                # 逐文件 size + sha256 清单与校验报告
-│   ├── logs/                     # 原始下载日志
-│   └── README.md                 # 各脚本的用法、校验口径与环境备注
-├── skills/
-│   └── 语音评价Skill_20261109/   # 按实际音频 + 原文 + 要求输出结构化评价
-├── experiments/                  # 预留：基线/微调/对比实验，目前为空
-└── .gitignore
-```
+共享节点，`nvidia` 模块仍有其他作业引用，**不重载模块、不重启**。
 
-## 候选基座一览
+## 二、测试集（已构建，但文本未经人工校对）
 
-| 目录（未入库） | 上游仓库 | 大小 | 项目中的角色 |
-| --- | --- | --- | --- |
-| `IndexTTS-2.5/` | IndexTeam/IndexTTS-2.5 | 5.11 GiB + 2.77 GiB 辅助 | 语速系数、拼音纠错、8 维情绪接口 |
-| `VoxCPM2/` | openbmb/VoxCPM2 | 4.62 GiB | 任务书指定主基座，三个说话人 LoRA |
-| `Fun-CosyVoice3-0.5B-2512/` | FunAudioLLM/Fun-CosyVoice3-0.5B-2512 | 9.08 GiB | 中文发音、多音字、数字读法 |
-| `Qwen3-TTS-12Hz-1.7B-Base/` | Qwen/Qwen3-TTS-12Hz-1.7B-Base | 4.23 GiB | 零样本克隆、单说话人微调 |
-| `FireRedTTS3/` | FireRedTeam/FireRedTTS3 | 19.35 GiB | 语音编辑与表现力（Base + Instruct） |
-| `CosyVoice-ttsfrd/` | FunAudioLLM/CosyVoice-ttsfrd | 0.32 GiB | CosyVoice3 文本前端配套 |
-| `Qwen3-TTS-Tokenizer-12Hz/` | Qwen/Qwen3-TTS-Tokenizer-12Hz | 0.64 GiB | Qwen3-TTS 独立 tokenizer 配套 |
+`scripts/build_testset.py` 生成，随机种子 20261111，可复现。
 
-权重目录名与上游仓库名一致，完整 revision、逐文件大小与哈希见 [`tools/manifests/`](tools/manifests/)。各模型的加载注意事项（如 IndexTTS 的平铺 `semantic_codec_model.safetensors`、CosyVoice 成对权重的口径选择）写在 [`model/README.md`](model/README.md)。
+### 参考音色 refs/
 
-## 数据集速览
+三个身份锚点取自全库**仅有**的 3 条 `speaker_assignment_status == user_confirmed` 记录（均在 HSK4-1）：
+MALE `HSK4-1_Q01_U03`、FEMALE `HSK4-1_Q09_U03`、NARRATOR `HSK4-1_Q13_U04`。
+锚点本身太短（2.46 s / 2.51 s），不适合直接做克隆参考，因此参考音频改从
+**同一 `global_speaker_id`、且 `speaker_assignment_source == confirmed_reference_voice_comparison`**
+（即与锚点比对过）的切片里挑 5–12 s、相似度最高的：
 
-| 分包 | 套数 | 题数 | 切片 | 时长 | 音频大小 |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| 一级（1-5 + 大纲样卷） | 6 | 120 | 526 | 26.4 min | 139.6 MB |
-| 二级（1-5 + 大纲样卷） | 6 | 210 | 1366 | 74.8 min | 396.1 MB |
-| 三级（1-5 + 大纲样卷） | 6 | 240 | 1906 | 124.0 min | 656.2 MB |
-| 四级（1-5 + 大纲样卷） | 6 | 270 | 1156 | 85.6 min | 453.2 MB |
-| 五级（1-5 + 大纲样卷） | 6 | 270 | 1180 | 93.7 min | 496.0 MB |
-| 六级（真题 1-3） | 3 | 150 | 467 | 69.0 min | 365.4 MB |
-| 六级（真题 4-5 + 大纲样卷） | 3 | 150 | 445 | 69.1 min | 365.5 MB |
-| **合计** | **36** | **1410** | **7046** | **9.04 h** | **2.87 GB** |
+| 音色 | 参考切片 | 时长 | 与锚点相似度 | 候选数 |
+| --- | --- | --- | --- | --- |
+| MALE | HSK5-1_Q17_U03 | 7.179 s | 0.8348 | 481 |
+| FEMALE | HSK3-1_Q40_U09 | 7.128 s | 0.8340 | 331 |
+| NARRATOR | HSK4-2_Q44_U01 | 5.120 s | 0.7675 | 53 |
 
-数据来自原始考试录音的切片，保留自动转写与候选说话人状态，**没有**把待核标签当成人工确认事实。字段、标注质量分布、已知缺口与使用限制见 [`data/README.md`](data/README.md)。
+**注意**：这三条参考跨了不同试卷（HSK5-1 / HSK3-1 / HSK4-2）。
+"跨试卷是否同一真人"仍未人工确认，`refs.json` 里每条都带 `identity_caveat`。
+音色相似度分数只能说明"与该锚点嵌入接近"，不等于身份已确认。
 
-## 复现方式
+### 文本 texts/
 
-### 1. 取模型权重并校验
+- `p0.csv`：10 条**原创**冒烟文本（陈述/疑问/感叹/数字/多音字/长句），不依赖语料，避免被脏标注卡住。
+- `p1.csv`：60 条 = 48 条 HSK 分级真题文本（每级 8 条，跨试卷分散、去重）+ 12 条**原创**发音专项
+  （多音字 行/长/重/得/还/都/发/觉、数字 年份电话/分数/价格小数、四声对比）。
+- `all.jsonl`：合并，供 runner 读取。
 
-需要 Python 3、`huggingface_hub`、`hf_transfer`，以及约 47 GiB 磁盘。脚本里的 `ROOT` / `MANIFEST_DIR` 是项目当时的绝对路径，换机器时先改这两处。
+生成量与方案一致：P0 = 10×3×6 = **180**，P1 = 60×3×6 = **1080**。
+
+**必须知道的局限**：全库 7046 条文本中 6903 条 `automatic_unproofread`、79 条 `needs_review`、
+64 条 `unreliable_placeholder`，**没有任何一条已人工校对**。
+已排除全部 placeholder，但选中的语料文本仍逐条保留真实 `review_status` 并标 `needs_human_proofread=true`。
+**在人工校对前，CER 只能作为初步筛查，不能当作发音准确性的最终结论。**
+
+## 三、串行与资源控制（按你的唯一要求实现）
+
+`scripts/mt_serial.py` 是编排器，`scripts/mt_run.py` 是单配置工作进程。
+
+- **一个配置一个独立进程，严格串行**：`subprocess.run` 等子进程退出后才起下一个，
+  进程退出即释放全部显存与宿主内存，中间再留 3 s 让 OS 回收。绝不并行加载两个模型。
+- 进程内另有 `del + empty_cache + ipc_collect + gc`，`torch.set_num_threads(8)` 限制 CPU 线程。
+- `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True` 降低碎片。
+- 每条记录都带 `peak_vram_gib` / `reserved_vram_gib` / `rss_gib`，显存和内存都可事后审计。
+- 每个配置独立 venv（`envs/<name>`，`--system-site-packages` 复用 torch），
+  避免五套依赖互相污染。
+- **断点续跑**：runner 启动时读已有结果，`status==ok` 的 (text_id, voice) 直接跳过。
+
+## 四、记录字段与状态口径
+
+结果落 `results/<phase>/<config_id>.jsonl`，一行一条，含：
+配置/家族/变体、text_id、voice_id、level、category、原文、拼音提示、文本来源与校对状态、
+参考切片 id、输出 wav 路径、采样率、总时长、发声起止与跨度、首尾静音、
+规范字数/汉字数、字/分钟、生成墙钟、RTF、峰值显存、RSS、seed、时间戳。
+
+状态四分，**不混为一谈**：`ok` / `failed`（运行报错，带 error_type 与 traceback）/
+`unsupported`（接口不支持）/ `not_tested`（本阶段未跑，例如 env 缺失）。
+
+语速口径按任务书：`chars_per_min = 规范字数 ÷ 发声跨度 × 60`，
+发声跨度用 20 ms 帧 RMS、相对阈值 0.02 削掉首尾静音，**保留句内停顿**；
+方法写进每条记录的 `span_method`，避免口径含糊。
+
+## 五、指标 scripts/mt_metrics.py
+
+- **音色一致性**：CAM++，权重直接用已在盘上的
+  `model/IndexTTS-2.5/hf_cache/campplus_cn_common.bin`，特征配方照抄
+  `indextts/infer_v2_5.py:640`（16 k、80 维 kaldi fbank、dither=0、减均值），
+  与语料说话人标签的产生方式一致，余弦相似度。
+- **CER**：需要 ASR 模型。**尚未下载**，未接入时该列记 `not_tested`，不填猜测值。
+  文本归一化去标点、可选繁转简（缺 zhconv 时不做并记录）。
+- 汇总输出 `results/metrics_<phase>.json`，含成功率、均值、`max_peak_vram_gib`、`fits_24gb`。
+- 自然度/语气/情绪走人工盲听，用 `skills/语音评价Skill_20261109`，自动指标不替代人耳。
+
+## 六、已实测的结果与踩过的坑
+
+### P0 首批结果（10 文本 × 3 音色，每配置 30 条）
+
+| 配置 | 成功 | 音色相似度 | CER | 字/分钟 | RTF | 峰值显存 | 塞得进 24GB |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| VoxCPM2 | 30/30 | 0.7176 | 0.0 | 244.5 | 0.635 | 5.58 GiB | 是 |
+| Qwen3-TTS-1.7B-Base | 30/30 | 0.7123 | 0.0 | 249.4 | 1.550 | 4.35 GiB | 是 |
+| IndexTTS-2.5 | 修复中 | — | — | — | — | — | — |
+| CosyVoice3 | 修复中 | — | — | — | — | — | — |
+| FireRedTTS3-Base | 修复中 | — | — | — | — | — | — |
+| FireRedTTS3-Instruct | 修复中 | — | — | — | — | — | — |
+
+**P0 的 CER=0 没有区分度**（天花板效应）：10 条冒烟文本又短又干净，两个模型都全对。
+真正能拉开差距的是 P1 的长句、多音字与数字专项。不要把 P0 的 0 当成"发音完美"的结论。
+
+### 坑 1：CER 口径——ITN 会把正确朗读判成错
+
+第一次算 CER 得到 **0.1042**，看着像发音很差。逐条查最差样本发现全是**测量口径问题，不是合成错误**：
+
+| 文本 | ASR 回写（ITN 开） | 判 CER |
+| --- | --- | --- |
+| 他的电话号码是**一三八零九零一二三四五**。 | 他的电话号码是**13809012345**。 | 0.611 |
+| 会议改到**三月五号**下午**两点半**。 | 会议改到**3月5号**下午**2点半**。 | 0.231 |
+| 请你把书翻到第**十五**页。 | 请你把书翻到第**15**页。 | 0.200 |
+
+音频读得完全正确，是 SenseVoice 的 ITN 把汉字数字改写成阿拉伯数字，与汉字形式的参考文本对不上。
+**改成 `use_itn=False` 后 CER 归零**。参考文本是汉字形式，就必须关掉 ITN 对齐口径。
+这也顺带成了 CER 管路的正向对照：同一批音频，口径错时 0.611、口径对时 0.0，
+证明这个指标不是恒等于 0 的摆设。
+
+### 坑 2：适配器初版四个签名全错（已按源码逐一改正）
+
+第一版适配器是照 README 写的，对着源码核验后发现四处都错：
+
+- `CosyVoice3.__init__` **没有 `load_jit` 参数**（只有 load_trt/load_vllm/fp16）。
+- IndexTTS 语速参数是 **`duration_factor`，不是 `speed`**；传 `speed` 会落进
+  `**generation_kwargs` 被静默忽略——典型的"参数传了但没生效"。
+- Qwen3-TTS 用自己的 **`qwen_tts.Qwen3TTSModel`**，不是 transformers `AutoModel`。
+- FireRedTTS3 在 **`fireredtts3.core`**（没有 api.py），构造参数是 `pretrained_model_dir`，
+  语种标签是 `"Chinese"` 而不是 `"zh"`；且 `use_fasttext` 默认 True 会去找没下载的 lid.176，
+  必须显式关掉并传语种。
+
+### 坑 3：环境依赖（每个都对应一条真实报错）
+
+| 配置 | 报错 | 处理 |
+| --- | --- | --- |
+| IndexTTS | `requires a different Python: 3.12.14 not in '<3.12,>=3.10'` | 改用 mamma 的 Python 3.11.18 重建 venv |
+| IndexTTS | `operator torchvision::nms does not exist` | venv 里 torch 2.8.0 配了 torchvision 0.22.1（属 2.7.1），装 0.23.0 对齐 |
+| CosyVoice | `deepspeed==0.15.1` 需要 CUDA_HOME/nvcc | DeepSpeed 是**训练**依赖，推理不需要，从 requirements 剔除 |
+| CosyVoice | `No module named 'hyperpyyaml'` | 补装 HyperPyYAML==1.2.3 |
+| FireRedTTS3 | `flash-attn` 需要 nvcc | 剔除；见下方代码改动声明 |
+| FireRedTTS3 | `FlashAttention2 has been toggled on ... not installed` | 见下方代码改动声明 |
+
+另外：aliyun 镜像 pip 实测只有 200–400 KB/s，直接 curl 测同一文件却有 16 MB/s，
+清华源 32 MB/s。已给**这几个实验 venv 各自**写 `pip.conf` 指向清华源（不动全局配置），
+后续安装从几十分钟降到几分钟。
+
+### 代码改动声明（不是静默修改）
+
+FireRedTTS3 把 `attn_implementation='flash_attention_2'` **硬编码**在
+`fireredtts3/redae/redae.py:37,122` 与 `fireredtts3/llm/fireredtts3_base.py:49`。
+本机没有 nvcc，装不了 flash-attn，因此把这三处字面量改成 `"sdpa"`，
+原文件备份为 `*.orig_flash`。**这是注意力后端的改动**，已写进每条推理结果的
+`attn_backend` 字段，比较时按同一后端口径看待，不当作模型原生配置。
+同理 Qwen3-TTS 适配器在检测不到 flash_attn 时回退 sdpa，并记录 `attn` 字段。
+
+## 七、当前进度与续跑方法
+
+已完成并验证：
+
+- [x] GPU/CUDA 实测，更正错误结论
+- [x] 五个代码仓库 clone 到 `repos/`
+- [x] 参考音色 3 条 + P0 10 条 + P1 60 条文本，计数与方案一致
+- [x] 串行编排器、单配置 runner、6 个适配器（签名已逐一核对源码）、指标脚本
+- [x] ASR（SenseVoiceSmall）已下载并接入，CER 口径已修正并做过正向对照
+- [x] **VoxCPM2 P0 30/30、Qwen3-TTS-Base P0 30/30**，含相似度/CER/语速/RTF/峰值显存
+
+进行中 / 未完成：
+
+- [ ] IndexTTS-2.5 / CosyVoice3 / FireRedTTS3-Base / FireRedTTS3-Instruct 的 P0
+      （依赖问题已定位并修复，正在重跑）
+- [ ] **P1 未开始**（1080 条），P2/P3 未开始
+- [ ] 人工盲听未做；自然度/语气/情绪尚无评分
+- [ ] 赛道 A/B 的加权总分未算（需先固定归一化方式，且人工维度缺位）
+- [ ] 语料文本仍全部未经人工校对，CER 只能作初步筛查
+
+续跑命令（在远端）：
 
 ```bash
-python tools/fetch_models.py manifest   # 从 HF API 生成逐文件 size + sha256 清单
-python tools/fetch_models.py fetch      # 下载 5 个基座 + 2 个配套仓库
-python tools/fetch_models.py verify     # 逐文件校验，非 100% 覆盖率即失败
-python tools/fetch_aux.py all           # IndexTTS-2.5 辅助模型：清单 + 下载 + 校验
+E=/data/shangguanrz/projectsss/speakgenerate/experiments/model-test
+# 单配置冒烟（先 3 条验证通路）
+PYTHONPATH=$E/scripts $E/envs/voxcpm/bin/python $E/scripts/mt_run.py \
+    --config voxcpm2 --phase P0 --limit 3
+# P0 全量，严格串行
+$HOME/miniconda3/envs/deepgen/bin/python $E/scripts/mt_serial.py --phase P0
+# P0 通过后再 P1
+$HOME/miniconda3/envs/deepgen/bin/python $E/scripts/mt_serial.py --phase P1
+# 指标（先只算音色相似度）
+PYTHONPATH=$E/scripts $E/envs/voxcpm/bin/python $E/scripts/mt_metrics.py \
+    --phase P0 --speaker-only
 ```
 
-校验原则：清单来自 HF API，与下载器相互独立；LFS 文件比 sha256，非 LFS 文件比 git blob sha1。校验门的反向探针：
+## 八、选型口径（尚未有数据支撑）
 
-```bash
-python tools/negctl.py
-```
-
-它会在符号链接副本上分别注入 LFS sha256 篡改、普通文件 sha1 篡改、删文件三种缺陷，要求校验门报警并以非零码退出，同时要求未篡改副本通过。
-
-### 2. 数据
-
-音频分包不随仓库分发（7 个独立 ZIP，每个小于 500 MB，便于传输）。本仓库保留数据集介绍、7 个分包 README 与分包统计，便于核对字段和申请数据。数据包内自带 `checksums.sha256` 和离线试听页 `index.html`；各包的源归档 sha256 一致，为 `4bba0058dc968425615f71f34b4006c2139f1f00c7e38fa06b390be9c0cf8f7f`。
-
-### 3. 任务书文本
-
-```bash
-python tools/docx_text.py "task/任务书-汉语听力考试语音合成-v8.docx"
-```
-
-### 4. 数据分发包下载（可选）
-
-`tools/bd_pull_parallel.py` 是下载分包用的百度网盘分块下载器，读取 `/tmp/bd_files.json`（文件名、大小）和 `/tmp/bdjar.txt`（Netscape cookie jar），每块 64 KB、6 秒截止、多线程、断点续传，并按文件大小与 MD5/CRC 校验后原子落位。它不是模型或训练流程的一部分，仓库中不包含任何 cookie、分享链接或凭据。
-
-## 已知限制
-
-- 数据标签是“自动初标 + 待核”状态，不是人工金标准。说话人同名不代表同一真人，跨卷不能直接合并；文本为自动转写，训练前需要复核。统计见 [`data/README.md`](data/README.md)。
-- 数据切片来自原始考试录音，音频与原文的权利归原权利人。本仓库只提供介绍，不再分发音频；使用前请自行确认授权范围，不要用于商业再分发。
-- 模型权重的许可跟随上游仓库，下载前请阅读各自 LICENSE。
-- 当前节点 GPU 驱动/用户态库版本不一致，推理与训练均未开始；这是环境问题，不是模型或数据问题。
-
-## 下一步
-
-- [ ] 修复/等待 GPU 节点 NVML 版本不一致问题
-- [ ] 零样本克隆基线：固定测试文本、参考音频与推理参数
-- [ ] 三个固定说话人的 LoRA 适配（VoxCPM2 主线）
-- [ ] 语速/停顿、语气、四情绪控制的有效范围与稳定性实验
-- [ ] 整套文稿解析、模板组卷、局部重生成与导出页面
-- [ ] 对比音频与测试报告
+方案建议保留 VoxCPM2 作主线、其余四个竞争第二个名额。
+**这是待验证的假设，不是结论**——目前一条音频都还没生成。
+FireRedTTS3 的 Base 与 Instruct 分开记为两个配置，但家族仍按五个统计；
+Instruct 的编辑收益不得计入 Base 的零样本能力。

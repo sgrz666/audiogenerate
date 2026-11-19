@@ -1,0 +1,34 @@
+{
+ "task": {
+  "kind": "pron",
+  "audio_id": "P2b-pron-indextts25-FEMALE-PR1",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/FEMALE/P2b-pron-indextts25-FEMALE-PR1.wav",
+  "source_text": "他骑车去银行，路上走了很长时间。",
+  "requirements": "重点核对多音字目标：‘银行’的‘行’（xíng/háng）和‘很长’的‘长’（cháng/zhǎng）。只报告实际听到的读音，不要按文本猜测；并判断是否有逐字读字母/增字/漏字。在 JSON 里加顶级字段 target_reading，按目标字顺序写拼音。",
+  "target": "PR1",
+  "config_id": "indextts25"
+ },
+ "raw": "{\"audio_id\":\"P2b-pron-indextts25-FEMALE-PR1\",\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":4,\"pauses_boundaries\":4,\"intonation\":4,\"emotion\":\"无法判断\",\"naturalness\":4,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"emotion_choice\":\"无法判断\",\"type_choice\":\"陈述\",\"pause_present\":\"有\",\"target_reading\":\"xíng/cháng\"}",
+ "ts": 1794570520.43209,
+ "parsed": {
+  "audio_id": "P2b-pron-indextts25-FEMALE-PR1",
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 4,
+   "pauses_boundaries": 4,
+   "intonation": 4,
+   "emotion": "无法判断",
+   "naturalness": 4,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "emotion_choice": "无法判断",
+  "type_choice": "陈述",
+  "pause_present": "有",
+  "target_reading": "xíng/cháng"
+ },
+ "status": "ok",
+ "tag": "run"
+}

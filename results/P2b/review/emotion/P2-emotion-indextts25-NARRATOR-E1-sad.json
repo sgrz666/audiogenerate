@@ -1,0 +1,35 @@
+{
+ "task": {
+  "kind": "emotion",
+  "audio_id": "P2-emotion-indextts25-NARRATOR-E1-sad",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/NARRATOR/P2-emotion-indextts25-NARRATOR-E1-sad.wav",
+  "source_text": "这件事终于有了结果。",
+  "requirements": "目标情绪：sad。请判断实际听感，并从 平静/高兴/悲伤/生气/无法判断 中选一个最接近的，在 JSON 里加顶级字段 emotion_choice。",
+  "target": "sad",
+  "config_id": "indextts25"
+ },
+ "raw": "{\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":5,\"pauses_boundaries\":5,\"intonation\":3,\"emotion\":3,\"naturalness\":4,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[\"终于有了结果。实际语调上扬不符合sad要求。\"],\"emotion_choice\":\"悲伤\",\"type_choice\":\"陈述\",\"pause_present\":\"有\",\"target_reading\":\"\"}",
+ "ts": 1794570027.0961313,
+ "parsed": {
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 5,
+   "pauses_boundaries": 5,
+   "intonation": 3,
+   "emotion": 3,
+   "naturalness": 4,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [
+   "终于有了结果。实际语调上扬不符合sad要求。"
+  ],
+  "emotion_choice": "悲伤",
+  "type_choice": "陈述",
+  "pause_present": "有",
+  "target_reading": ""
+ },
+ "status": "ok",
+ "tag": "run"
+}

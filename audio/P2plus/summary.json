@@ -1,0 +1,1397 @@
+{
+  "manifest": [
+    {
+      "item_id": "P2plus-HSK1",
+      "level": 1,
+      "exam_key": "HSK1-3",
+      "question_no": 12,
+      "question_template": "对话",
+      "target_sample_id": "HSK1-3_Q12_U05",
+      "target_role": "对话",
+      "target_text": "我下午不来了,我们明天上午见。",
+      "target_source_wav": "/data/shangguanrz/projectsss/speakgenerate/data/01_中文听力_一级_真题1-5及大纲样卷/data/HSK1-3/HSK1-3_Q12_U05.wav",
+      "target_gt_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2plus/data_gt/HSK1_HSK1-3_Q12_U05_gt.wav",
+      "target_speaker_status": "automatic",
+      "target_metrics": {
+        "sample_rate": 44100,
+        "duration_s": 5.621,
+        "speech_span_s": 5.18,
+        "norm_chars": 13,
+        "actual_cpm": 150.58,
+        "asr_hyp": "我下午不来了我们明天上午见",
+        "cer": 0.0
+      },
+      "ref_sample_id": "HSK1-3_Q18_U04",
+      "ref_role": "短文材料",
+      "ref_text": "现在六点五十,我十分钟后回家。",
+      "ref_source_wav": "/data/shangguanrz/projectsss/speakgenerate/data/01_中文听力_一级_真题1-5及大纲样卷/data/HSK1-3/HSK1-3_Q18_U04.wav",
+      "ref_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2plus/refs/HSK1_HSK1-3_Q18_U04_ref.wav",
+      "ref_speaker_status": "automatic",
+      "ref_metrics": {
+        "sample_rate": 44100,
+        "duration_s": 6.535,
+        "speech_span_s": 6.1,
+        "norm_chars": 13,
+        "actual_cpm": 127.87,
+        "asr_hyp": "现在六点五十我十分钟后回家",
+        "cer": 0.0
+      },
+      "ref_target_spk_sim": 0.8183
+    },
+    {
+      "item_id": "P2plus-HSK2",
+      "level": 2,
+      "exam_key": "HSK2-2",
+      "question_no": 21,
+      "question_template": "两句对话与提问",
+      "target_sample_id": "HSK2-2_Q21_U06",
+      "target_role": "对话",
+      "target_text": "这么长时间了,还没有公共汽车来。",
+      "target_source_wav": "/data/shangguanrz/projectsss/speakgenerate/data/02_中文听力_二级_真题1-5及大纲样卷/data/HSK2-2/HSK2-2_Q21_U06.wav",
+      "target_gt_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2plus/data_gt/HSK2_HSK2-2_Q21_U06_gt.wav",
+      "target_speaker_status": "automatic",
+      "target_metrics": {
+        "sample_rate": 44100,
+        "duration_s": 5.46,
+        "speech_span_s": 5.02,
+        "norm_chars": 14,
+        "actual_cpm": 167.33,
+        "asr_hyp": "这么长时间了还没有公共汽车来",
+        "cer": 0.0
+      },
+      "ref_sample_id": "HSK2-2_Q25_U02",
+      "ref_role": "对话",
+      "ref_text": "我想去看眼睛,你知道哪家医院好吗?",
+      "ref_source_wav": "/data/shangguanrz/projectsss/speakgenerate/data/02_中文听力_二级_真题1-5及大纲样卷/data/HSK2-2/HSK2-2_Q25_U02.wav",
+      "ref_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2plus/refs/HSK2_HSK2-2_Q25_U02_ref.wav",
+      "ref_speaker_status": "automatic",
+      "ref_metrics": {
+        "sample_rate": 44100,
+        "duration_s": 6.299,
+        "speech_span_s": 5.86,
+        "norm_chars": 15,
+        "actual_cpm": 153.58,
+        "asr_hyp": "我想去看眼睛你知道哪家医院好吗",
+        "cer": 0.0
+      },
+      "ref_target_spk_sim": 0.8689
+    },
+    {
+      "item_id": "P2plus-HSK3",
+      "level": 3,
+      "exam_key": "HSK3-1",
+      "question_no": 36,
+      "question_template": "多句对话与提问",
+      "target_sample_id": "HSK3-1_Q36_U09",
+      "target_role": "对话",
+      "target_text": "那我们到机场还要多长时间?不会迟到吧?",
+      "target_source_wav": "/data/shangguanrz/projectsss/speakgenerate/data/03_中文听力_三级_真题1-5及大纲样卷/data/HSK3-1/HSK3-1_Q36_U09.wav",
+      "target_gt_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2plus/data_gt/HSK3_HSK3-1_Q36_U09_gt.wav",
+      "target_speaker_status": "automatic",
+      "target_metrics": {
+        "sample_rate": 44100,
+        "duration_s": 5.753,
+        "speech_span_s": 5.4,
+        "norm_chars": 17,
+        "actual_cpm": 188.89,
+        "asr_hyp": "那我们到机场还要多长时间不会迟到吧",
+        "cer": 0.0
+      },
+      "ref_sample_id": "HSK3-1_Q40_U04",
+      "ref_role": "对话",
+      "ref_text": "我不小心把护照忘在出租车上了,那位司机给我送了回来。",
+      "ref_source_wav": "/data/shangguanrz/projectsss/speakgenerate/data/03_中文听力_三级_真题1-5及大纲样卷/data/HSK3-1/HSK3-1_Q40_U04.wav",
+      "ref_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2plus/refs/HSK3_HSK3-1_Q40_U04_ref.wav",
+      "ref_speaker_status": "automatic",
+      "ref_metrics": {
+        "sample_rate": 44100,
+        "duration_s": 7.128,
+        "speech_span_s": 6.68,
+        "norm_chars": 24,
+        "actual_cpm": 215.57,
+        "asr_hyp": "我不小心把护照忘在出租车上了那位司机给我送了回来",
+        "cer": 0.0
+      },
+      "ref_target_spk_sim": 0.8415
+    },
+    {
+      "item_id": "P2plus-HSK4",
+      "level": 4,
+      "exam_key": "HSK4-2",
+      "question_no": 32,
+      "question_template": "对话或短文与提问",
+      "target_sample_id": "HSK4-2_Q32_U05",
+      "target_role": "对话",
+      "target_text": "年底各大商场都在打折,你们可以去看看。",
+      "target_source_wav": "/data/shangguanrz/projectsss/speakgenerate/data/04_中文听力_四级_真题1-5及大纲样卷/data/HSK4-2/HSK4-2_Q32_U05.wav",
+      "target_gt_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2plus/data_gt/HSK4_HSK4-2_Q32_U05_gt.wav",
+      "target_speaker_status": "automatic",
+      "target_metrics": {
+        "sample_rate": 44100,
+        "duration_s": 5.706,
+        "speech_span_s": 5.38,
+        "norm_chars": 17,
+        "actual_cpm": 189.59,
+        "asr_hyp": "年底各大商场都在打折你们可以去看看",
+        "cer": 0.0
+      },
+      "ref_sample_id": "HSK4-2_Q18_U02",
+      "ref_role": "对话",
+      "ref_text": "现在的孩子真厉害,我哥的孩子才三岁,就认识一千多个汉字了。",
+      "ref_source_wav": "/data/shangguanrz/projectsss/speakgenerate/data/04_中文听力_四级_真题1-5及大纲样卷/data/HSK4-2/HSK4-2_Q18_U02.wav",
+      "ref_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2plus/refs/HSK4_HSK4-2_Q18_U02_ref.wav",
+      "ref_speaker_status": "automatic",
+      "ref_metrics": {
+        "sample_rate": 44100,
+        "duration_s": 9.227,
+        "speech_span_s": 8.78,
+        "norm_chars": 26,
+        "actual_cpm": 177.68,
+        "asr_hyp": "现在的孩子真厉害我哥的孩子才三岁就认识一千多个汉字了",
+        "cer": 0.0
+      },
+      "ref_target_spk_sim": 0.9165
+    },
+    {
+      "item_id": "P2plus-HSK5",
+      "level": 5,
+      "exam_key": "HSK5-5",
+      "question_no": 11,
+      "question_template": "两句对话与提问",
+      "target_sample_id": "HSK5-5_Q11_U02",
+      "target_role": "对话",
+      "target_text": "今年春节,我们买几号的票回家呢?",
+      "target_source_wav": "/data/shangguanrz/projectsss/speakgenerate/data/05_中文听力_五级_真题1-5及大纲样卷/data/HSK5-5/HSK5-5_Q11_U02.wav",
+      "target_gt_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2plus/data_gt/HSK5_HSK5-5_Q11_U02_gt.wav",
+      "target_speaker_status": "automatic",
+      "target_metrics": {
+        "sample_rate": 44100,
+        "duration_s": 4.216,
+        "speech_span_s": 3.84,
+        "norm_chars": 14,
+        "actual_cpm": 218.75,
+        "asr_hyp": "今年春节我们买几号的票回家呢",
+        "cer": 0.0
+      },
+      "ref_sample_id": "HSK5-5_Q25_U02",
+      "ref_role": "对话",
+      "ref_text": "今年的电影节规模不小呢,很多国际著名导演都将作为特邀嘉宾,出席本届电影节。",
+      "ref_source_wav": "/data/shangguanrz/projectsss/speakgenerate/data/05_中文听力_五级_真题1-5及大纲样卷/data/HSK5-5/HSK5-5_Q25_U02.wav",
+      "ref_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2plus/refs/HSK5_HSK5-5_Q25_U02_ref.wav",
+      "ref_speaker_status": "automatic",
+      "ref_metrics": {
+        "sample_rate": 44100,
+        "duration_s": 10.757,
+        "speech_span_s": 10.36,
+        "norm_chars": 34,
+        "actual_cpm": 196.91,
+        "asr_hyp": "据说今年的电影节规模不小呢很多国际著名导演都将作为特邀嘉宾出席本届电影节",
+        "cer": 0.0588
+      },
+      "ref_target_spk_sim": 0.8746
+    },
+    {
+      "item_id": "P2plus-HSK6",
+      "level": 6,
+      "exam_key": "HSK6-5",
+      "question_no": 21,
+      "question_template": "采访与成组提问",
+      "target_sample_id": "HSK6-5_Q21_U04",
+      "target_role": "采访对话",
+      "target_text": "根据多年的拍摄经验,你觉得生态摄影有什么需要注意的吗?",
+      "target_source_wav": "/data/shangguanrz/projectsss/speakgenerate/data/07_中文听力_六级_真题4-5及大纲样卷/data/HSK6-5/HSK6-5_Q21_U04.wav",
+      "target_gt_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2plus/data_gt/HSK6_HSK6-5_Q21_U04_gt.wav",
+      "target_speaker_status": "automatic",
+      "target_metrics": {
+        "sample_rate": 44100,
+        "duration_s": 5.372,
+        "speech_span_s": 4.94,
+        "norm_chars": 25,
+        "actual_cpm": 303.64,
+        "asr_hyp": "根据多年的拍摄经验你觉得生态摄影有什么需要注意的吗",
+        "cer": 0.0
+      },
+      "ref_sample_id": "HSK6-5_Q26_U03",
+      "ref_role": "采访对话",
+      "ref_text": "我十七岁从舞蹈学院毕业那时就特别想考中央戏剧学院我相信冥冥之中和表演有缘分认定表演会把我带入全新的天地",
+      "ref_source_wav": "/data/shangguanrz/projectsss/speakgenerate/data/07_中文听力_六级_真题4-5及大纲样卷/data/HSK6-5/HSK6-5_Q26_U03.wav",
+      "ref_wav": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2plus/refs/HSK6_HSK6-5_Q26_U03_ref.wav",
+      "ref_speaker_status": "automatic",
+      "ref_metrics": {
+        "sample_rate": 44100,
+        "duration_s": 12.234,
+        "speech_span_s": 11.88,
+        "norm_chars": 51,
+        "actual_cpm": 257.58,
+        "asr_hyp": "我十七岁从舞蹈学院毕业那时就特别想考中央戏剧学院我相信冥冥之中和表演有缘分认定表演会把我带入全新的天地",
+        "cer": 0.0
+      },
+      "ref_target_spk_sim": 0.884
+    }
+  ],
+  "01_baseline": {
+    "voxcpm2": {
+      "n": 6,
+      "mean_cpm": 276.89,
+      "mean_abs_delta_cpm": 73.76,
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.6474,
+      "mean_spk_sim_to_gt": 0.5923,
+      "mean_rtf": 0.6396,
+      "max_vram_gib": 5.776,
+      "per_level": [
+        {
+          "level": 1,
+          "gt_cpm": 150.58,
+          "actual_cpm": 248.41,
+          "delta_cpm": 97.83,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.633,
+          "spk_sim_to_gt": 0.5892,
+          "dur_s": 3.68,
+          "rtf": 1.2059,
+          "vram_gib": 5.512
+        },
+        {
+          "level": 2,
+          "gt_cpm": 167.33,
+          "actual_cpm": 247.06,
+          "delta_cpm": 79.73,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.3874,
+          "spk_sim_to_gt": 0.3319,
+          "dur_s": 3.52,
+          "rtf": 0.5362,
+          "vram_gib": 5.549
+        },
+        {
+          "level": 3,
+          "gt_cpm": 188.89,
+          "actual_cpm": 307.23,
+          "delta_cpm": 118.34,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.8138,
+          "spk_sim_to_gt": 0.6542,
+          "dur_s": 4.0,
+          "rtf": 0.5232,
+          "vram_gib": 5.581
+        },
+        {
+          "level": 4,
+          "gt_cpm": 189.59,
+          "actual_cpm": 248.78,
+          "delta_cpm": 59.19,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.7756,
+          "spk_sim_to_gt": 0.7961,
+          "dur_s": 4.64,
+          "rtf": 0.5203,
+          "vram_gib": 5.659
+        },
+        {
+          "level": 5,
+          "gt_cpm": 218.75,
+          "actual_cpm": 265.82,
+          "delta_cpm": 47.07,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.499,
+          "spk_sim_to_gt": 0.4405,
+          "dur_s": 3.36,
+          "rtf": 0.5262,
+          "vram_gib": 5.724
+        },
+        {
+          "level": 6,
+          "gt_cpm": 303.64,
+          "actual_cpm": 344.04,
+          "delta_cpm": 40.4,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.7755,
+          "spk_sim_to_gt": 0.742,
+          "dur_s": 4.48,
+          "rtf": 0.5258,
+          "vram_gib": 5.776
+        }
+      ]
+    },
+    "voxcpm2_ctrl": {
+      "n": 6,
+      "mean_cpm": 276.89,
+      "mean_abs_delta_cpm": 73.76,
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.6474,
+      "mean_spk_sim_to_gt": 0.5923,
+      "mean_rtf": 0.5256,
+      "max_vram_gib": 5.776,
+      "per_level": [
+        {
+          "level": 1,
+          "gt_cpm": 150.58,
+          "actual_cpm": 248.41,
+          "delta_cpm": 97.83,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.633,
+          "spk_sim_to_gt": 0.5892,
+          "dur_s": 3.68,
+          "rtf": 0.6163,
+          "vram_gib": 5.512
+        },
+        {
+          "level": 2,
+          "gt_cpm": 167.33,
+          "actual_cpm": 247.06,
+          "delta_cpm": 79.73,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.3874,
+          "spk_sim_to_gt": 0.3319,
+          "dur_s": 3.52,
+          "rtf": 0.506,
+          "vram_gib": 5.549
+        },
+        {
+          "level": 3,
+          "gt_cpm": 188.89,
+          "actual_cpm": 307.23,
+          "delta_cpm": 118.34,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.8138,
+          "spk_sim_to_gt": 0.6542,
+          "dur_s": 4.0,
+          "rtf": 0.5064,
+          "vram_gib": 5.581
+        },
+        {
+          "level": 4,
+          "gt_cpm": 189.59,
+          "actual_cpm": 248.78,
+          "delta_cpm": 59.19,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.7756,
+          "spk_sim_to_gt": 0.7961,
+          "dur_s": 4.64,
+          "rtf": 0.5046,
+          "vram_gib": 5.659
+        },
+        {
+          "level": 5,
+          "gt_cpm": 218.75,
+          "actual_cpm": 265.82,
+          "delta_cpm": 47.07,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.499,
+          "spk_sim_to_gt": 0.4405,
+          "dur_s": 3.36,
+          "rtf": 0.5096,
+          "vram_gib": 5.724
+        },
+        {
+          "level": 6,
+          "gt_cpm": 303.64,
+          "actual_cpm": 344.04,
+          "delta_cpm": 40.4,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.7755,
+          "spk_sim_to_gt": 0.742,
+          "dur_s": 4.48,
+          "rtf": 0.5108,
+          "vram_gib": 5.776
+        }
+      ]
+    },
+    "indextts25": {
+      "n": 6,
+      "mean_cpm": 222.195,
+      "mean_abs_delta_cpm": 27.3417,
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.9099,
+      "mean_spk_sim_to_gt": 0.8415,
+      "mean_rtf": 0.8794,
+      "max_vram_gib": 5.721,
+      "per_level": [
+        {
+          "level": 1,
+          "gt_cpm": 150.58,
+          "actual_cpm": 209.68,
+          "delta_cpm": 59.1,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.8693,
+          "spk_sim_to_gt": 0.8405,
+          "dur_s": 3.785,
+          "rtf": 2.9442,
+          "vram_gib": 5.345
+        },
+        {
+          "level": 2,
+          "gt_cpm": 167.33,
+          "actual_cpm": 193.55,
+          "delta_cpm": 26.22,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.9117,
+          "spk_sim_to_gt": 0.8252,
+          "dur_s": 4.911,
+          "rtf": 0.4591,
+          "vram_gib": 5.411
+        },
+        {
+          "level": 3,
+          "gt_cpm": 188.89,
+          "actual_cpm": 233.94,
+          "delta_cpm": 45.05,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.9089,
+          "spk_sim_to_gt": 0.847,
+          "dur_s": 4.992,
+          "rtf": 0.4855,
+          "vram_gib": 5.454
+        },
+        {
+          "level": 4,
+          "gt_cpm": 189.59,
+          "actual_cpm": 198.44,
+          "delta_cpm": 8.85,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.9249,
+          "spk_sim_to_gt": 0.9097,
+          "dur_s": 5.19,
+          "rtf": 0.4528,
+          "vram_gib": 5.562
+        },
+        {
+          "level": 5,
+          "gt_cpm": 218.75,
+          "actual_cpm": 218.75,
+          "delta_cpm": 0.0,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.9184,
+          "spk_sim_to_gt": 0.7956,
+          "dur_s": 4.551,
+          "rtf": 0.4765,
+          "vram_gib": 5.644
+        },
+        {
+          "level": 6,
+          "gt_cpm": 303.64,
+          "actual_cpm": 278.81,
+          "delta_cpm": -24.83,
+          "cer": 0.0,
+          "spk_sim_to_ref": 0.9261,
+          "spk_sim_to_gt": 0.8312,
+          "dur_s": 5.422,
+          "rtf": 0.4583,
+          "vram_gib": 5.721
+        }
+      ]
+    }
+  },
+  "02_rate": {
+    "voxcpm2": {
+      "n": 36,
+      "control_mode": "text_fallback",
+      "pearson_r_all": 0.1207,
+      "spearman_rho_all": 0.2453,
+      "mae_cpm_all": 64.8478,
+      "gt_match_mae_cpm": 73.76,
+      "gt_match_mape_pct": 40.2184,
+      "per_level_pearson_mean": null,
+      "strictly_monotonic_levels": "0/6",
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.6474,
+      "mean_spk_sim_to_gt": 0.5923
+    },
+    "voxcpm2_ctrl": {
+      "n": 36,
+      "control_mode": "native_prompt",
+      "pearson_r_all": 0.6798,
+      "spearman_rho_all": 0.6999,
+      "mae_cpm_all": 57.3114,
+      "gt_match_mae_cpm": 74.5967,
+      "gt_match_mape_pct": 36.5916,
+      "per_level_pearson_mean": 0.8643,
+      "strictly_monotonic_levels": "1/6",
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.6009,
+      "mean_spk_sim_to_gt": 0.5671
+    },
+    "indextts25": {
+      "n": 36,
+      "control_mode": "native",
+      "pearson_r_all": 0.9995,
+      "spearman_rho_all": 0.9683,
+      "mae_cpm_all": 1.4881,
+      "gt_match_mae_cpm": 1.4683,
+      "gt_match_mape_pct": 0.8613,
+      "per_level_pearson_mean": 0.9999,
+      "strictly_monotonic_levels": "6/6",
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.8798,
+      "mean_spk_sim_to_gt": 0.8067
+    }
+  },
+  "03_pause": {
+    "voxcpm2": {
+      "n_rows": 54,
+      "n_levels": 6,
+      "delta_comma_median_s": 0.2,
+      "delta_period_vs_comma_median_s": -0.18,
+      "delta_period_vs_none_median_s": 0.51,
+      "positive_comma": "5/6",
+      "sign_p_comma": 0.2188,
+      "positive_period_vs_none": "4/6",
+      "sign_p_period_vs_none": 0.6875,
+      "mean_internal_gap_dur_s": {
+        "none": 0.236,
+        "comma": 0.4,
+        "period": 0.47
+      },
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.6992,
+      "per_level": [
+        {
+          "level": 1,
+          "nch": 13,
+          "span_per_char": {
+            "none": 0.21538,
+            "comma": 0.24,
+            "period": 0.20462
+          },
+          "delta_comma_s": 0.32,
+          "delta_period_vs_comma_s": -0.46,
+          "delta_period_vs_none_s": -0.14,
+          "median_internal_gap_dur_s": {
+            "none": 0.51,
+            "comma": 0.6,
+            "period": 0.483
+          },
+          "median_internal_gap_cnt": {
+            "none": 1.0,
+            "comma": 1.0,
+            "period": 2.0
+          }
+        },
+        {
+          "level": 2,
+          "nch": 14,
+          "span_per_char": {
+            "none": 0.18714,
+            "comma": 0.19286,
+            "period": 0.26
+          },
+          "delta_comma_s": 0.08,
+          "delta_period_vs_comma_s": 0.94,
+          "delta_period_vs_none_s": 1.02,
+          "median_internal_gap_dur_s": {
+            "none": 0.133,
+            "comma": 0.374,
+            "period": 0.699
+          },
+          "median_internal_gap_cnt": {
+            "none": 1.0,
+            "comma": 1.0,
+            "period": 2.0
+          }
+        },
+        {
+          "level": 3,
+          "nch": 17,
+          "span_per_char": {
+            "none": 0.16824,
+            "comma": 0.23176,
+            "period": 0.20941
+          },
+          "delta_comma_s": 1.08,
+          "delta_period_vs_comma_s": -0.38,
+          "delta_period_vs_none_s": 0.7,
+          "median_internal_gap_dur_s": {
+            "none": 0.09,
+            "comma": 0.514,
+            "period": 0.64
+          },
+          "median_internal_gap_cnt": {
+            "none": 1.0,
+            "comma": 2.0,
+            "period": 1.0
+          }
+        },
+        {
+          "level": 4,
+          "nch": 17,
+          "span_per_char": {
+            "none": 0.29176,
+            "comma": 0.29529,
+            "period": 0.24118
+          },
+          "delta_comma_s": 0.06,
+          "delta_period_vs_comma_s": -0.92,
+          "delta_period_vs_none_s": -0.86,
+          "median_internal_gap_dur_s": {
+            "none": 0.476,
+            "comma": 0.407,
+            "period": 0.46
+          },
+          "median_internal_gap_cnt": {
+            "none": 2.0,
+            "comma": 2.0,
+            "period": 2.0
+          }
+        },
+        {
+          "level": 5,
+          "nch": 14,
+          "span_per_char": {
+            "none": 0.19286,
+            "comma": 0.22429,
+            "period": 0.22571
+          },
+          "delta_comma_s": 0.44,
+          "delta_period_vs_comma_s": 0.02,
+          "delta_period_vs_none_s": 0.46,
+          "median_internal_gap_dur_s": {
+            "none": 0.0,
+            "comma": 0.507,
+            "period": 0.35
+          },
+          "median_internal_gap_cnt": {
+            "none": 0.0,
+            "comma": 3.0,
+            "period": 2.0
+          }
+        },
+        {
+          "level": 6,
+          "nch": 25,
+          "span_per_char": {
+            "none": 0.172,
+            "comma": 0.172,
+            "period": 0.1944
+          },
+          "delta_comma_s": 0.0,
+          "delta_period_vs_comma_s": 0.56,
+          "delta_period_vs_none_s": 0.56,
+          "median_internal_gap_dur_s": {
+            "none": 0.207,
+            "comma": 0.0,
+            "period": 0.187
+          },
+          "median_internal_gap_cnt": {
+            "none": 1.0,
+            "comma": 0.0,
+            "period": 1.0
+          }
+        }
+      ]
+    },
+    "voxcpm2_ctrl": {
+      "n_rows": 54,
+      "n_levels": 6,
+      "delta_comma_median_s": 0.25,
+      "delta_period_vs_comma_median_s": 0.53,
+      "delta_period_vs_none_median_s": 0.69,
+      "positive_comma": "5/6",
+      "sign_p_comma": 0.2188,
+      "positive_period_vs_none": "6/6",
+      "sign_p_period_vs_none": 0.0312,
+      "mean_internal_gap_dur_s": {
+        "none": 0.13,
+        "comma": 0.334,
+        "period": 0.384
+      },
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.5921,
+      "per_level": [
+        {
+          "level": 1,
+          "nch": 13,
+          "span_per_char": {
+            "none": 0.17846,
+            "comma": 0.17077,
+            "period": 0.22615
+          },
+          "delta_comma_s": -0.1,
+          "delta_period_vs_comma_s": 0.72,
+          "delta_period_vs_none_s": 0.62,
+          "median_internal_gap_dur_s": {
+            "none": 0.28,
+            "comma": 0.117,
+            "period": 0.443
+          },
+          "median_internal_gap_cnt": {
+            "none": 1.0,
+            "comma": 1.0,
+            "period": 1.0
+          }
+        },
+        {
+          "level": 2,
+          "nch": 14,
+          "span_per_char": {
+            "none": 0.20714,
+            "comma": 0.21429,
+            "period": 0.23571
+          },
+          "delta_comma_s": 0.1,
+          "delta_period_vs_comma_s": 0.3,
+          "delta_period_vs_none_s": 0.4,
+          "median_internal_gap_dur_s": {
+            "none": 0.127,
+            "comma": 0.423,
+            "period": 0.437
+          },
+          "median_internal_gap_cnt": {
+            "none": 1.0,
+            "comma": 2.0,
+            "period": 1.0
+          }
+        },
+        {
+          "level": 3,
+          "nch": 17,
+          "span_per_char": {
+            "none": 0.16588,
+            "comma": 0.16941,
+            "period": 0.21647
+          },
+          "delta_comma_s": 0.06,
+          "delta_period_vs_comma_s": 0.8,
+          "delta_period_vs_none_s": 0.86,
+          "median_internal_gap_dur_s": {
+            "none": 0.0,
+            "comma": 0.38,
+            "period": 0.5
+          },
+          "median_internal_gap_cnt": {
+            "none": 0.0,
+            "comma": 1.0,
+            "period": 2.0
+          }
+        },
+        {
+          "level": 4,
+          "nch": 17,
+          "span_per_char": {
+            "none": 0.21647,
+            "comma": 0.25412,
+            "period": 0.24824
+          },
+          "delta_comma_s": 0.64,
+          "delta_period_vs_comma_s": -0.1,
+          "delta_period_vs_none_s": 0.54,
+          "median_internal_gap_dur_s": {
+            "none": 0.293,
+            "comma": 0.387,
+            "period": 0.0
+          },
+          "median_internal_gap_cnt": {
+            "none": 1.0,
+            "comma": 1.0,
+            "period": 0.0
+          }
+        },
+        {
+          "level": 5,
+          "nch": 14,
+          "span_per_char": {
+            "none": 0.18857,
+            "comma": 0.21714,
+            "period": 0.24286
+          },
+          "delta_comma_s": 0.4,
+          "delta_period_vs_comma_s": 0.36,
+          "delta_period_vs_none_s": 0.76,
+          "median_internal_gap_dur_s": {
+            "none": 0.083,
+            "comma": 0.327,
+            "period": 0.123
+          },
+          "median_internal_gap_cnt": {
+            "none": 1.0,
+            "comma": 2.0,
+            "period": 1.0
+          }
+        },
+        {
+          "level": 6,
+          "nch": 25,
+          "span_per_char": {
+            "none": 0.1552,
+            "comma": 0.176,
+            "period": 0.204
+          },
+          "delta_comma_s": 0.52,
+          "delta_period_vs_comma_s": 0.7,
+          "delta_period_vs_none_s": 1.22,
+          "median_internal_gap_dur_s": {
+            "none": 0.0,
+            "comma": 0.373,
+            "period": 0.8
+          },
+          "median_internal_gap_cnt": {
+            "none": 0.0,
+            "comma": 2.0,
+            "period": 2.0
+          }
+        }
+      ]
+    },
+    "indextts25": {
+      "n_rows": 54,
+      "n_levels": 6,
+      "delta_comma_median_s": 0.07,
+      "delta_period_vs_comma_median_s": 0.05,
+      "delta_period_vs_none_median_s": 0.27,
+      "positive_comma": "3/6",
+      "sign_p_comma": 1.0,
+      "positive_period_vs_none": "4/6",
+      "sign_p_period_vs_none": 0.6875,
+      "mean_internal_gap_dur_s": {
+        "none": 0.314,
+        "comma": 0.388,
+        "period": 0.489
+      },
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.9102,
+      "per_level": [
+        {
+          "level": 1,
+          "nch": 13,
+          "span_per_char": {
+            "none": 0.27692,
+            "comma": 0.29077,
+            "period": 0.30308
+          },
+          "delta_comma_s": 0.18,
+          "delta_period_vs_comma_s": 0.16,
+          "delta_period_vs_none_s": 0.34,
+          "median_internal_gap_dur_s": {
+            "none": 0.421,
+            "comma": 0.544,
+            "period": 0.588
+          },
+          "median_internal_gap_cnt": {
+            "none": 1.0,
+            "comma": 1.0,
+            "period": 1.0
+          }
+        },
+        {
+          "level": 2,
+          "nch": 14,
+          "span_per_char": {
+            "none": 0.28143,
+            "comma": 0.27857,
+            "period": 0.31
+          },
+          "delta_comma_s": -0.04,
+          "delta_period_vs_comma_s": 0.44,
+          "delta_period_vs_none_s": 0.4,
+          "median_internal_gap_dur_s": {
+            "none": 0.385,
+            "comma": 0.384,
+            "period": 0.537
+          },
+          "median_internal_gap_cnt": {
+            "none": 2.0,
+            "comma": 2.0,
+            "period": 2.0
+          }
+        },
+        {
+          "level": 3,
+          "nch": 17,
+          "span_per_char": {
+            "none": 0.25059,
+            "comma": 0.24,
+            "period": 0.24471
+          },
+          "delta_comma_s": -0.18,
+          "delta_period_vs_comma_s": 0.08,
+          "delta_period_vs_none_s": -0.1,
+          "median_internal_gap_dur_s": {
+            "none": 0.363,
+            "comma": 0.312,
+            "period": 0.464
+          },
+          "median_internal_gap_cnt": {
+            "none": 2.0,
+            "comma": 2.0,
+            "period": 2.0
+          }
+        },
+        {
+          "level": 4,
+          "nch": 17,
+          "span_per_char": {
+            "none": 0.29294,
+            "comma": 0.28824,
+            "period": 0.28941
+          },
+          "delta_comma_s": -0.08,
+          "delta_period_vs_comma_s": 0.02,
+          "delta_period_vs_none_s": -0.06,
+          "median_internal_gap_dur_s": {
+            "none": 0.552,
+            "comma": 0.457,
+            "period": 0.581
+          },
+          "median_internal_gap_cnt": {
+            "none": 2.0,
+            "comma": 1.0,
+            "period": 2.0
+          }
+        },
+        {
+          "level": 5,
+          "nch": 14,
+          "span_per_char": {
+            "none": 0.24571,
+            "comma": 0.28857,
+            "period": 0.29
+          },
+          "delta_comma_s": 0.6,
+          "delta_period_vs_comma_s": 0.02,
+          "delta_period_vs_none_s": 0.62,
+          "median_internal_gap_dur_s": {
+            "none": 0.0,
+            "comma": 0.247,
+            "period": 0.407
+          },
+          "median_internal_gap_cnt": {
+            "none": 0.0,
+            "comma": 1.0,
+            "period": 2.0
+          }
+        },
+        {
+          "level": 6,
+          "nch": 25,
+          "span_per_char": {
+            "none": 0.208,
+            "comma": 0.2208,
+            "period": 0.216
+          },
+          "delta_comma_s": 0.32,
+          "delta_period_vs_comma_s": -0.12,
+          "delta_period_vs_none_s": 0.2,
+          "median_internal_gap_dur_s": {
+            "none": 0.16,
+            "comma": 0.385,
+            "period": 0.356
+          },
+          "median_internal_gap_cnt": {
+            "none": 1.0,
+            "comma": 1.0,
+            "period": 1.0
+          }
+        }
+      ]
+    }
+  },
+  "04_intonation": {
+    "data_gt_f0": {
+      "1": {
+        "f0_mean": 210.159,
+        "st_std": 4.949,
+        "st_range": 15.8,
+        "final_delta": -2.652,
+        "dur": 5.621,
+        "db": -45.549,
+        "db_std": 46.672
+      },
+      "2": {
+        "f0_mean": 202.37,
+        "st_std": 4.021,
+        "st_range": 14.315,
+        "final_delta": 2.637,
+        "dur": 5.46,
+        "db": -42.783,
+        "db_std": 48.075
+      },
+      "3": {
+        "f0_mean": 210.927,
+        "st_std": 4.843,
+        "st_range": 15.24,
+        "final_delta": -2.412,
+        "dur": 5.753,
+        "db": -43.483,
+        "db_std": 41.078
+      },
+      "4": {
+        "f0_mean": 191.857,
+        "st_std": 4.012,
+        "st_range": 13.125,
+        "final_delta": -3.663,
+        "dur": 5.706,
+        "db": -41.394,
+        "db_std": 40.841
+      },
+      "5": {
+        "f0_mean": 209.196,
+        "st_std": 4.35,
+        "st_range": 12.875,
+        "final_delta": 2.532,
+        "dur": 4.216,
+        "db": -39.448,
+        "db_std": 37.425
+      },
+      "6": {
+        "f0_mean": 215.012,
+        "st_std": 4.77,
+        "st_range": 14.6,
+        "final_delta": null,
+        "dur": 5.372,
+        "db": -38.005,
+        "db_std": 36.195
+      }
+    },
+    "voxcpm2": {
+      "n": 18,
+      "features": {
+        "f0_mean": {
+          "means": {
+            "declarative": 240.638,
+            "interrogative": 245.34,
+            "exclamatory": 276.619
+          },
+          "eta2": 0.323,
+          "omega2": 0.2227,
+          "perm_p": 0.0554
+        },
+        "st_std": {
+          "means": {
+            "declarative": 3.869,
+            "interrogative": 4.148,
+            "exclamatory": 3.657
+          },
+          "eta2": 0.0863,
+          "omega2": -0.0335,
+          "perm_p": 0.5041
+        },
+        "st_range": {
+          "means": {
+            "declarative": 12.246,
+            "interrogative": 12.96,
+            "exclamatory": 11.382
+          },
+          "eta2": 0.105,
+          "omega2": -0.0135,
+          "perm_p": 0.4325
+        },
+        "final_delta": {
+          "means": {
+            "declarative": -2.912,
+            "interrogative": -1.05,
+            "exclamatory": 0.621
+          },
+          "eta2": 0.1913,
+          "omega2": 0.0716,
+          "perm_p": 0.2468
+        }
+      },
+      "max_eta2_feature": "f0_mean",
+      "max_eta2": 0.323,
+      "max_omega2": 0.2227,
+      "effect": 1.0,
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.5673
+    },
+    "voxcpm2_ctrl": {
+      "n": 18,
+      "features": {
+        "f0_mean": {
+          "means": {
+            "declarative": 223.354,
+            "interrogative": 254.843,
+            "exclamatory": 280.225
+          },
+          "eta2": 0.486,
+          "omega2": 0.4036,
+          "perm_p": 0.0056
+        },
+        "st_std": {
+          "means": {
+            "declarative": 3.83,
+            "interrogative": 3.648,
+            "exclamatory": 3.483
+          },
+          "eta2": 0.0631,
+          "omega2": -0.0582,
+          "perm_p": 0.6035
+        },
+        "st_range": {
+          "means": {
+            "declarative": 11.806,
+            "interrogative": 11.302,
+            "exclamatory": 10.725
+          },
+          "eta2": 0.0645,
+          "omega2": -0.0567,
+          "perm_p": 0.5947
+        },
+        "final_delta": {
+          "means": {
+            "declarative": -1.907,
+            "interrogative": -1.007,
+            "exclamatory": -2.257
+          },
+          "eta2": 0.075,
+          "omega2": -0.0536,
+          "perm_p": 0.5751
+        }
+      },
+      "max_eta2_feature": "f0_mean",
+      "max_eta2": 0.486,
+      "max_omega2": 0.4036,
+      "effect": 1.0,
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.4566
+    },
+    "indextts25": {
+      "n": 18,
+      "features": {
+        "f0_mean": {
+          "means": {
+            "declarative": 203.874,
+            "interrogative": 209.803,
+            "exclamatory": 204.106
+          },
+          "eta2": 0.0711,
+          "omega2": -0.0497,
+          "perm_p": 0.5665
+        },
+        "st_std": {
+          "means": {
+            "declarative": 4.662,
+            "interrogative": 4.194,
+            "exclamatory": 5.253
+          },
+          "eta2": 0.1908,
+          "omega2": 0.0787,
+          "perm_p": 0.2216
+        },
+        "st_range": {
+          "means": {
+            "declarative": 14.85,
+            "interrogative": 12.977,
+            "exclamatory": 17.401
+          },
+          "eta2": 0.1588,
+          "omega2": 0.0442,
+          "perm_p": 0.234
+        },
+        "final_delta": {
+          "means": {
+            "declarative": -1.166,
+            "interrogative": -3.078,
+            "exclamatory": -3.295
+          },
+          "eta2": 0.0487,
+          "omega2": -0.091,
+          "perm_p": 0.7253
+        }
+      },
+      "max_eta2_feature": "st_std",
+      "max_eta2": 0.1908,
+      "max_omega2": 0.0787,
+      "effect": 0.6558,
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.9131
+    }
+  },
+  "05_emotion": {
+    "voxcpm2": {
+      "status": "ok",
+      "control_mode": "text_fallback",
+      "n": 24,
+      "loo_acc": 0.0,
+      "chance": 0.25,
+      "obj": 0.0,
+      "confusion": {
+        "calm->happy": 6,
+        "happy->calm": 6,
+        "sad->calm": 6,
+        "angry->calm": 6
+      },
+      "per_emotion_means": {
+        "calm": {
+          "f0_mean": 240.936,
+          "st_std": 3.532,
+          "st_range": 11.163,
+          "db": -39.972,
+          "dur": 3.947
+        },
+        "happy": {
+          "f0_mean": 240.936,
+          "st_std": 3.532,
+          "st_range": 11.163,
+          "db": -39.972,
+          "dur": 3.947
+        },
+        "sad": {
+          "f0_mean": 240.936,
+          "st_std": 3.532,
+          "st_range": 11.163,
+          "db": -39.972,
+          "dur": 3.947
+        },
+        "angry": {
+          "f0_mean": 240.936,
+          "st_std": 3.532,
+          "st_range": 11.163,
+          "db": -39.972,
+          "dur": 3.947
+        }
+      },
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.6474,
+      "mean_spk_sim_to_gt": 0.5923
+    },
+    "voxcpm2_ctrl": {
+      "status": "ok",
+      "control_mode": "native_prompt",
+      "n": 24,
+      "loo_acc": 0.2917,
+      "chance": 0.25,
+      "obj": 0.0556,
+      "confusion": {
+        "calm->sad": 1,
+        "happy->calm": 2,
+        "sad->sad": 4,
+        "angry->calm": 3,
+        "calm->angry": 2,
+        "happy->angry": 4,
+        "angry->sad": 1,
+        "calm->calm": 2,
+        "sad->calm": 1,
+        "calm->happy": 1,
+        "sad->happy": 1,
+        "angry->angry": 1,
+        "angry->happy": 1
+      },
+      "per_emotion_means": {
+        "calm": {
+          "f0_mean": 243.791,
+          "st_std": 3.759,
+          "st_range": 11.572,
+          "db": -37.871,
+          "dur": 3.893
+        },
+        "happy": {
+          "f0_mean": 260.14,
+          "st_std": 3.462,
+          "st_range": 10.579,
+          "db": -37.213,
+          "dur": 3.627
+        },
+        "sad": {
+          "f0_mean": 225.072,
+          "st_std": 2.355,
+          "st_range": 7.499,
+          "db": -39.132,
+          "dur": 5.067
+        },
+        "angry": {
+          "f0_mean": 259.761,
+          "st_std": 3.732,
+          "st_range": 11.178,
+          "db": -36.046,
+          "dur": 3.627
+        }
+      },
+      "mean_cer": 0.0,
+      "mean_spk_sim_to_ref": 0.5093,
+      "mean_spk_sim_to_gt": 0.4809
+    },
+    "indextts25": {
+      "status": "ok",
+      "control_mode": "native",
+      "n": 24,
+      "loo_acc": 0.5417,
+      "chance": 0.25,
+      "obj": 0.3889,
+      "confusion": {
+        "calm->calm": 5,
+        "happy->angry": 3,
+        "sad->angry": 3,
+        "angry->angry": 3,
+        "happy->happy": 2,
+        "angry->sad": 3,
+        "sad->sad": 3,
+        "calm->sad": 1,
+        "happy->sad": 1
+      },
+      "per_emotion_means": {
+        "calm": {
+          "f0_mean": 240.151,
+          "st_std": 3.165,
+          "st_range": 10.254,
+          "db": -26.459,
+          "dur": 3.555
+        },
+        "happy": {
+          "f0_mean": 284.955,
+          "st_std": 4.082,
+          "st_range": 15.021,
+          "db": -28.808,
+          "dur": 4.156
+        },
+        "sad": {
+          "f0_mean": 290.583,
+          "st_std": 2.571,
+          "st_range": 8.36,
+          "db": -32.305,
+          "dur": 4.648
+        },
+        "angry": {
+          "f0_mean": 306.077,
+          "st_std": 2.954,
+          "st_range": 9.593,
+          "db": -32.095,
+          "dur": 4.234
+        }
+      },
+      "mean_cer": 0.0049,
+      "mean_spk_sim_to_ref": 0.7041,
+      "mean_spk_sim_to_gt": 0.6383
+    }
+  },
+  "06_pronunciation": {
+    "voxcpm2": {
+      "control_mode": "text_fallback",
+      "n_pos": 42,
+      "n_neg": 0,
+      "pos_cer_mean": 0.0095,
+      "pos_zero_cer_rate": 0.8571,
+      "hsk_pos_cer_mean": 0.0,
+      "pr_pos_cer_mean": 0.0111,
+      "neg_cer_mean": null,
+      "neg_asr_diff_vs_pos": null,
+      "mean_spk_sim_to_ref": 0.6463,
+      "mean_spk_sim_to_gt": 0.5944
+    },
+    "voxcpm2_ctrl": {
+      "control_mode": "prompt_hint",
+      "n_pos": 42,
+      "n_neg": 18,
+      "pos_cer_mean": 0.0095,
+      "pos_zero_cer_rate": 0.8571,
+      "hsk_pos_cer_mean": 0.0,
+      "pr_pos_cer_mean": 0.0111,
+      "neg_cer_mean": 0.0,
+      "neg_asr_diff_vs_pos": "0/18",
+      "mean_spk_sim_to_ref": 0.623,
+      "mean_spk_sim_to_gt": 0.5704
+    },
+    "indextts25": {
+      "control_mode": "native",
+      "n_pos": 42,
+      "n_neg": 18,
+      "pos_cer_mean": 0.0098,
+      "pos_zero_cer_rate": 0.8571,
+      "hsk_pos_cer_mean": 0.0128,
+      "pr_pos_cer_mean": 0.0093,
+      "neg_cer_mean": 0.0348,
+      "neg_asr_diff_vs_pos": "9/18",
+      "mean_spk_sim_to_ref": 0.9089,
+      "mean_spk_sim_to_gt": 0.8192
+    }
+  }
+}

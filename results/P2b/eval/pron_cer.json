@@ -1,0 +1,347 @@
+[
+ {
+  "item_id": "P2b-pron-indextts25-MALE-PR1",
+  "text_id": "PR1",
+  "voice_id": "MALE",
+  "negative_control": false,
+  "text": "他骑车去银行，路上走了很长时间。",
+  "hyp": "他骑车去银行路上走了很长时间",
+  "cer": 0.0,
+  "applied_text": "他骑车去银<行|HANG2>，路上走了很<长|CHANG2>时间。",
+  "hints": [
+   "行|HANG2",
+   "长|CHANG2"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-FEMALE-PR1",
+  "text_id": "PR1",
+  "voice_id": "FEMALE",
+  "negative_control": false,
+  "text": "他骑车去银行，路上走了很长时间。",
+  "hyp": "他骑车去银行路上走了很长时间",
+  "cer": 0.0,
+  "applied_text": "他骑车去银<行|HANG2>，路上走了很<长|CHANG2>时间。",
+  "hints": [
+   "行|HANG2",
+   "长|CHANG2"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-NARRATOR-PR1",
+  "text_id": "PR1",
+  "voice_id": "NARRATOR",
+  "negative_control": false,
+  "text": "他骑车去银行，路上走了很长时间。",
+  "hyp": "他骑车去银行路上走了很长时间",
+  "cer": 0.0,
+  "applied_text": "他骑车去银<行|HANG2>，路上走了很<长|CHANG2>时间。",
+  "hints": [
+   "行|HANG2",
+   "长|CHANG2"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-MALE-PR2",
+  "text_id": "PR2",
+  "voice_id": "MALE",
+  "negative_control": false,
+  "text": "这个箱子太重了，请你重新搬一次。",
+  "hyp": "这个箱子太重了请你重新搬一次",
+  "cer": 0.0,
+  "applied_text": "这个箱子太<重|ZHONG4>了，请你<重|CHONG2>新搬一次。",
+  "hints": [
+   "重|ZHONG4",
+   "重|CHONG2"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-FEMALE-PR2",
+  "text_id": "PR2",
+  "voice_id": "FEMALE",
+  "negative_control": false,
+  "text": "这个箱子太重了，请你重新搬一次。",
+  "hyp": "这个箱子太重了请你重新搬一次",
+  "cer": 0.0,
+  "applied_text": "这个箱子太<重|ZHONG4>了，请你<重|CHONG2>新搬一次。",
+  "hints": [
+   "重|ZHONG4",
+   "重|CHONG2"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-NARRATOR-PR2",
+  "text_id": "PR2",
+  "voice_id": "NARRATOR",
+  "negative_control": false,
+  "text": "这个箱子太重了，请你重新搬一次。",
+  "hyp": "这个箱子太重了请你重新搬一次",
+  "cer": 0.0,
+  "applied_text": "这个箱子太<重|ZHONG4>了，请你<重|CHONG2>新搬一次。",
+  "hints": [
+   "重|ZHONG4",
+   "重|CHONG2"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-MALE-PR3",
+  "text_id": "PR3",
+  "voice_id": "MALE",
+  "negative_control": false,
+  "text": "你得把作业写完，才能出去玩得开心。",
+  "hyp": "你得把作业写完才能出去玩的开心",
+  "cer": 0.0667,
+  "applied_text": "你<得|DEI3>把作业写完，才能出去玩<得|DE5>开心。",
+  "hints": [
+   "得|DEI3",
+   "得|DE5"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-FEMALE-PR3",
+  "text_id": "PR3",
+  "voice_id": "FEMALE",
+  "negative_control": false,
+  "text": "你得把作业写完，才能出去玩得开心。",
+  "hyp": "你得把作业写完才能出去玩的开心",
+  "cer": 0.0667,
+  "applied_text": "你<得|DEI3>把作业写完，才能出去玩<得|DE5>开心。",
+  "hints": [
+   "得|DEI3",
+   "得|DE5"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-NARRATOR-PR3",
+  "text_id": "PR3",
+  "voice_id": "NARRATOR",
+  "negative_control": false,
+  "text": "你得把作业写完，才能出去玩得开心。",
+  "hyp": "你得把作业写完才能出去玩得开心",
+  "cer": 0.0,
+  "applied_text": "你<得|DEI3>把作业写完，才能出去玩<得|DE5>开心。",
+  "hints": [
+   "得|DEI3",
+   "得|DE5"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-MALE-PR4",
+  "text_id": "PR4",
+  "voice_id": "MALE",
+  "negative_control": false,
+  "text": "他还有一本书没还给我，说明天还。",
+  "hyp": "他还有一本书没还给我说明天还",
+  "cer": 0.0,
+  "applied_text": "他<还|HAI2>有一本书没<还|HUAN2>给我，说明天<还|HUAN2>。",
+  "hints": [
+   "还|HAI2",
+   "还|HUAN2",
+   "还|HUAN2"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-FEMALE-PR4",
+  "text_id": "PR4",
+  "voice_id": "FEMALE",
+  "negative_control": false,
+  "text": "他还有一本书没还给我，说明天还。",
+  "hyp": "他还有一本书没还给我说明天还",
+  "cer": 0.0,
+  "applied_text": "他<还|HAI2>有一本书没<还|HUAN2>给我，说明天<还|HUAN2>。",
+  "hints": [
+   "还|HAI2",
+   "还|HUAN2",
+   "还|HUAN2"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-NARRATOR-PR4",
+  "text_id": "PR4",
+  "voice_id": "NARRATOR",
+  "negative_control": false,
+  "text": "他还有一本书没还给我，说明天还。",
+  "hyp": "他还有一本书没还给我说明天还",
+  "cer": 0.0,
+  "applied_text": "他<还|HAI2>有一本书没<还|HUAN2>给我，说明天<还|HUAN2>。",
+  "hints": [
+   "还|HAI2",
+   "还|HUAN2",
+   "还|HUAN2"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-MALE-PR5",
+  "text_id": "PR5",
+  "voice_id": "MALE",
+  "negative_control": false,
+  "text": "我们都去过首都，那里的人都很热情。",
+  "hyp": "我们都去过首都那里的人都很热情",
+  "cer": 0.0,
+  "applied_text": "我们<都|DOU1>去过首<都|DU1>，那里的人<都|DOU1>很热情。",
+  "hints": [
+   "都|DOU1",
+   "都|DU1",
+   "都|DOU1"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-FEMALE-PR5",
+  "text_id": "PR5",
+  "voice_id": "FEMALE",
+  "negative_control": false,
+  "text": "我们都去过首都，那里的人都很热情。",
+  "hyp": "我们都去过首都那里的人都很热情",
+  "cer": 0.0,
+  "applied_text": "我们<都|DOU1>去过首<都|DU1>，那里的人<都|DOU1>很热情。",
+  "hints": [
+   "都|DOU1",
+   "都|DU1",
+   "都|DOU1"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-NARRATOR-PR5",
+  "text_id": "PR5",
+  "voice_id": "NARRATOR",
+  "negative_control": false,
+  "text": "我们都去过首都，那里的人都很热情。",
+  "hyp": "我们都去过首都那里的人都很热情",
+  "cer": 0.0,
+  "applied_text": "我们<都|DOU1>去过首<都|DU1>，那里的人<都|DOU1>很热情。",
+  "hints": [
+   "都|DOU1",
+   "都|DU1",
+   "都|DOU1"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-MALE-PR6",
+  "text_id": "PR6",
+  "voice_id": "MALE",
+  "negative_control": false,
+  "text": "我觉得睡觉以前应该少看手机。",
+  "hyp": "我觉得睡觉以前应该少看手机",
+  "cer": 0.0,
+  "applied_text": "我<觉|JVE2>得睡<觉|JIAO4>以前应该少看手机。",
+  "hints": [
+   "觉|JVE2",
+   "觉|JIAO4"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-FEMALE-PR6",
+  "text_id": "PR6",
+  "voice_id": "FEMALE",
+  "negative_control": false,
+  "text": "我觉得睡觉以前应该少看手机。",
+  "hyp": "我觉得睡觉以前应该少看手机",
+  "cer": 0.0,
+  "applied_text": "我<觉|JVE2>得睡<觉|JIAO4>以前应该少看手机。",
+  "hints": [
+   "觉|JVE2",
+   "觉|JIAO4"
+  ]
+ },
+ {
+  "item_id": "P2b-pron-indextts25-NARRATOR-PR6",
+  "text_id": "PR6",
+  "voice_id": "NARRATOR",
+  "negative_control": false,
+  "text": "我觉得睡觉以前应该少看手机。",
+  "hyp": "我觉得睡觉以前应该少看手机",
+  "cer": 0.0,
+  "applied_text": "我<觉|JVE2>得睡<觉|JIAO4>以前应该少看手机。",
+  "hints": [
+   "觉|JVE2",
+   "觉|JIAO4"
+  ]
+ },
+ {
+  "item_id": "P2b-pronneg-indextts25-MALE-PR1",
+  "text_id": "PR1-NEG",
+  "voice_id": "MALE",
+  "negative_control": true,
+  "text": "他骑车去银行，路上走了很长时间。",
+  "hyp": "他骑车去银行路上走了很长时间",
+  "cer": 0.0,
+  "applied_text": "他骑车去银<行|XING2>，路上走了很<长|CHANG2>时间。",
+  "hints": [
+   "行|XING2",
+   "长|CHANG2"
+  ]
+ },
+ {
+  "item_id": "P2b-pronneg-indextts25-FEMALE-PR1",
+  "text_id": "PR1-NEG",
+  "voice_id": "FEMALE",
+  "negative_control": true,
+  "text": "他骑车去银行，路上走了很长时间。",
+  "hyp": "他骑车去银行路上走了很长时间",
+  "cer": 0.0,
+  "applied_text": "他骑车去银<行|XING2>，路上走了很<长|CHANG2>时间。",
+  "hints": [
+   "行|XING2",
+   "长|CHANG2"
+  ]
+ },
+ {
+  "item_id": "P2b-pronneg-indextts25-NARRATOR-PR1",
+  "text_id": "PR1-NEG",
+  "voice_id": "NARRATOR",
+  "negative_control": true,
+  "text": "他骑车去银行，路上走了很长时间。",
+  "hyp": "他骑车去银行路上走了很长时间",
+  "cer": 0.0,
+  "applied_text": "他骑车去银<行|XING2>，路上走了很<长|CHANG2>时间。",
+  "hints": [
+   "行|XING2",
+   "长|CHANG2"
+  ]
+ },
+ {
+  "item_id": "P2b-pronneg-indextts25-MALE-PR4",
+  "text_id": "PR4-NEG",
+  "voice_id": "MALE",
+  "negative_control": true,
+  "text": "他还有一本书没还给我，说明天还。",
+  "hyp": "他还有一本书梅还给我说明天还",
+  "cer": 0.0714,
+  "applied_text": "他<还|HUAN2>有一本书没<还|HAI2>给我，说明天<还|HAI2>。",
+  "hints": [
+   "还|HUAN2",
+   "还|HAI2",
+   "还|HAI2"
+  ]
+ },
+ {
+  "item_id": "P2b-pronneg-indextts25-FEMALE-PR4",
+  "text_id": "PR4-NEG",
+  "voice_id": "FEMALE",
+  "negative_control": true,
+  "text": "他还有一本书没还给我，说明天还。",
+  "hyp": "他还有一本书梅还给我说明天还",
+  "cer": 0.0714,
+  "applied_text": "他<还|HUAN2>有一本书没<还|HAI2>给我，说明天<还|HAI2>。",
+  "hints": [
+   "还|HUAN2",
+   "还|HAI2",
+   "还|HAI2"
+  ]
+ },
+ {
+  "item_id": "P2b-pronneg-indextts25-NARRATOR-PR4",
+  "text_id": "PR4-NEG",
+  "voice_id": "NARRATOR",
+  "negative_control": true,
+  "text": "他还有一本书没还给我，说明天还。",
+  "hyp": "他还有一本书没海给我说明天还",
+  "cer": 0.0714,
+  "applied_text": "他<还|HUAN2>有一本书没<还|HAI2>给我，说明天<还|HAI2>。",
+  "hints": [
+   "还|HUAN2",
+   "还|HAI2",
+   "还|HAI2"
+  ]
+ }
+]

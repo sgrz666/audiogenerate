@@ -1,0 +1,25 @@
+[
+ {
+  "config_id": "cosyvoice3",
+  "phase": "P0",
+  "env": "cosyvoice",
+  "exit_code": 2,
+  "wall_s": 15.8,
+  "log": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/logs/P0_cosyvoice3.log",
+  "counts": {
+   "failed": 4
+  }
+ },
+ {
+  "config_id": "fireredtts3_instruct",
+  "phase": "P0",
+  "env": "fireredtts",
+  "exit_code": 0,
+  "wall_s": 137.6,
+  "log": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/logs/P0_fireredtts3_instruct.log",
+  "counts": {
+   "failed": 32,
+   "ok": 30
+  }
+ }
+]

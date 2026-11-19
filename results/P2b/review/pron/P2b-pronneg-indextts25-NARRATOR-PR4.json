@@ -1,0 +1,36 @@
+{
+ "task": {
+  "kind": "pron",
+  "audio_id": "P2b-pronneg-indextts25-NARRATOR-PR4",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pronneg-indextts25-NARRATOR-PR4.wav",
+  "source_text": "他还有一本书没还给我，说明天还。",
+  "requirements": "重点核对多音字目标：‘还有’的‘还’、‘没还’的‘还’、‘明天还’的‘还’（hái/huán）。只报告实际听到的读音，不要按文本猜测；并判断是否有逐字读字母/增字/漏字。在 JSON 里加顶级字段 target_reading，按目标字顺序写拼音。",
+  "target": "PR4-NEG",
+  "config_id": "indextts25"
+ },
+ "raw": "{\"audio_id\":\"P2b-pronneg-indextts25-NARRATOR-PR4\",\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":3,\"speaking_rate\":null,\"pauses_boundaries\":null,\"intonation\":null,\"emotion\":null,\"naturalness\":null,\"audio_quality\":null,\"voice_consistency\":null},\"issues\":[\"他还有一本书没还给我，说明天还。中‘还’字在不同位置实际读音不一致，未按要求统一处理多音字。\"],\"target_reading\":\"hái/huán/huán\",\"emotion_choice\":\"无法判断\",\"type_choice\":\"陈述\",\"pause_present\":\"无法判断\"}",
+ "ts": 1794570630.4215724,
+ "parsed": {
+  "audio_id": "P2b-pronneg-indextts25-NARRATOR-PR4",
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 3,
+   "speaking_rate": null,
+   "pauses_boundaries": null,
+   "intonation": null,
+   "emotion": null,
+   "naturalness": null,
+   "audio_quality": null,
+   "voice_consistency": null
+  },
+  "issues": [
+   "他还有一本书没还给我，说明天还。中‘还’字在不同位置实际读音不一致，未按要求统一处理多音字。"
+  ],
+  "target_reading": "hái/huán/huán",
+  "emotion_choice": "无法判断",
+  "type_choice": "陈述",
+  "pause_present": "无法判断"
+ },
+ "status": "ok",
+ "tag": "run"
+}

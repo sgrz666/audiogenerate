@@ -1,0 +1,2 @@
+{"item_id": "P2b-pron-indextts25-NARRATOR-PR2", "phase": "P2b", "sub": "pronunciation", "config_id": "indextts25", "voice_id": "NARRATOR", "text_id": "PR2", "text": "这个箱子太重了，请你重新搬一次。", "pinyin_hints": "重|ZHONG4;重|CHONG2", "control": "pronunciation", "seed": 42}
+{"item_id": "P2b-pron-indextts25-NARRATOR-PR4", "phase": "P2b", "sub": "pronunciation", "config_id": "indextts25", "voice_id": "NARRATOR", "text_id": "PR4", "text": "他还有一本书没还给我，说明天还。", "pinyin_hints": "还|HAI2;还|HUAN2;还|HUAN2", "control": "pronunciation", "seed": 42}

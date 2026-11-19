@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>P2plus · HSK 1-6 女声对话克隆对照</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 1180px; margin: 24px auto; padding: 0 16px; background: #f6f7f9; color: #1f2328; }
+  h1 { font-size: 22px; }
+  .card { background: #fff; border: 1px solid #d0d7de; border-radius: 10px; padding: 16px 20px; margin-bottom: 18px; }
+  .card h2 { margin: 0 0 8px 0; font-size: 17px; }
+  .txt { margin: 4px 0; font-size: 15px; }
+  .sub { margin: 4px 0 12px 0; font-size: 13px; color: #57606a; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+  .item { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; }
+  .item.gt { background: #f0fdf4; border-color: #86efac; }
+  .lbl { font-weight: 600; font-size: 13px; margin-bottom: 6px; }
+  audio { width: 100%; height: 36px; }
+  .meta { font-size: 12px; color: #57606a; margin-top: 6px; }
+</style>
+</head>
+<body>
+<h1>P2plus：HSK 1–6 女声对话克隆与真题对照试听</h1>
+<p>每级从 <code>data/</code> 选取 1 条真实女声对话作对照（<code>data_gt</code>），克隆参考音频取自同等级同套题较长女声（<code>refs</code>），分别使用 VoxCPM2（<code>vox</code>）与 IndexTTS-2.5（<code>index</code> 默认 &amp; 语速对齐）生成。</p>
+
+        <section class="card">
+          <h2>HSK 1 · <code>HSK1-3_Q12_U05</code></h2>
+          <p class="txt"><strong>目标对话文本：</strong>我下午不来了,我们明天上午见。</p>
+          <p class="sub"><strong>克隆参考文本（HSK1-3_Q18_U04，6.54s）：</strong>现在六点五十,我十分钟后回家。</p>
+          <div class="grid">
+            <div class="item">
+              <div class="lbl">1. 克隆参考音频 (refs)</div>
+              <audio controls preload="none" src="refs/HSK1_HSK1-3_Q18_U04_ref.wav"></audio>
+              <div class="meta">时长 6.54s | 语速 127.9 cpm</div>
+            </div>
+            <div class="item gt">
+              <div class="lbl">2. Data 真实女声对照 (data_gt)</div>
+              <audio controls preload="none" src="data_gt/HSK1_HSK1-3_Q12_U05_gt.wav"></audio>
+              <div class="meta">时长 5.62s | 语速 150.6 cpm | 参考-真值 sim=0.8183</div>
+            </div>
+            <div class="item">
+              <div class="lbl">3. VoxCPM2 生成 (vox)</div>
+              <audio controls preload="none" src="vox/HSK1_HSK1-3_Q12_U05.wav"></audio>
+              <div class="meta">时长 3.68s | 语速 248.4 cpm (误差 65.0%) | sim_ref=0.633 sim_gt=0.5892 | CER=0.0</div>
+            </div>
+            <div class="item">
+              <div class="lbl">4. IndexTTS-2.5 默认克隆 (index default)</div>
+              <audio controls preload="none" src="index/HSK1_HSK1-3_Q12_U05_default.wav"></audio>
+              <div class="meta">时长 3.78s | 语速 209.7 cpm (误差 39.2%) | sim_ref=0.8693 sim_gt=0.8405 | CER=0.0</div>
+            </div>
+            <div class="item">
+              <div class="lbl">5. IndexTTS-2.5 语速对齐 (index rate-matched, df=1.3925)</div>
+              <audio controls preload="none" src="index/HSK1_HSK1-3_Q12_U05_ratematched.wav"></audio>
+              <div class="meta">时长 5.28s | 语速 154.8 cpm (误差 2.8%) | sim_ref=0.8651 sim_gt=0.8702 | CER=0.0</div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="card">
+          <h2>HSK 2 · <code>HSK2-1_Q34_U08</code></h2>
+          <p class="txt"><strong>目标对话文本：</strong>有一个姓王的先生打电话找您。</p>
+          <p class="sub"><strong>克隆参考文本（HSK2-1_Q30_U03，7.13s）：</strong>给小狗吃的。它这两天不吃东西,也不喝水。</p>
+          <div class="grid">
+            <div class="item">
+              <div class="lbl">1. 克隆参考音频 (refs)</div>
+              <audio controls preload="none" src="refs/HSK2_HSK2-1_Q30_U03_ref.wav"></audio>
+              <div class="meta">时长 7.13s | 语速 152.2 cpm</div>
+            </div>
+            <div class="item gt">
+              <div class="lbl">2. Data 真实女声对照 (data_gt)</div>
+              <audio controls preload="none" src="data_gt/HSK2_HSK2-1_Q34_U08_gt.wav"></audio>
+              <div class="meta">时长 4.88s | 语速 174.9 cpm | 参考-真值 sim=0.8764</div>
+            </div>
+            <div class="item">
+              <div class="lbl">3. VoxCPM2 生成 (vox)</div>
+              <audio controls preload="none" src="vox/HSK2_HSK2-1_Q34_U08.wav"></audio>
+              <div class="meta">时长 2.72s | 语速 345.1 cpm (误差 97.3%) | sim_ref=0.7652 sim_gt=0.7364 | CER=0.0</div>
+            </div>
+            <div class="item">
+              <div class="lbl">4. IndexTTS-2.5 默认克隆 (index default)</div>
+              <audio controls preload="none" src="index/HSK2_HSK2-1_Q34_U08_default.wav"></audio>
+              <div class="meta">时长 4.42s | 语速 180.6 cpm (误差 3.2%) | sim_ref=0.9244 sim_gt=0.8353 | CER=0.0</div>
+            </div>
+            <div class="item">
+              <div class="lbl">5. IndexTTS-2.5 语速对齐 (index rate-matched, df=1.0324)</div>
+              <audio controls preload="none" src="index/HSK2_HSK2-1_Q34_U08_ratematched.wav"></audio>
+              <div class="meta">时长 4.57s | 语速 174.9 cpm (误差 0.0%) | sim_ref=0.918 sim_gt=0.8228 | CER=0.0</div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="card">
+          <h2>HSK 3 · <code>HSK3-1_Q36_U09</code></h2>
+          <p class="txt"><strong>目标对话文本：</strong>那我们到机场还要多长时间?不会迟到吧?</p>
+          <p class="sub"><strong>克隆参考文本（HSK3-1_Q40_U04，7.13s）：</strong>我不小心把护照忘在出租车上了,那位司机给我送了回来。</p>
+          <div class="grid">
+            <div class="item">
+              <div class="lbl">1. 克隆参考音频 (refs)</div>
+              <audio controls preload="none" src="refs/HSK3_HSK3-1_Q40_U04_ref.wav"></audio>
+              <div class="meta">时长 7.13s | 语速 215.6 cpm</div>
+            </div>
+            <div class="item gt">
+              <div class="lbl">2. Data 真实女声对照 (data_gt)</div>
+              <audio controls preload="none" src="data_gt/HSK3_HSK3-1_Q36_U09_gt.wav"></audio>
+              <div class="meta">时长 5.75s | 语速 188.9 cpm | 参考-真值 sim=0.8415</div>
+            </div>
+            <div class="item">
+              <div class="lbl">3. VoxCPM2 生成 (vox)</div>
+              <audio controls preload="none" src="vox/HSK3_HSK3-1_Q36_U09.wav"></audio>
+              <div class="meta">时长 4.00s | 语速 307.2 cpm (误差 62.6%) | sim_ref=0.8138 sim_gt=0.6542 | CER=0.0</div>
+            </div>
+            <div class="item">
+              <div class="lbl">4. IndexTTS-2.5 默认克隆 (index default)</div>
+              <audio controls preload="none" src="index/HSK3_HSK3-1_Q36_U09_default.wav"></audio>
+              <div class="meta">时长 4.99s | 语速 233.9 cpm (误差 23.9%) | sim_ref=0.9089 sim_gt=0.847 | CER=0.0</div>
+            </div>
+            <div class="item">
+              <div class="lbl">5. IndexTTS-2.5 语速对齐 (index rate-matched, df=1.2385)</div>
+              <audio controls preload="none" src="index/HSK3_HSK3-1_Q36_U09_ratematched.wav"></audio>
+              <div class="meta">时长 6.18s | 语速 189.6 cpm (误差 0.4%) | sim_ref=0.8899 sim_gt=0.8288 | CER=0.0</div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="card">
+          <h2>HSK 4 · <code>HSK4-2_Q32_U05</code></h2>
+          <p class="txt"><strong>目标对话文本：</strong>年底各大商场都在打折,你们可以去看看。</p>
+          <p class="sub"><strong>克隆参考文本（HSK4-2_Q18_U02，9.23s）：</strong>现在的孩子真厉害,我哥的孩子才三岁,就认识一千多个汉字了。</p>
+          <div class="grid">
+            <div class="item">
+              <div class="lbl">1. 克隆参考音频 (refs)</div>
+              <audio controls preload="none" src="refs/HSK4_HSK4-2_Q18_U02_ref.wav"></audio>
+              <div class="meta">时长 9.23s | 语速 177.7 cpm</div>
+            </div>
+            <div class="item gt">
+              <div class="lbl">2. Data 真实女声对照 (data_gt)</div>
+              <audio controls preload="none" src="data_gt/HSK4_HSK4-2_Q32_U05_gt.wav"></audio>
+              <div class="meta">时长 5.71s | 语速 189.6 cpm | 参考-真值 sim=0.9165</div>
+            </div>
+            <div class="item">
+              <div class="lbl">3. VoxCPM2 生成 (vox)</div>
+              <audio controls preload="none" src="vox/HSK4_HSK4-2_Q32_U05.wav"></audio>
+              <div class="meta">时长 4.64s | 语速 248.8 cpm (误差 31.2%) | sim_ref=0.7756 sim_gt=0.7961 | CER=0.0</div>
+            </div>
+            <div class="item">
+              <div class="lbl">4. IndexTTS-2.5 默认克隆 (index default)</div>
+              <audio controls preload="none" src="index/HSK4_HSK4-2_Q32_U05_default.wav"></audio>
+              <div class="meta">时长 5.19s | 语速 198.4 cpm (误差 4.7%) | sim_ref=0.9249 sim_gt=0.9097 | CER=0.0</div>
+            </div>
+            <div class="item">
+              <div class="lbl">5. IndexTTS-2.5 语速对齐 (index rate-matched, df=1.0467)</div>
+              <audio controls preload="none" src="index/HSK4_HSK4-2_Q32_U05_ratematched.wav"></audio>
+              <div class="meta">时长 5.43s | 语速 189.6 cpm (误差 0.0%) | sim_ref=0.9231 sim_gt=0.8777 | CER=0.0</div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="card">
+          <h2>HSK 5 · <code>HSK5-5_Q11_U02</code></h2>
+          <p class="txt"><strong>目标对话文本：</strong>今年春节,我们买几号的票回家呢?</p>
+          <p class="sub"><strong>克隆参考文本（HSK5-5_Q25_U02，10.76s）：</strong>今年的电影节规模不小呢,很多国际著名导演都将作为特邀嘉宾,出席本届电影节。</p>
+          <div class="grid">
+            <div class="item">
+              <div class="lbl">1. 克隆参考音频 (refs)</div>
+              <audio controls preload="none" src="refs/HSK5_HSK5-5_Q25_U02_ref.wav"></audio>
+              <div class="meta">时长 10.76s | 语速 196.9 cpm</div>
+            </div>
+            <div class="item gt">
+              <div class="lbl">2. Data 真实女声对照 (data_gt)</div>
+              <audio controls preload="none" src="data_gt/HSK5_HSK5-5_Q11_U02_gt.wav"></audio>
+              <div class="meta">时长 4.22s | 语速 218.8 cpm | 参考-真值 sim=0.8746</div>
+            </div>
+            <div class="item">
+              <div class="lbl">3. VoxCPM2 生成 (vox)</div>
+              <audio controls preload="none" src="vox/HSK5_HSK5-5_Q11_U02.wav"></audio>
+              <div class="meta">时长 3.36s | 语速 265.8 cpm (误差 21.5%) | sim_ref=0.499 sim_gt=0.4405 | CER=0.0</div>
+            </div>
+            <div class="item">
+              <div class="lbl">4. IndexTTS-2.5 默认克隆 (index default)</div>
+              <audio controls preload="none" src="index/HSK5_HSK5-5_Q11_U02_default.wav"></audio>
+              <div class="meta">时长 4.55s | 语速 218.8 cpm (误差 0.0%) | sim_ref=0.9184 sim_gt=0.7956 | CER=0.0</div>
+            </div>
+            <div class="item">
+              <div class="lbl">5. IndexTTS-2.5 语速对齐 (index rate-matched, df=1.0)</div>
+              <audio controls preload="none" src="index/HSK5_HSK5-5_Q11_U02_ratematched.wav"></audio>
+              <div class="meta">时长 4.55s | 语速 218.8 cpm (误差 0.0%) | sim_ref=0.9184 sim_gt=0.7956 | CER=0.0</div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="card">
+          <h2>HSK 6 · <code>HSK6-5_Q21_U04</code></h2>
+          <p class="txt"><strong>目标对话文本：</strong>根据多年的拍摄经验,你觉得生态摄影有什么需要注意的吗?</p>
+          <p class="sub"><strong>克隆参考文本（HSK6-5_Q26_U03，12.23s）：</strong>我十七岁从舞蹈学院毕业那时就特别想考中央戏剧学院我相信冥冥之中和表演有缘分认定表演会把我带入全新的天地</p>
+          <div class="grid">
+            <div class="item">
+              <div class="lbl">1. 克隆参考音频 (refs)</div>
+              <audio controls preload="none" src="refs/HSK6_HSK6-5_Q26_U03_ref.wav"></audio>
+              <div class="meta">时长 12.23s | 语速 257.6 cpm</div>
+            </div>
+            <div class="item gt">
+              <div class="lbl">2. Data 真实女声对照 (data_gt)</div>
+              <audio controls preload="none" src="data_gt/HSK6_HSK6-5_Q21_U04_gt.wav"></audio>
+              <div class="meta">时长 5.37s | 语速 303.6 cpm | 参考-真值 sim=0.884</div>
+            </div>
+            <div class="item">
+              <div class="lbl">3. VoxCPM2 生成 (vox)</div>
+              <audio controls preload="none" src="vox/HSK6_HSK6-5_Q21_U04.wav"></audio>
+              <div class="meta">时长 4.48s | 语速 344.0 cpm (误差 13.3%) | sim_ref=0.7755 sim_gt=0.742 | CER=0.0</div>
+            </div>
+            <div class="item">
+              <div class="lbl">4. IndexTTS-2.5 默认克隆 (index default)</div>
+              <audio controls preload="none" src="index/HSK6_HSK6-5_Q21_U04_default.wav"></audio>
+              <div class="meta">时长 5.42s | 语速 278.8 cpm (误差 8.2%) | sim_ref=0.9261 sim_gt=0.8312 | CER=0.0</div>
+            </div>
+            <div class="item">
+              <div class="lbl">5. IndexTTS-2.5 语速对齐 (index rate-matched, df=0.9182)</div>
+              <audio controls preload="none" src="index/HSK6_HSK6-5_Q21_U04_ratematched.wav"></audio>
+              <div class="meta">时长 4.98s | 语速 302.4 cpm (误差 0.4%) | sim_ref=0.9313 sim_gt=0.8289 | CER=0.0</div>
+            </div>
+          </div>
+        </section>
+        
+</body>
+</html>

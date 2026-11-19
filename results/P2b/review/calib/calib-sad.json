@@ -1,0 +1,39 @@
+{
+ "task": {
+  "kind": "calib",
+  "audio_id": "calib-sad",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/FEMALE/P2-emotion-indextts25-FEMALE-E1-sad.wav",
+  "source_text": "这件事终于有了结果。",
+  "requirements": "判断实际听感最像哪种情绪；在 JSON 里加 emotion_choice。",
+  "expected": {
+   "emotion_choice_in": [
+    "悲伤",
+    "sad"
+   ]
+  }
+ },
+ "raw": "{\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":null,\"pauses_boundaries\":4,\"intonation\":4,\"emotion\":2,\"naturalness\":3,\"audio_quality\":5,\"voice_consistency\":null},\"issues\":[\"终于停顿过长导致衔接生硬\"],\"emotion_choice\":\"悲伤\",\"type_choice\":\"陈述\",\"pause_present\":\"有\",\"target_reading\":\"\"}",
+ "ts": 1794569497.1563041,
+ "parsed": {
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": null,
+   "pauses_boundaries": 4,
+   "intonation": 4,
+   "emotion": 2,
+   "naturalness": 3,
+   "audio_quality": 5,
+   "voice_consistency": null
+  },
+  "issues": [
+   "终于停顿过长导致衔接生硬"
+  ],
+  "emotion_choice": "悲伤",
+  "type_choice": "陈述",
+  "pause_present": "有",
+  "target_reading": ""
+ },
+ "status": "ok",
+ "tag": "calibration"
+}

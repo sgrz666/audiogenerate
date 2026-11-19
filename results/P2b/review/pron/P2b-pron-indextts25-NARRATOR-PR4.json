@@ -1,0 +1,33 @@
+{
+ "task": {
+  "kind": "pron",
+  "audio_id": "P2b-pron-indextts25-NARRATOR-PR4",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pron-indextts25-NARRATOR-PR4.wav",
+  "source_text": "他还有一本书没还给我，说明天还。",
+  "requirements": "重点核对多音字目标：‘还有’的‘还’、‘没还’的‘还’、‘明天还’的‘还’（hái/huán）。只报告实际听到的读音，不要按文本猜测；并判断是否有逐字读字母/增字/漏字。在 JSON 里加顶级字段 target_reading，按目标字顺序写拼音。",
+  "target": "PR4",
+  "config_id": "indextts25"
+ },
+ "raw": "{\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":4,\"pauses_boundaries\":4,\"intonation\":4,\"emotion\":\"平静\",\"naturalness\":4,\"audio_quality\":5,\"voice_consistency\":5},\"target_reading\":\"hai you yi ben shu mei huan gei wo shuo ming tian huan\",\"issues\":[],\"pause_present\":\"有\",\"emotion_choice\":\"平静\",\"type_choice\":\"陈述\",\"pause_present\":\"有\"}",
+ "ts": 1794570565.1033983,
+ "parsed": {
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 4,
+   "pauses_boundaries": 4,
+   "intonation": 4,
+   "emotion": "平静",
+   "naturalness": 4,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "target_reading": "hai you yi ben shu mei huan gei wo shuo ming tian huan",
+  "issues": [],
+  "pause_present": "有",
+  "emotion_choice": "平静",
+  "type_choice": "陈述"
+ },
+ "status": "ok",
+ "tag": "run"
+}

@@ -1,0 +1,38 @@
+{
+ "task": {
+  "kind": "calib",
+  "audio_id": "calib-dropout",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/results/P2b/calib/dropout.wav",
+  "source_text": "那家饭店是我朋友开的。",
+  "requirements": "重点听是否有异常断音、缺口、衔接不自然。",
+  "expected": {
+   "decision_in": [
+    "revise",
+    "human_review"
+   ],
+   "pauses_boundaries_max": 3
+  }
+ },
+ "raw": "{\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":5,\"pauses_boundaries\":5,\"intonation\":5,\"emotion\":\"平静\",\"naturalness\":5,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"emotion_choice\":\"平静\",\"type_choice\":\"陈述\",\"pause_present\":\"无\",\"target_reading\":\"无\"}",
+ "ts": 1794569475.3569412,
+ "parsed": {
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 5,
+   "pauses_boundaries": 5,
+   "intonation": 5,
+   "emotion": "平静",
+   "naturalness": 5,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "emotion_choice": "平静",
+  "type_choice": "陈述",
+  "pause_present": "无",
+  "target_reading": "无"
+ },
+ "status": "ok",
+ "tag": "calibration"
+}

@@ -1,0 +1,37 @@
+{
+ "task": {
+  "kind": "calib",
+  "audio_id": "calib-interrogative",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/FEMALE/P2-intonation-indextts25-FEMALE-I2-interrogative.wav",
+  "source_text": "这道题其实一点都不难吗？",
+  "requirements": "判断实际听感最像哪种句型；在 JSON 里加 type_choice。",
+  "expected": {
+   "type_choice_in": [
+    "疑问",
+    "interrogative"
+   ]
+  }
+ },
+ "raw": "{\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":4,\"pauses_boundaries\":4,\"intonation\":4,\"emotion\":\"平静\",\"naturalness\":4,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"emotion_choice\":\"平静\",\"type_choice\":\"疑问\",\"pause_present\":\"有\",\"target_reading\":\"\"}",
+ "ts": 1794569507.0224476,
+ "parsed": {
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 4,
+   "pauses_boundaries": 4,
+   "intonation": 4,
+   "emotion": "平静",
+   "naturalness": 4,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "emotion_choice": "平静",
+  "type_choice": "疑问",
+  "pause_present": "有",
+  "target_reading": ""
+ },
+ "status": "ok",
+ "tag": "calibration"
+}

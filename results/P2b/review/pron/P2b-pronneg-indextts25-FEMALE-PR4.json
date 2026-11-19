@@ -1,0 +1,33 @@
+{
+ "task": {
+  "kind": "pron",
+  "audio_id": "P2b-pronneg-indextts25-FEMALE-PR4",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/FEMALE/P2b-pronneg-indextts25-FEMALE-PR4.wav",
+  "source_text": "他还有一本书没还给我，说明天还。",
+  "requirements": "重点核对多音字目标：‘还有’的‘还’、‘没还’的‘还’、‘明天还’的‘还’（hái/huán）。只报告实际听到的读音，不要按文本猜测；并判断是否有逐字读字母/增字/漏字。在 JSON 里加顶级字段 target_reading，按目标字顺序写拼音。",
+  "target": "PR4-NEG",
+  "config_id": "indextts25"
+ },
+ "raw": "{\"audio_id\":\"P2b-pronneg-indextts25-FEMALE-PR4\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":5,\"pauses_boundaries\":5,\"intonation\":5,\"emotion\":\"无法判断\",\"naturalness\":5,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"target_reading\":\"hai/huan/huan\",\"emotion_choice\":\"无法判断\",\"type_choice\":\"陈述\",\"pause_present\":\"有\"}",
+ "ts": 1794570622.6237595,
+ "parsed": {
+  "audio_id": "P2b-pronneg-indextts25-FEMALE-PR4",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 5,
+   "pauses_boundaries": 5,
+   "intonation": 5,
+   "emotion": "无法判断",
+   "naturalness": 5,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "target_reading": "hai/huan/huan",
+  "emotion_choice": "无法判断",
+  "type_choice": "陈述",
+  "pause_present": "有"
+ },
+ "status": "ok",
+ "tag": "run"
+}

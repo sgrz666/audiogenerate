@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>P2 匿名听评</title>
+<style>
+body{font-family:-apple-system,"Segoe UI","Noto Sans SC",sans-serif;max-width:980px;margin:24px auto;padding:0 16px;background:#f6f7f9;color:#1d2129}
+h1{font-size:22px;margin:0 0 6px} .sub{color:#6b7280;font-size:13px;margin-bottom:16px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px 16px;margin:14px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.meta{font-size:12px;color:#6b7280;margin:2px 0 8px;word-break:break-all}
+.src{font-size:15px;line-height:1.6;margin:6px 0}
+.target{display:inline-block;background:#eef2ff;color:#3730a3;border-radius:999px;padding:2px 10px;font-size:12px;margin:4px 0}
+audio{width:100%;margin:6px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:8px}
+label{font-size:12px;color:#374151;display:flex;flex-direction:column;gap:3px}
+select,textarea,button{font:inherit;border:1px solid #d1d5db;border-radius:8px;padding:6px 8px;background:#fff}
+textarea{width:100%;min-height:44px}
+.bar{position:sticky;top:0;background:#f6f7f9;padding:10px 0;display:flex;gap:10px;align-items:center;z-index:5}
+button{background:#2563eb;color:#fff;border-color:#2563eb;cursor:pointer;padding:9px 16px}
+button.sec{background:#fff;color:#2563eb}
+.small{font-size:12px;color:#6b7280}
+</style></head><body>
+<h1>P2 匿名听评</h1>
+<div class="sub">音频与模型名已匿名。每个片段按需评分；1=严重问题，5=在本次范围内未发现明显问题。不确定选“未评”。</div>
+<div class="bar"><button onclick="exportJSON()">导出 reviews.json</button>
+<button class="sec" onclick="fillNA()">未评项填 NA</button>
+<span class="small" id="count"></span></div>
+<div id="cards"></div>
+<script>
+const ROWS = [{"blind_id": "p2_001", "source_text": "他骑车去银行，路上走了很长时间。", "target": "读音提示后：行 háng / 长 cháng", "kind": "pron", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_002", "source_text": "这个箱子太重了，请你重新搬一次。", "target": "读音提示后：重 zhòng / 重 chóng", "kind": "pron", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_003", "source_text": "你得把作业写完，才能出去玩得开心。", "target": "读音提示后：得 děi / 得 de", "kind": "pron", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_004", "source_text": "他还有一本书没还给我，说明天还。", "target": "读音提示后：还 hái / 还 huán / 还 huán", "kind": "pron", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_005", "source_text": "我们都去过首都，那里的人都很热情。", "target": "读音提示后：都 dōu / 都 dū / 都 dōu", "kind": "pron", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_006", "source_text": "我觉得睡觉以前应该少看手机。", "target": "读音提示后：觉 jué / 觉 jiào", "kind": "pron", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_007", "source_text": "他骑车去银行，路上走了很长时间。", "target": "故意错读负对照（不计入正样本）", "kind": "pron_neg", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_008", "source_text": "他还有一本书没还给我，说明天还。", "target": "故意错读负对照（不计入正样本）", "kind": "pron_neg", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_009", "source_text": "春天来了花都开了小草也绿了。", "target": "停顿设置：none（none=去逗号，period=逗号改句号）", "kind": "pause", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_010", "source_text": "春天来了。花都开了。小草也绿了。", "target": "停顿设置：period（none=去逗号，period=逗号改句号）", "kind": "pause", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_011", "source_text": "春天来了花都开了小草也绿了。", "target": "停顿设置：none（none=去逗号，period=逗号改句号）", "kind": "pause", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_012", "source_text": "春天来了。花都开了。小草也绿了。", "target": "停顿设置：period（none=去逗号，period=逗号改句号）", "kind": "pause", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_013", "source_text": "春天来了花都开了小草也绿了。", "target": "停顿设置：none（none=去逗号，period=逗号改句号）", "kind": "pause", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_014", "source_text": "春天来了。花都开了。小草也绿了。", "target": "停顿设置：period（none=去逗号，period=逗号改句号）", "kind": "pause", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_015", "source_text": "春天来了花都开了小草也绿了。", "target": "停顿设置：none（none=去逗号，period=逗号改句号）", "kind": "pause", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_016", "source_text": "春天来了。花都开了。小草也绿了。", "target": "停顿设置：period（none=去逗号，period=逗号改句号）", "kind": "pause", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_017", "source_text": "春天来了花都开了小草也绿了。", "target": "停顿设置：none（none=去逗号，period=逗号改句号）", "kind": "pause", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_018", "source_text": "春天来了。花都开了。小草也绿了。", "target": "停顿设置：period（none=去逗号，period=逗号改句号）", "kind": "pause", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_019", "source_text": "这道题其实一点都不难。", "target": "语气：declarative", "kind": "intonation", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_020", "source_text": "这道题其实一点都不难吗？", "target": "语气：interrogative", "kind": "intonation", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_021", "source_text": "这道题其实一点都不难！", "target": "语气：exclamatory", "kind": "intonation", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_022", "source_text": "这道题其实一点都不难。", "target": "语气：declarative", "kind": "intonation", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_023", "source_text": "这道题其实一点都不难吗？", "target": "语气：interrogative", "kind": "intonation", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_024", "source_text": "这道题其实一点都不难！", "target": "语气：exclamatory", "kind": "intonation", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_025", "source_text": "这件事终于有了结果。", "target": "目标情绪：calm", "kind": "emotion", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_026", "source_text": "这件事终于有了结果。", "target": "目标情绪：happy", "kind": "emotion", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_027", "source_text": "这件事终于有了结果。", "target": "目标情绪：sad", "kind": "emotion", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_028", "source_text": "这件事终于有了结果。", "target": "目标情绪：angry", "kind": "emotion", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_029", "source_text": "他把我的书弄坏了。", "target": "目标情绪：happy", "kind": "emotion", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}, {"blind_id": "p2_030", "source_text": "他把我的书弄坏了。", "target": "目标情绪：sad", "kind": "emotion", "dimensions": ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"]}];
+const DIMS = ["content_pronunciation", "speaking_rate", "pauses_boundaries", "intonation", "emotion", "naturalness", "audio_quality", "voice_consistency"];
+const DIMCN = {"content_pronunciation": "内容/发音", "speaking_rate": "语速", "pauses_boundaries": "停顿/边界", "intonation": "语气", "emotion": "情绪", "naturalness": "自然度", "audio_quality": "音质", "voice_consistency": "音色一致性"};
+const cards = document.getElementById('cards');
+function sel(name,id){let o='<option value="">未评</option>';for(let i=1;i<=5;i++)o+=`<option value="${i}">${i}</option>`;o+='<option value="NA">NA</option>';return `<label>${name}<select data-id="${id}" data-field="${name}">${o}</select></label>`}
+ROWS.forEach((r,idx)=>{
+  const div=document.createElement('div'); div.className='card';
+  div.innerHTML=`<div class="meta">${r.blind_id} · ${r.kind}</div>
+  <div class="src">${r.source_text}</div>
+  ${r.target?`<div class="target">目标：${r.target}</div>`:''}
+  <audio controls preload="none" src="audio/${r.blind_id}.wav"></audio>
+  <div class="grid">${DIMS.map(d=>sel(DIMCN[d],r.blind_id)).join('')}
+  <label>结论<select data-id="${r.blind_id}" data-field="decision">
+  <option value="">未评</option><option>usable</option><option>revise</option><option>human_review</option><option>unavailable</option>
+  </select></label></div>
+  <label style="margin-top:8px">问题/备注<textarea data-id="${r.blind_id}" data-field="notes"></textarea></label>`;
+  cards.appendChild(div);
+});
+function collect(){
+  const out={}; ROWS.forEach(r=>{out[r.blind_id]={blind_id:r.blind_id,source_text:r.source_text,target:r.target,kind:r.kind,scores:{},decision:'',notes:''}});
+  document.querySelectorAll('select[data-id]').forEach(el=>{
+    const id=el.dataset.id, f=el.dataset.field, v=el.value;
+    if(f==='decision') out[id].decision=v;
+    else if(v==='NA') out[id].scores[f]='NA';
+    else if(v!=='') out[id].scores[f]=Number(v);
+  });
+  document.querySelectorAll('textarea[data-id]').forEach(el=>{out[el.dataset.id].notes=el.value});
+  return out;
+}
+function update(){const c=collect();const n=Object.values(c).filter(x=>x.decision||Object.keys(x.scores).length).length;document.getElementById('count').textContent=`已评 ${n}/${ROWS.length}`}
+document.addEventListener('change',update);document.addEventListener('input',update);
+function fillNA(){document.querySelectorAll('select[data-id]').forEach(el=>{if(el.dataset.field!=='decision'&&!el.value)el.value='NA'});update()}
+function exportJSON(){
+  const blob=new Blob([JSON.stringify({schema_version:'p2-human-1.0',reviews:Object.values(collect())},null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='reviews.json';a.click();
+}
+</script></body></html>

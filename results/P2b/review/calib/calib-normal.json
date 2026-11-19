@@ -1,0 +1,37 @@
+{
+ "task": {
+  "kind": "calib",
+  "audio_id": "calib-normal",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P1/indextts25/NARRATOR/P1-HSK1-01.wav",
+  "source_text": "那家饭店是我朋友开的。",
+  "requirements": "正常样本；按规范完整评价。",
+  "expected": {
+   "decision_in": [
+    "usable"
+   ],
+   "content_pronunciation_min": 4
+  }
+ },
+ "raw": "{\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":5,\"pauses_boundaries\":5,\"intonation\":5,\"emotion\":\"平静\",\"naturalness\":5,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"emotion_choice\":\"平静\",\"type_choice\":\"陈述\",\"pause_present\":\"有\",\"target_reading\":\"饭店\"}",
+ "ts": 1794569382.1189077,
+ "parsed": {
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 5,
+   "pauses_boundaries": 5,
+   "intonation": 5,
+   "emotion": "平静",
+   "naturalness": 5,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "emotion_choice": "平静",
+  "type_choice": "陈述",
+  "pause_present": "有",
+  "target_reading": "饭店"
+ },
+ "status": "ok",
+ "tag": "calibration"
+}

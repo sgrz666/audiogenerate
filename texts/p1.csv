@@ -1,0 +1,61 @@
+﻿text_id,phase,level,category,text,pinyin_hint,source,source_sample_id,source_exam_key,source_audio,source_duration_s,review_status,needs_human_proofread
+P1-HSK1-01,P1,1,HSK1真题,那家饭店是我朋友开的。,,corpus,HSK1-3_Q16_U03,HSK1-3,/data/shangguanrz/projectsss/speakgenerate/data/01_中文听力_一级_真题1-5及大纲样卷/data/HSK1-3/HSK1-3_Q16_U03.wav,5.473,automatic_unproofread,True
+P1-HSK1-02,P1,1,HSK1真题,"王先生,十月八号去中国。",,corpus,HSK1-5_Q20_U02,HSK1-5,/data/shangguanrz/projectsss/speakgenerate/data/01_中文听力_一级_真题1-5及大纲样卷/data/HSK1-5/HSK1-5_Q20_U02.wav,5.692,automatic_unproofread,True
+P1-HSK1-03,P1,1,HSK1真题,"我现在好多了,谢谢医生。",,corpus,HSK1-1_Q10_U03,HSK1-1,/data/shangguanrz/projectsss/speakgenerate/data/01_中文听力_一级_真题1-5及大纲样卷/data/HSK1-1/HSK1-1_Q10_U03.wav,5.708,automatic_unproofread,True
+P1-HSK1-04,P1,1,HSK1真题,"中午,我和朋友在饭店吃饭。",,corpus,HSK1-5_Q19_U02,HSK1-5,/data/shangguanrz/projectsss/speakgenerate/data/01_中文听力_一级_真题1-5及大纲样卷/data/HSK1-5/HSK1-5_Q19_U02.wav,6.558,automatic_unproofread,True
+P1-HSK1-05,P1,1,HSK1真题,他昨天和同学去书店看书了。,,corpus,HSK1-4_Q19_U04,HSK1-4,/data/shangguanrz/projectsss/speakgenerate/data/01_中文听力_一级_真题1-5及大纲样卷/data/HSK1-4/HSK1-4_Q19_U04.wav,5.399,automatic_unproofread,True
+P1-HSK1-06,P1,1,HSK1真题,王先生十月八号去中国。,,corpus,HSK1-5_Q20_U04,HSK1-5,/data/shangguanrz/projectsss/speakgenerate/data/01_中文听力_一级_真题1-5及大纲样卷/data/HSK1-5/HSK1-5_Q20_U04.wav,4.863,automatic_unproofread,True
+P1-HSK1-07,P1,1,HSK1真题,"小王在医院工作,是个医生。",,corpus,HSK1-outline_Q17_U02,HSK1-outline,/data/shangguanrz/projectsss/speakgenerate/data/01_中文听力_一级_真题1-5及大纲样卷/data/HSK1-outline/HSK1-outline_Q17_U02.wav,6.426,automatic_unproofread,True
+P1-HSK1-08,P1,1,HSK1真题,"我下午不来了,我们明天上午见。",,corpus,HSK1-3_Q12_U05,HSK1-3,/data/shangguanrz/projectsss/speakgenerate/data/01_中文听力_一级_真题1-5及大纲样卷/data/HSK1-3/HSK1-3_Q12_U05.wav,5.621,automatic_unproofread,True
+P1-HSK2-01,P1,2,HSK2真题,"我这儿有鸡蛋,你吃一个吧。",,corpus,HSK2-4_Q31_U10,HSK2-4,/data/shangguanrz/projectsss/speakgenerate/data/02_中文听力_二级_真题1-5及大纲样卷/data/HSK2-4/HSK2-4_Q31_U10.wav,3.978,automatic_unproofread,True
+P1-HSK2-02,P1,2,HSK2真题,女的在北京工作了多长时间？,,corpus,HSK2-outline_Q35_U18,HSK2-outline,/data/shangguanrz/projectsss/speakgenerate/data/02_中文听力_二级_真题1-5及大纲样卷/data/HSK2-outline/HSK2-outline_Q35_U18.wav,4.495,automatic_unproofread,True
+P1-HSK2-03,P1,2,HSK2真题,我在火车站前面的咖啡馆等你。,,corpus,HSK2-2_Q33_U04,HSK2-2,/data/shangguanrz/projectsss/speakgenerate/data/02_中文听力_二级_真题1-5及大纲样卷/data/HSK2-2/HSK2-2_Q33_U04.wav,5.895,automatic_unproofread,True
+P1-HSK2-04,P1,2,HSK2真题,"喂,你往后看,我在你后面。",,corpus,HSK2-5_Q02_U02,HSK2-5,/data/shangguanrz/projectsss/speakgenerate/data/02_中文听力_二级_真题1-5及大纲样卷/data/HSK2-5/HSK2-5_Q02_U02.wav,6.579,automatic_unproofread,True
+P1-HSK2-05,P1,2,HSK2真题,"我有个朋友,姓王,他说可以送您一只。",,corpus,HSK2-3_Q33_U05,HSK2-3,/data/shangguanrz/projectsss/speakgenerate/data/02_中文听力_二级_真题1-5及大纲样卷/data/HSK2-3/HSK2-3_Q33_U05.wav,6.33,automatic_unproofread,True
+P1-HSK2-06,P1,2,HSK2真题,"你别在这儿睡觉,回房间去睡吧。",,corpus,HSK2-4_Q12_U03,HSK2-4,/data/shangguanrz/projectsss/speakgenerate/data/02_中文听力_二级_真题1-5及大纲样卷/data/HSK2-4/HSK2-4_Q12_U03.wav,4.779,automatic_unproofread,True
+P1-HSK2-07,P1,2,HSK2真题,"现在太晚了,路上车少,我们再等等吧。",,corpus,HSK2-4_Q21_U07,HSK2-4,/data/shangguanrz/projectsss/speakgenerate/data/02_中文听力_二级_真题1-5及大纲样卷/data/HSK2-4/HSK2-4_Q21_U07.wav,7.22,automatic_unproofread,True
+P1-HSK2-08,P1,2,HSK2真题,"明天天很冷,可能会下雪。你多穿点衣服。",,corpus,HSK2-3_Q28_U05,HSK2-3,/data/shangguanrz/projectsss/speakgenerate/data/02_中文听力_二级_真题1-5及大纲样卷/data/HSK2-3/HSK2-3_Q28_U05.wav,7.744,automatic_unproofread,True
+P1-HSK3-01,P1,3,HSK3真题,女的打算怎么去火车站？,,corpus,HSK3-outline_Q30_U04,HSK3-outline,/data/shangguanrz/projectsss/speakgenerate/data/03_中文听力_三级_真题1-5及大纲样卷/data/HSK3-outline/HSK3-outline_Q30_U04.wav,3.507,automatic_unproofread,True
+P1-HSK3-02,P1,3,HSK3真题,那条街道离公司比较近。,,corpus,HSK3-1_Q14_U03,HSK3-1,/data/shangguanrz/projectsss/speakgenerate/data/03_中文听力_三级_真题1-5及大纲样卷/data/HSK3-1/HSK3-1_Q14_U03.wav,3.554,automatic_unproofread,True
+P1-HSK3-03,P1,3,HSK3真题,"以前没这么冷,今年的天气比较奇怪。",,corpus,HSK3-1_Q29_U03,HSK3-1,/data/shangguanrz/projectsss/speakgenerate/data/03_中文听力_三级_真题1-5及大纲样卷/data/HSK3-1/HSK3-1_Q29_U03.wav,5.435,automatic_unproofread,True
+P1-HSK3-04,P1,3,HSK3真题,"上的字太小了,好多地方都看不清楚。",,corpus,HSK3-4_Q21_U04,HSK3-4,/data/shangguanrz/projectsss/speakgenerate/data/03_中文听力_三级_真题1-5及大纲样卷/data/HSK3-4/HSK3-4_Q21_U04.wav,5.961,automatic_unproofread,True
+P1-HSK3-05,P1,3,HSK3真题,那你教几班?我女儿在二年级三班。,,corpus,HSK3-5_Q34_U05,HSK3-5,/data/shangguanrz/projectsss/speakgenerate/data/03_中文听力_三级_真题1-5及大纲样卷/data/HSK3-5/HSK3-5_Q34_U05.wav,5.944,automatic_unproofread,True
+P1-HSK3-06,P1,3,HSK3真题,"孩子要多喝牛奶,多锻炼。这样个子才能长高。",,corpus,HSK3-1_Q13_U02,HSK3-1,/data/shangguanrz/projectsss/speakgenerate/data/03_中文听力_三级_真题1-5及大纲样卷/data/HSK3-1/HSK3-1_Q13_U02.wav,7.855,automatic_unproofread,True
+P1-HSK3-07,P1,3,HSK3真题,有些看足球赛的人不懂足球。,,corpus,HSK3-3_Q19_U03,HSK3-3,/data/shangguanrz/projectsss/speakgenerate/data/03_中文听力_三级_真题1-5及大纲样卷/data/HSK3-3/HSK3-3_Q19_U03.wav,4.084,automatic_unproofread,True
+P1-HSK3-08,P1,3,HSK3真题,"明天就要考试了,大家都在复习呢。",,corpus,HSK3-3_Q09_U05,HSK3-3,/data/shangguanrz/projectsss/speakgenerate/data/03_中文听力_三级_真题1-5及大纲样卷/data/HSK3-3/HSK3-3_Q09_U05.wav,4.811,automatic_unproofread,True
+P1-HSK4-01,P1,4,HSK4真题,"是啊,这几天热得我都快受不了了。",,corpus,HSK4-1_Q32_U05,HSK4-1,/data/shangguanrz/projectsss/speakgenerate/data/04_中文听力_四级_真题1-5及大纲样卷/data/HSK4-1/HSK4-1_Q32_U05.wav,4.829,automatic_unproofread,True
+P1-HSK4-02,P1,4,HSK4真题,第四十二到四十三题是根据下面一段话。,,corpus,HSK4-2_Q42_U01,HSK4-2,/data/shangguanrz/projectsss/speakgenerate/data/04_中文听力_四级_真题1-5及大纲样卷/data/HSK4-2/HSK4-2_Q42_U01.wav,5.129,automatic_unproofread,True
+P1-HSK4-03,P1,4,HSK4真题,"花儿是不是缺水了,叶子都黄了。",,corpus,HSK4-4_Q22_U02,HSK4-4,/data/shangguanrz/projectsss/speakgenerate/data/04_中文听力_四级_真题1-5及大纲样卷/data/HSK4-4/HSK4-4_Q22_U02.wav,4.586,automatic_unproofread,True
+P1-HSK4-04,P1,4,HSK4真题,"是的,医院这次只要三个人,但一共有七十人参加应聘呢。",,corpus,HSK4-5_Q26_U05,HSK4-5,/data/shangguanrz/projectsss/speakgenerate/data/04_中文听力_四级_真题1-5及大纲样卷/data/HSK4-5/HSK4-5_Q26_U05.wav,6.397,automatic_unproofread,True
+P1-HSK4-05,P1,4,HSK4真题,你知道小兰去哪儿了吗?她的手机一直占线。,,corpus,HSK4-outline_Q31_U02,HSK4-outline,/data/shangguanrz/projectsss/speakgenerate/data/04_中文听力_四级_真题1-5及大纲样卷/data/HSK4-outline/HSK4-outline_Q31_U02.wav,5.947,automatic_unproofread,True
+P1-HSK4-06,P1,4,HSK4真题,"有一次我和女朋友约会,她发短信给我,我五分钟后到,如果没到,你就再读一遍短信。",,corpus,HSK4-2_Q02_U02,HSK4-2,/data/shangguanrz/projectsss/speakgenerate/data/04_中文听力_四级_真题1-5及大纲样卷/data/HSK4-2/HSK4-2_Q02_U02.wav,11.95,automatic_unproofread,True
+P1-HSK4-07,P1,4,HSK4真题,"这叫多肉植物,你要是喜欢,我可以送你一颗。",,corpus,HSK4-5_Q30_U03,HSK4-5,/data/shangguanrz/projectsss/speakgenerate/data/04_中文听力_四级_真题1-5及大纲样卷/data/HSK4-5/HSK4-5_Q30_U03.wav,5.85,automatic_unproofread,True
+P1-HSK4-08,P1,4,HSK4真题,"大球出了一身汗,你帮我拿条毛巾吧。",,corpus,HSK4-3_Q31_U02,HSK4-3,/data/shangguanrz/projectsss/speakgenerate/data/04_中文听力_四级_真题1-5及大纲样卷/data/HSK4-3/HSK4-3_Q31_U02.wav,5.047,automatic_unproofread,True
+P1-HSK5-01,P1,5,HSK5真题,"不是这么简单。下次我给你带一瓶,你尝尝就知道了。",,corpus,HSK5-1_Q30_U05,HSK5-1,/data/shangguanrz/projectsss/speakgenerate/data/05_中文听力_五级_真题1-5及大纲样卷/data/HSK5-1/HSK5-1_Q30_U05.wav,6.179,automatic_unproofread,True
+P1-HSK5-02,P1,5,HSK5真题,这是我的记者证和邀请函。,,corpus,HSK5-2_Q25_U05,HSK5-2,/data/shangguanrz/projectsss/speakgenerate/data/05_中文听力_五级_真题1-5及大纲样卷/data/HSK5-2/HSK5-2_Q25_U05.wav,3.446,automatic_unproofread,True
+P1-HSK5-03,P1,5,HSK5真题,第三十九到四十一题是根据下面一段话。,,corpus,HSK5-outline_Q39_U01,HSK5-outline,/data/shangguanrz/projectsss/speakgenerate/data/05_中文听力_五级_真题1-5及大纲样卷/data/HSK5-outline/HSK5-outline_Q39_U01.wav,4.964,automatic_unproofread,True
+P1-HSK5-04,P1,5,HSK5真题,"你学好多少,我帮你看看。",,corpus,HSK5-5_Q28_U05,HSK5-5,/data/shangguanrz/projectsss/speakgenerate/data/05_中文听力_五级_真题1-5及大纲样卷/data/HSK5-5/HSK5-5_Q28_U05.wav,2.858,automatic_unproofread,True
+P1-HSK5-05,P1,5,HSK5真题,"这边水很浅,下来一起玩吧。",,corpus,HSK5-5_Q10_U03,HSK5-5,/data/shangguanrz/projectsss/speakgenerate/data/05_中文听力_五级_真题1-5及大纲样卷/data/HSK5-5/HSK5-5_Q10_U03.wav,3.825,automatic_unproofread,True
+P1-HSK5-06,P1,5,HSK5真题,你头发怎么湿了？外面没下雨呀。,,corpus,HSK5-outline_Q24_U02,HSK5-outline,/data/shangguanrz/projectsss/speakgenerate/data/05_中文听力_五级_真题1-5及大纲样卷/data/HSK5-outline/HSK5-outline_Q24_U02.wav,4.385,automatic_unproofread,True
+P1-HSK5-07,P1,5,HSK5真题,"女儿第一次离家这么久,不知道她有没有照顾好自己。",,corpus,HSK5-3_Q22_U02,HSK5-3,/data/shangguanrz/projectsss/speakgenerate/data/05_中文听力_五级_真题1-5及大纲样卷/data/HSK5-3/HSK5-3_Q22_U02.wav,6.63,automatic_unproofread,True
+P1-HSK5-08,P1,5,HSK5真题,"最难忘的是在黄山看日出,景色美极了,像仙境一样。",,corpus,HSK5-4_Q16_U03,HSK5-4,/data/shangguanrz/projectsss/speakgenerate/data/05_中文听力_五级_真题1-5及大纲样卷/data/HSK5-4/HSK5-4_Q16_U03.wav,7.736,automatic_unproofread,True
+P1-HSK6-01,P1,6,HSK6真题,根据这段话，下列哪向正确？,,corpus,HSK6-outline_Q50_U02,HSK6-outline,/data/shangguanrz/projectsss/speakgenerate/data/07_中文听力_六级_真题4-5及大纲样卷/data/HSK6-outline/HSK6-outline_Q50_U02.wav,3.052,automatic_unproofread,True
+P1-HSK6-02,P1,6,HSK6真题,第四十八到五十题是根据下面一段话。,,corpus,HSK6-3_Q48_U01,HSK6-3,/data/shangguanrz/projectsss/speakgenerate/data/06_中文听力_六级_真题1-3/data/HSK6-3/HSK6-3_Q48_U01.wav,4.112,automatic_unproofread,True
+P1-HSK6-03,P1,6,HSK6真题,女的认为拥有良好的口才有什么好处？,,corpus,HSK6-outline_Q22_U02,HSK6-outline,/data/shangguanrz/projectsss/speakgenerate/data/07_中文听力_六级_真题4-5及大纲样卷/data/HSK6-outline/HSK6-outline_Q22_U02.wav,3.922,automatic_unproofread,True
+P1-HSK6-04,P1,6,HSK6真题,三十二、正谷改那个字的理由是什么？,,corpus,HSK6-outline_Q32_U02,HSK6-outline,/data/shangguanrz/projectsss/speakgenerate/data/07_中文听力_六级_真题4-5及大纲样卷/data/HSK6-outline/HSK6-outline_Q32_U02.wav,2.963,automatic_unproofread,True
+P1-HSK6-05,P1,6,HSK6真题,"多媒体在这部作品中是一个很重要的辅助手段,这在你之前的作品中好像并不多见。",,corpus,HSK6-4_Q21_U10,HSK6-4,/data/shangguanrz/projectsss/speakgenerate/data/07_中文听力_六级_真题4-5及大纲样卷/data/HSK6-4/HSK6-4_Q21_U10.wav,6.755,automatic_unproofread,True
+P1-HSK6-06,P1,6,HSK6真题,"如果想应聘人力资源职位,最好不要说自己有什么缺点。",,corpus,HSK6-1_Q46_U02,HSK6-1,/data/shangguanrz/projectsss/speakgenerate/data/06_中文听力_六级_真题1-3/data/HSK6-1/HSK6-1_Q46_U02.wav,6.086,automatic_unproofread,True
+P1-HSK6-07,P1,6,HSK6真题,第三十四到三十六题是根据下面一段话。,,corpus,HSK6-5_Q34_U01,HSK6-5,/data/shangguanrz/projectsss/speakgenerate/data/07_中文听力_六级_真题4-5及大纲样卷/data/HSK6-5/HSK6-5_Q34_U01.wav,5.035,automatic_unproofread,True
+P1-HSK6-08,P1,6,HSK6真题,第二十一到二十五题是根据下面一段采访。,,corpus,HSK6-1_Q21_U01,HSK6-1,/data/shangguanrz/projectsss/speakgenerate/data/06_中文听力_六级_真题1-3/data/HSK6-1/HSK6-1_Q21_U01.wav,4.403,automatic_unproofread,True
+P1-PR-01,P1,0,多音字-行,他一边骑车一边听音乐，很快就到了银行门口。,行 xíng / háng,original,,,,0,agent_authored,True
+P1-PR-02,P1,0,多音字-长,这条马路很长，两边种满了高大的树。,长 cháng / zhǎng,original,,,,0,agent_authored,True
+P1-PR-03,P1,0,多音字-重,这个箱子太重了，请你重新搬一次。,重 zhòng / chóng,original,,,,0,agent_authored,True
+P1-PR-04,P1,0,多音字-得,你得把作业写完，才能出去玩得开心。,得 děi / de / dé,original,,,,0,agent_authored,True
+P1-PR-05,P1,0,多音字-还,他还有一本书没还给我，说明天还。,还 hái / huán,original,,,,0,agent_authored,True
+P1-PR-06,P1,0,多音字-都,我们都去过首都，那里的人都很热情。,都 dōu / dū,original,,,,0,agent_authored,True
+P1-PR-07,P1,0,多音字-发,他发现理发店今天不开门，只好明天再理发。,发 fā / fà,original,,,,0,agent_authored,True
+P1-PR-08,P1,0,多音字-觉,我觉得睡觉以前应该少看手机。,觉 jué / jiào,original,,,,0,agent_authored,True
+P1-PR-09,P1,0,数字-年份电话,二零零八年八月八号，我打了电话零幺零八八八八六六六六。,幺 yāo,original,,,,0,agent_authored,True
+P1-PR-10,P1,0,数字-数量分数,三百二十五个学生里，有四分之三的人通过了考试。,分数读法,original,,,,0,agent_authored,True
+P1-PR-11,P1,0,数字-价格小数,这件衣服原价一百九十九块，现在打八点五折。,小数与折扣,original,,,,0,agent_authored,True
+P1-PR-12,P1,0,声调-易混,妈妈骂马，马慢，妈妈骂马慢。,四声对比 mā má mǎ mà,original,,,,0,agent_authored,True

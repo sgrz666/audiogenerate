@@ -1,0 +1,36 @@
+{
+ "task": {
+  "kind": "intonation",
+  "audio_id": "P2-intonation-voxcpm2-NARRATOR-I2-exclamatory",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/voxcpm2/NARRATOR/P2-intonation-voxcpm2-NARRATOR-I2-exclamatory.wav",
+  "source_text": "这道题其实一点都不难！",
+  "requirements": "目标语气：exclamatory。只判断声音本身；不要因为文本里有问号就假定句尾上扬。在 JSON 里加顶级字段 type_choice，取值 陈述/疑问/感叹/无法判断。",
+  "target": "exclamatory",
+  "config_id": "voxcpm2"
+ },
+ "raw": "{\"audio_id\":\"P2-intonation-voxcpm2-NARRATOR-I2-exclamatory\",\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":4,\"pauses_boundaries\":4,\"intonation\":2,\"emotion\":5,\"naturalness\":4,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[\"句尾缺乏明显上扬，未能充分体现 exclamatory 语气（这道题其实一点都不难！）\"],\"emotion_choice\":\"平静\",\"type_choice\":\"陈述\",\"pause_present\":\"有\",\"target_reading\":\"难\"}",
+ "ts": 1794569668.0285056,
+ "parsed": {
+  "audio_id": "P2-intonation-voxcpm2-NARRATOR-I2-exclamatory",
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 4,
+   "pauses_boundaries": 4,
+   "intonation": 2,
+   "emotion": 5,
+   "naturalness": 4,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [
+   "句尾缺乏明显上扬，未能充分体现 exclamatory 语气（这道题其实一点都不难！）"
+  ],
+  "emotion_choice": "平静",
+  "type_choice": "陈述",
+  "pause_present": "有",
+  "target_reading": "难"
+ },
+ "status": "ok",
+ "tag": "run"
+}

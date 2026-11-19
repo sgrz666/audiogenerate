@@ -1,0 +1,46 @@
+{
+ "task": {
+  "kind": "calib",
+  "audio_id": "calib-wrong-tone",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2b/indextts25/NARRATOR/P2b-pronneg-indextts25-NARRATOR-PR4.wav",
+  "source_text": "他还有一本书没还给我，说明天还。",
+  "requirements": "重点核对多音字读音；在 JSON 里加 target_reading。",
+  "expected": {
+   "decision_in": [
+    "revise",
+    "human_review"
+   ],
+   "issue_keywords": [
+    "读音",
+    "声调",
+    "多音",
+    "梅",
+    "海"
+   ]
+  }
+ },
+ "raw": "{\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":2,\"speaking_rate\":null,\"pauses_boundaries\":null,\"intonation\":null,\"emotion\":null,\"naturalness\":null,\"audio_quality\":null,\"voice_consistency\":null},\"issues\":[\"还有一本书没还给我中的‘还’应读hái而非huán或hǎi\"],\"emotion_choice\":\"无法判断\",\"type_choice\":\"陈述\",\"pause_present\":\"无法判断\",\"target_reading\":\"还：hái\"}",
+ "ts": 1794569465.155492,
+ "parsed": {
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 2,
+   "speaking_rate": null,
+   "pauses_boundaries": null,
+   "intonation": null,
+   "emotion": null,
+   "naturalness": null,
+   "audio_quality": null,
+   "voice_consistency": null
+  },
+  "issues": [
+   "还有一本书没还给我中的‘还’应读hái而非huán或hǎi"
+  ],
+  "emotion_choice": "无法判断",
+  "type_choice": "陈述",
+  "pause_present": "无法判断",
+  "target_reading": "还：hái"
+ },
+ "status": "ok",
+ "tag": "calibration"
+}

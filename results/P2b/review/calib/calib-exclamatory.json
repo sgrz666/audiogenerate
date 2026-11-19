@@ -1,0 +1,37 @@
+{
+ "task": {
+  "kind": "calib",
+  "audio_id": "calib-exclamatory",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/FEMALE/P2-intonation-indextts25-FEMALE-I2-exclamatory.wav",
+  "source_text": "这道题其实一点都不难！",
+  "requirements": "判断实际听感最像哪种句型；在 JSON 里加 type_choice。",
+  "expected": {
+   "type_choice_in": [
+    "感叹",
+    "exclamatory"
+   ]
+  }
+ },
+ "raw": "{\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":4,\"pauses_boundaries\":4,\"intonation\":5,\"emotion\":\"高兴\",\"naturalness\":5,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"emotion_choice\":\"高兴\",\"type_choice\":\"感叹\",\"pause_present\":\"无\",\"target_reading\":\"难\"}",
+ "ts": 1794569511.963501,
+ "parsed": {
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 4,
+   "pauses_boundaries": 4,
+   "intonation": 5,
+   "emotion": "高兴",
+   "naturalness": 5,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "emotion_choice": "高兴",
+  "type_choice": "感叹",
+  "pause_present": "无",
+  "target_reading": "难"
+ },
+ "status": "ok",
+ "tag": "calibration"
+}

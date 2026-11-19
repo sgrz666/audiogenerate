@@ -1,0 +1,191 @@
+{
+ "calibration_pass": true,
+ "calibration_agreement": 1.0,
+ "calibration_note": "n_hard=8 agreement=1.00 defect_marked_usable=False soft=4; gate=pass",
+ "calibration_checks": [
+  {
+   "audio_id": "calib-clipped",
+   "ok": false,
+   "defect": true,
+   "soft": true,
+   "decision": "usable"
+  },
+  {
+   "audio_id": "calib-declarative",
+   "ok": true,
+   "defect": false,
+   "soft": false,
+   "decision": "usable"
+  },
+  {
+   "audio_id": "calib-dropout",
+   "ok": false,
+   "defect": true,
+   "soft": true,
+   "decision": "usable"
+  },
+  {
+   "audio_id": "calib-exclamatory",
+   "ok": true,
+   "defect": false,
+   "soft": false,
+   "decision": "usable"
+  },
+  {
+   "audio_id": "calib-happy",
+   "ok": true,
+   "defect": false,
+   "soft": false,
+   "decision": "usable"
+  },
+  {
+   "audio_id": "calib-interrogative",
+   "ok": true,
+   "defect": false,
+   "soft": false,
+   "decision": "usable"
+  },
+  {
+   "audio_id": "calib-letter-read",
+   "ok": true,
+   "defect": true,
+   "soft": false,
+   "decision": "revise"
+  },
+  {
+   "audio_id": "calib-normal",
+   "ok": true,
+   "defect": false,
+   "soft": false,
+   "decision": "usable"
+  },
+  {
+   "audio_id": "calib-pause-long",
+   "ok": true,
+   "defect": false,
+   "soft": true,
+   "decision": "revise"
+  },
+  {
+   "audio_id": "calib-pause-short",
+   "ok": true,
+   "defect": false,
+   "soft": true,
+   "decision": "revise"
+  },
+  {
+   "audio_id": "calib-sad",
+   "ok": true,
+   "defect": false,
+   "soft": false,
+   "decision": "revise"
+  },
+  {
+   "audio_id": "calib-wrong-tone",
+   "ok": true,
+   "defect": true,
+   "soft": false,
+   "decision": "revise"
+  }
+ ],
+ "intonation": {
+  "by_config": {
+   "voxcpm2": {
+    "n": 9,
+    "acc": 0.7778,
+    "acc_norm": 0.6667,
+    "dim_mean": 3.222
+   },
+   "indextts25": {
+    "n": 9,
+    "acc": 0.6667,
+    "acc_norm": 0.5,
+    "dim_mean": 3.444
+   },
+   "qwen3tts_base": {
+    "n": 9,
+    "acc": 1.0,
+    "acc_norm": 1.0,
+    "dim_mean": 3.556
+   },
+   "fireredtts3_base": {
+    "n": 9,
+    "acc": 0.6667,
+    "acc_norm": 0.5,
+    "dim_mean": 2.889
+   },
+   "fireredtts3_instruct": {
+    "n": 9,
+    "acc": 0.8889,
+    "acc_norm": 0.8333,
+    "dim_mean": 2.889
+   }
+  }
+ },
+ "emotion": {
+  "n": 24,
+  "acc": 0.8333,
+  "acc_norm": 0.7778,
+  "confusion": {
+   "angry->无法判断": 4,
+   "calm->calm": 6,
+   "happy->happy": 6,
+   "sad->sad": 6,
+   "angry->angry": 2
+  },
+  "dim_mean": 3.708
+ },
+ "pause": {
+  "by_config": {
+   "voxcpm2": {
+    "n": 9,
+    "dim_mean": 4.778,
+    "dim_norm": 0.3333,
+    "present_acc": 0.6667,
+    "source": "pause_present"
+   },
+   "indextts25": {
+    "n": 9,
+    "dim_mean": 5.0,
+    "dim_norm": 0.3333,
+    "present_acc": 0.6667,
+    "source": "pause_present"
+   },
+   "qwen3tts_base": {
+    "n": 9,
+    "dim_mean": 5.0,
+    "dim_norm": 0.3333,
+    "present_acc": 0.6667,
+    "source": "pause_present"
+   },
+   "fireredtts3_base": {
+    "n": 9,
+    "dim_mean": 5.0,
+    "dim_norm": 0.3333,
+    "present_acc": 0.6667,
+    "source": "pause_present"
+   },
+   "fireredtts3_instruct": {
+    "n": 9,
+    "dim_mean": 5.0,
+    "dim_norm": 0.3333,
+    "present_acc": 0.6667,
+    "source": "pause_present"
+   }
+  }
+ },
+ "pron": {
+  "n_after": 12,
+  "after_acc": null,
+  "n_before": 10,
+  "before_acc": null,
+  "n_neg": 6,
+  "chance": null,
+  "neg_detects_wrong": 0.5,
+  "tone_reliable": false,
+  "raw_after_acc": 0.8333,
+  "raw_before_acc": 1.0,
+  "raw_chance": 0.5,
+  "tone_note": "MiniCPM reports text-correct readings on planted-wrong clips; tone scores are not audio-grounded, content CER only"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": {
+  "kind": "pron_before",
+  "audio_id": "P1-P1-PR-06-NARRATOR",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P1/indextts25/NARRATOR/P1-PR-06.wav",
+  "source_text": "我们都去过首都，那里的人都很热情。",
+  "requirements": "重点核对多音字目标：‘我们’的‘都’、‘首都’的‘都’、‘都很’的‘都’（dōu/dū）。只报告实际听到的读音，不要按文本猜测；并判断是否有逐字读字母/增字/漏字。在 JSON 里加顶级字段 target_reading，按目标字顺序写拼音。",
+  "target": "PR5",
+  "config_id": "indextts25"
+ },
+ "raw": "{\"audio_id\":\"P1-P1-PR-06-NARRATOR\",\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":4,\"pauses_boundaries\":4,\"intonation\":4,\"emotion\":\"平静\",\"naturalness\":4,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"target_reading\":\"dōu dū dōu\",\"pause_present\":\"有\"}",
+ "ts": 1794570674.4959795,
+ "parsed": {
+  "audio_id": "P1-P1-PR-06-NARRATOR",
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 4,
+   "pauses_boundaries": 4,
+   "intonation": 4,
+   "emotion": "平静",
+   "naturalness": 4,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "target_reading": "dōu dū dōu",
+  "pause_present": "有"
+ },
+ "status": "ok",
+ "tag": "run"
+}

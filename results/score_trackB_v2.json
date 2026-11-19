@@ -1,0 +1,765 @@
+{
+ "rubric": "docs/P2_RUBRIC.md",
+ "rubric_version": "P2-RUBRIC-2026-11-13",
+ "weights": {
+  "speaking_rate_control": 0.25,
+  "pause_control": 0.2,
+  "intonation_control": 0.15,
+  "emotion_control": 0.15,
+  "pronunciation_correction": 0.15,
+  "vram_efficiency": 0.1
+ },
+ "calibration_pass": true,
+ "calibration_note": "n_hard=8 agreement=1.00 defect_marked_usable=False soft=4; gate=pass",
+ "note": "unsupported/no_interface is never imputed as 0; full score only when weight coverage is 1.0",
+ "configs": [
+  {
+   "config_id": "voxcpm2",
+   "family": "VoxCPM2",
+   "variant": "base",
+   "rate_detail": {
+    "reason": "no native rate items"
+   },
+   "pause_detail": {
+    "n_triples": 9,
+    "delta_comma_median_s": -0.04,
+    "effect": 0.0,
+    "sign_p": 1.0,
+    "positive_comma": 4,
+    "v1_same_text_abs_delta_median_s": 0.0,
+    "gate_v2_gt_v1_noise": false,
+    "listen_norm": null,
+    "gap_stats_P1_MALE": {
+     "none": [
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      }
+     ],
+     "comma": [
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 4,
+       "total": 0.72,
+       "max": 0.32
+      }
+     ],
+     "period": [
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 2,
+       "total": 0.25,
+       "max": 0.14
+      }
+     ]
+    }
+   },
+   "intonation_detail": {
+    "n": 27,
+    "max_eta2": 0.059,
+    "max_eta2_feature": "st_std",
+    "max_omega2": -0.0187,
+    "effect": 0.0,
+    "features": {
+     "f0_mean": {
+      "means": [
+       183.18,
+       195.057,
+       196.651
+      ],
+      "eta2": 0.0176,
+      "omega2": -0.0618,
+      "perm_p": 0.801
+     },
+     "st_std": {
+      "means": [
+       3.538,
+       4.183,
+       4.371
+      ],
+      "eta2": 0.059,
+      "omega2": -0.0187,
+      "perm_p": 0.5311
+     },
+     "st_range": {
+      "means": [
+       11.736,
+       13.794,
+       13.557
+      ],
+      "eta2": 0.051,
+      "omega2": -0.027,
+      "perm_p": 0.5609
+     },
+     "final_delta": {
+      "means": [
+       -1.067,
+       -2.031,
+       -2.04
+      ],
+      "eta2": 0.0268,
+      "omega2": -0.083,
+      "perm_p": 0.7948
+     }
+    },
+    "listen_acc_norm": 0.6667
+   },
+   "vram_detail": {
+    "max_peak_vram_gib": 5.579,
+    "mean_rtf": 0.6789,
+    "fits_24gb": true,
+    "note": "max_memory_allocated is a lower bound; NVML unavailable"
+   },
+   "trackB_subscores": {
+    "pause_control": 0.0,
+    "intonation_control": 0.3333,
+    "vram_efficiency": 1.0
+   },
+   "trackB_weight_coverage": 0.35,
+   "trackB_objective_partial": 0.3333,
+   "trackB_full_score": null,
+   "rankable": false,
+   "not_tested_reason": {
+    "speaking_rate_control": "no native rate items",
+    "pause_control": "objective half only; MiniCPM pause probe biased to 有, human spot-check pending",
+    "emotion_control": "no_interface: identical emotion text, only random sampling",
+    "pronunciation_correction": "no_interface: no pinyin hint interface"
+   }
+  },
+  {
+   "config_id": "indextts25",
+   "family": "IndexTTS-2.5",
+   "variant": "base",
+   "rate_detail": {
+    "n_native": 45,
+    "mean_rel_err_pct": 4.33,
+    "within_5pct": 0.6
+   },
+   "pause_detail": {
+    "n_triples": 9,
+    "delta_comma_median_s": 0.06,
+    "effect": 0.3,
+    "sign_p": 0.5078,
+    "positive_comma": 6,
+    "v1_same_text_abs_delta_median_s": 0.12,
+    "gate_v2_gt_v1_noise": false,
+    "listen_norm": null,
+    "gap_stats_P1_MALE": {
+     "none": [
+      {
+       "n": 1,
+       "total": 0.29,
+       "max": 0.29
+      },
+      {
+       "n": 1,
+       "total": 0.3,
+       "max": 0.3
+      },
+      {
+       "n": 1,
+       "total": 0.12,
+       "max": 0.12
+      }
+     ],
+     "comma": [
+      {
+       "n": 1,
+       "total": 0.12,
+       "max": 0.12
+      },
+      {
+       "n": 1,
+       "total": 0.38,
+       "max": 0.38
+      },
+      {
+       "n": 1,
+       "total": 0.23,
+       "max": 0.23
+      }
+     ],
+     "period": [
+      {
+       "n": 2,
+       "total": 0.43,
+       "max": 0.25
+      },
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      }
+     ]
+    }
+   },
+   "intonation_detail": {
+    "n": 27,
+    "max_eta2": 0.3479,
+    "max_eta2_feature": "final_delta",
+    "max_omega2": 0.2858,
+    "effect": 1.0,
+    "features": {
+     "f0_mean": {
+      "means": [
+       158.728,
+       161.781,
+       143.75
+      ],
+      "eta2": 0.0451,
+      "omega2": -0.0332,
+      "perm_p": 0.5607
+     },
+     "st_std": {
+      "means": [
+       4.843,
+       4.692,
+       5.995
+      ],
+      "eta2": 0.1318,
+      "omega2": 0.0573,
+      "perm_p": 0.1822
+     },
+     "st_range": {
+      "means": [
+       16.953,
+       16.143,
+       19.082
+      ],
+      "eta2": 0.0571,
+      "omega2": -0.0207,
+      "perm_p": 0.4733
+     },
+     "final_delta": {
+      "means": [
+       -6.669,
+       -1.565,
+       -1.154
+      ],
+      "eta2": 0.3479,
+      "omega2": 0.2858,
+      "perm_p": 0.005
+     }
+    },
+    "listen_acc_norm": 0.5
+   },
+   "emotion_detail": {
+    "n": 36,
+    "acc": 0.5833,
+    "obj": 0.4444,
+    "listen_acc_norm": 0.7778,
+    "confusion": {
+     "calm->sad": 1,
+     "calm->angry": 1,
+     "calm->calm": 5,
+     "happy->angry": 2,
+     "happy->happy": 7,
+     "sad->sad": 4,
+     "angry->sad": 2,
+     "angry->calm": 1,
+     "angry->angry": 5,
+     "sad->happy": 5,
+     "angry->happy": 1,
+     "calm->happy": 2
+    }
+   },
+   "pronunciation_detail": {
+    "n_pos": 18,
+    "n_neg": 6,
+    "mean_cer_pos": 0.0074,
+    "content_ok": 1.0,
+    "after_acc": null,
+    "before_acc": null,
+    "chance": null,
+    "tone_reliable": false,
+    "raw_after_acc": 0.8333,
+    "raw_before_acc": 1.0,
+    "raw_chance": 0.5,
+    "neg_detects_wrong": 0.5,
+    "calibration_pass": true
+   },
+   "vram_detail": {
+    "max_peak_vram_gib": 5.456,
+    "mean_rtf": 1.0341,
+    "fits_24gb": true,
+    "note": "max_memory_allocated is a lower bound; NVML unavailable"
+   },
+   "trackB_subscores": {
+    "speaking_rate_control": 1.0,
+    "pause_control": 0.3,
+    "intonation_control": 0.75,
+    "emotion_control": 0.6111,
+    "pronunciation_correction": 0.3,
+    "vram_efficiency": 1.0
+   },
+   "trackB_weight_coverage": 0.795,
+   "trackB_objective_partial": 0.6592,
+   "trackB_full_score": null,
+   "rankable": false,
+   "not_tested_reason": {
+    "pause_control": "objective half only; MiniCPM pause probe biased to 有, human spot-check pending",
+    "pronunciation_correction": "MiniCPM reports text-correct readings on planted-wrong clips; tone scores are not audio-grounded, content CER only"
+   }
+  },
+  {
+   "config_id": "qwen3tts_base",
+   "family": "Qwen3-TTS-1.7B",
+   "variant": "Base",
+   "rate_detail": {
+    "reason": "no native rate items"
+   },
+   "pause_detail": {
+    "n_triples": 9,
+    "delta_comma_median_s": 0.06,
+    "effect": 0.3,
+    "sign_p": 0.1797,
+    "positive_comma": 7,
+    "v1_same_text_abs_delta_median_s": 0.2,
+    "gate_v2_gt_v1_noise": false,
+    "listen_norm": null,
+    "gap_stats_P1_MALE": {
+     "none": [
+      {
+       "n": 1,
+       "total": 0.12,
+       "max": 0.12
+      },
+      {
+       "n": 2,
+       "total": 0.25,
+       "max": 0.14
+      },
+      {
+       "n": 1,
+       "total": 0.22,
+       "max": 0.22
+      }
+     ],
+     "comma": [
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      }
+     ],
+     "period": [
+      {
+       "n": 2,
+       "total": 0.55,
+       "max": 0.3
+      },
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 2,
+       "total": 0.25,
+       "max": 0.14
+      }
+     ]
+    }
+   },
+   "intonation_detail": {
+    "n": 27,
+    "max_eta2": 0.0806,
+    "max_eta2_feature": "st_range",
+    "max_omega2": 0.0038,
+    "effect": 0.0317,
+    "features": {
+     "f0_mean": {
+      "means": [
+       157.855,
+       179.732,
+       169.807
+      ],
+      "eta2": 0.0389,
+      "omega2": -0.0396,
+      "perm_p": 0.6111
+     },
+     "st_std": {
+      "means": [
+       4.236,
+       3.768,
+       4.24
+      ],
+      "eta2": 0.0771,
+      "omega2": 0.0002,
+      "perm_p": 0.3807
+     },
+     "st_range": {
+      "means": [
+       14.318,
+       12.974,
+       14.762
+      ],
+      "eta2": 0.0806,
+      "omega2": 0.0038,
+      "perm_p": 0.3665
+     },
+     "final_delta": {
+      "means": [
+       -1.586,
+       0.321,
+       -0.804
+      ],
+      "eta2": 0.0585,
+      "omega2": -0.0192,
+      "perm_p": 0.4867
+     }
+    },
+    "listen_acc_norm": 1.0
+   },
+   "vram_detail": {
+    "max_peak_vram_gib": 4.329,
+    "mean_rtf": 1.7486,
+    "fits_24gb": true,
+    "note": "max_memory_allocated is a lower bound; NVML unavailable"
+   },
+   "trackB_subscores": {
+    "pause_control": 0.3,
+    "intonation_control": 0.5159,
+    "vram_efficiency": 1.0
+   },
+   "trackB_weight_coverage": 0.35,
+   "trackB_objective_partial": 0.5275,
+   "trackB_full_score": null,
+   "rankable": false,
+   "not_tested_reason": {
+    "speaking_rate_control": "no native rate items",
+    "pause_control": "objective half only; MiniCPM pause probe biased to 有, human spot-check pending",
+    "emotion_control": "no_interface: identical emotion text, only random sampling",
+    "pronunciation_correction": "no_interface: no pinyin hint interface"
+   }
+  },
+  {
+   "config_id": "fireredtts3_base",
+   "family": "FireRedTTS3",
+   "variant": "Base",
+   "rate_detail": {
+    "reason": "no native rate items"
+   },
+   "pause_detail": {
+    "n_triples": 9,
+    "delta_comma_median_s": 0.38,
+    "effect": 1.0,
+    "sign_p": 0.0039,
+    "positive_comma": 9,
+    "v1_same_text_abs_delta_median_s": 0.0,
+    "gate_v2_gt_v1_noise": true,
+    "listen_norm": null,
+    "gap_stats_P1_MALE": {
+     "none": [
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      }
+     ],
+     "comma": [
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 1,
+       "total": 0.17,
+       "max": 0.17
+      },
+      {
+       "n": 1,
+       "total": 0.12,
+       "max": 0.12
+      }
+     ],
+     "period": [
+      {
+       "n": 2,
+       "total": 0.49,
+       "max": 0.25
+      },
+      {
+       "n": 2,
+       "total": 0.33,
+       "max": 0.22
+      },
+      {
+       "n": 2,
+       "total": 0.31,
+       "max": 0.19
+      }
+     ]
+    }
+   },
+   "intonation_detail": {
+    "n": 27,
+    "max_eta2": 0.0143,
+    "max_eta2_feature": "st_std",
+    "max_omega2": -0.0651,
+    "effect": 0.0,
+    "features": {
+     "f0_mean": {
+      "means": [
+       159.81,
+       164.822,
+       163.147
+      ],
+      "eta2": 0.0021,
+      "omega2": -0.0778,
+      "perm_p": 0.9608
+     },
+     "st_std": {
+      "means": [
+       3.522,
+       3.411,
+       3.456
+      ],
+      "eta2": 0.0143,
+      "omega2": -0.0651,
+      "perm_p": 0.8442
+     },
+     "st_range": {
+      "means": [
+       11.699,
+       11.43,
+       11.436
+      ],
+      "eta2": 0.0102,
+      "omega2": -0.0694,
+      "perm_p": 0.8954
+     },
+     "final_delta": {
+      "means": [
+       0.213,
+       -0.045,
+       -0.094
+      ],
+      "eta2": 0.0011,
+      "omega2": -0.0858,
+      "perm_p": 0.9854
+     }
+    },
+    "listen_acc_norm": 0.5
+   },
+   "vram_detail": {
+    "max_peak_vram_gib": 14.105,
+    "mean_rtf": 0.9193,
+    "fits_24gb": true,
+    "note": "max_memory_allocated is a lower bound; NVML unavailable"
+   },
+   "trackB_subscores": {
+    "pause_control": 1.0,
+    "intonation_control": 0.25,
+    "vram_efficiency": 1.0
+   },
+   "trackB_weight_coverage": 0.35,
+   "trackB_objective_partial": 0.75,
+   "trackB_full_score": null,
+   "rankable": false,
+   "not_tested_reason": {
+    "speaking_rate_control": "no native rate items",
+    "pause_control": "objective half only; MiniCPM pause probe biased to 有, human spot-check pending",
+    "emotion_control": "no_interface: identical emotion text, only random sampling",
+    "pronunciation_correction": "no_interface: no pinyin hint interface"
+   }
+  },
+  {
+   "config_id": "fireredtts3_instruct",
+   "family": "FireRedTTS3",
+   "variant": "Instruct",
+   "rate_detail": {
+    "reason": "no native rate items"
+   },
+   "pause_detail": {
+    "n_triples": 9,
+    "delta_comma_median_s": 0.48,
+    "effect": 1.0,
+    "sign_p": 0.1797,
+    "positive_comma": 7,
+    "v1_same_text_abs_delta_median_s": 0.0,
+    "gate_v2_gt_v1_noise": true,
+    "listen_norm": null,
+    "gap_stats_P1_MALE": {
+     "none": [
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 1,
+       "total": 0.1,
+       "max": 0.1
+      },
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      }
+     ],
+     "comma": [
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 2,
+       "total": 0.53,
+       "max": 0.28
+      },
+      {
+       "n": 2,
+       "total": 0.41,
+       "max": 0.25
+      }
+     ],
+     "period": [
+      {
+       "n": 0,
+       "total": 0,
+       "max": 0
+      },
+      {
+       "n": 2,
+       "total": 0.63,
+       "max": 0.32
+      },
+      {
+       "n": 2,
+       "total": 0.49,
+       "max": 0.27
+      }
+     ]
+    }
+   },
+   "intonation_detail": {
+    "n": 27,
+    "max_eta2": 0.0242,
+    "max_eta2_feature": "f0_mean",
+    "max_omega2": -0.0549,
+    "effect": 0.0,
+    "features": {
+     "f0_mean": {
+      "means": [
+       167.671,
+       184.776,
+       168.977
+      ],
+      "eta2": 0.0242,
+      "omega2": -0.0549,
+      "perm_p": 0.7439
+     },
+     "st_std": {
+      "means": [
+       4.004,
+       3.984,
+       3.986
+      ],
+      "eta2": 0.0001,
+      "omega2": -0.0799,
+      "perm_p": 0.9992
+     },
+     "st_range": {
+      "means": [
+       13.338,
+       12.766,
+       13.111
+      ],
+      "eta2": 0.0087,
+      "omega2": -0.071,
+      "perm_p": 0.9046
+     },
+     "final_delta": {
+      "means": [
+       -1.94,
+       -1.234,
+       -1.354
+      ],
+      "eta2": 0.0126,
+      "omega2": -0.0778,
+      "perm_p": 0.8784
+     }
+    },
+    "listen_acc_norm": 0.8333
+   },
+   "vram_detail": {
+    "max_peak_vram_gib": 14.077,
+    "mean_rtf": 0.8897,
+    "fits_24gb": true,
+    "note": "max_memory_allocated is a lower bound; NVML unavailable"
+   },
+   "trackB_subscores": {
+    "pause_control": 1.0,
+    "intonation_control": 0.4167,
+    "vram_efficiency": 1.0
+   },
+   "trackB_weight_coverage": 0.35,
+   "trackB_objective_partial": 0.8056,
+   "trackB_full_score": null,
+   "rankable": false,
+   "not_tested_reason": {
+    "speaking_rate_control": "no native rate items",
+    "pause_control": "objective half only; MiniCPM pause probe biased to 有, human spot-check pending",
+    "emotion_control": "no_interface: identical emotion text, only random sampling",
+    "pronunciation_correction": "no_interface: no pinyin hint interface"
+   }
+  }
+ ]
+}

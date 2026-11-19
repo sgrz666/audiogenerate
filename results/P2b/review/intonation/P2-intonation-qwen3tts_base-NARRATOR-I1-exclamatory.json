@@ -1,0 +1,44 @@
+{
+ "task": {
+  "kind": "intonation",
+  "audio_id": "P2-intonation-qwen3tts_base-NARRATOR-I1-exclamatory",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/qwen3tts_base/NARRATOR/P2-intonation-qwen3tts_base-NARRATOR-I1-exclamatory.wav",
+  "source_text": "他昨天买了一本新书！",
+  "requirements": "目标语气：exclamatory。只判断声音本身；不要因为文本里有问号就假定句尾上扬。在 JSON 里加顶级字段 type_choice，取值 陈述/疑问/感叹/无法判断。",
+  "target": "exclamatory",
+  "config_id": "qwen3tts_base"
+ },
+ "raw": "{\"audio_id\":\"P2-intonation-qwen3tts_base-NARRATOR-I1-exclamatory\",\"decision\":\"revise\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":null,\"pauses_boundaries\":null,\"intonation\":2,\"emotion\":null,\"naturalness\":null,\"audio_quality\":null,\"voice_consistency\":null},\"issues\":[\"他昨天买了一本新书！\",{\"start_s\":null,\"end_s\":null,\"time_precision\":\"unavailable\",\"text_anchor\":\"他昨天买了一本新书！\",\"observed_text\":\"句尾无明显上扬，整体语调平稳\",\"evidence\":\"未达到 exclamatory 语气要求\"}],\"emotion_choice\":\"无法判断\",\"type_choice\":\"感叹\",\"pause_present\":\"无法判断\",\"target_reading\":\"null\"}",
+ "ts": 1794569774.5400991,
+ "parsed": {
+  "audio_id": "P2-intonation-qwen3tts_base-NARRATOR-I1-exclamatory",
+  "decision": "revise",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": null,
+   "pauses_boundaries": null,
+   "intonation": 2,
+   "emotion": null,
+   "naturalness": null,
+   "audio_quality": null,
+   "voice_consistency": null
+  },
+  "issues": [
+   "他昨天买了一本新书！",
+   {
+    "start_s": null,
+    "end_s": null,
+    "time_precision": "unavailable",
+    "text_anchor": "他昨天买了一本新书！",
+    "observed_text": "句尾无明显上扬，整体语调平稳",
+    "evidence": "未达到 exclamatory 语气要求"
+   }
+  ],
+  "emotion_choice": "无法判断",
+  "type_choice": "感叹",
+  "pause_present": "无法判断",
+  "target_reading": "null"
+ },
+ "status": "ok",
+ "tag": "run"
+}

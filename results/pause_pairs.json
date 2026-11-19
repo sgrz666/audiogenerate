@@ -1,0 +1,886 @@
+{
+ "n_rows": 405,
+ "configs": {
+  "voxcpm2": {
+   "status": "ok",
+   "n_triples": 9,
+   "delta_comma_median_s": -0.04,
+   "delta_comma_mean_s": 0.0956,
+   "positive_comma": 4,
+   "sign_p": 1.0,
+   "pause_effect": 0.0,
+   "v1_same_text_abs_delta_median_s": 0.0,
+   "gate_v2_gt_v1_noise": false,
+   "triples": [
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.350769,
+      "comma": 0.332308,
+      "period": 0.383077
+     },
+     "delta_comma_s": -0.24,
+     "delta_period_s": 0.66
+    },
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.221053,
+      "comma": 0.235789,
+      "period": 0.268421
+     },
+     "delta_comma_s": 0.28,
+     "delta_period_s": 0.62
+    },
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.170526,
+      "comma": 0.161053,
+      "period": 0.2
+     },
+     "delta_comma_s": -0.18,
+     "delta_period_s": 0.74
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.349231,
+      "comma": 0.398462,
+      "period": 0.401538
+     },
+     "delta_comma_s": 0.64,
+     "delta_period_s": 0.04
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.228421,
+      "comma": 0.252632,
+      "period": 0.296842
+     },
+     "delta_comma_s": 0.46,
+     "delta_period_s": 0.84
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.157895,
+      "comma": 0.155789,
+      "period": 0.215789
+     },
+     "delta_comma_s": -0.04,
+     "delta_period_s": 1.14
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.316923,
+      "comma": 0.34,
+      "period": 0.395385
+     },
+     "delta_comma_s": 0.3,
+     "delta_period_s": 0.72
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.237895,
+      "comma": 0.230526,
+      "period": 0.267368
+     },
+     "delta_comma_s": -0.14,
+     "delta_period_s": 0.7
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.202105,
+      "comma": 0.190526,
+      "period": 0.212632
+     },
+     "delta_comma_s": -0.22,
+     "delta_period_s": 0.42
+    }
+   ],
+   "gap_stats_P1_MALE": {
+    "none": [
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     }
+    ],
+    "comma": [
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 4,
+      "total": 0.72,
+      "max": 0.32
+     }
+    ],
+    "period": [
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 2,
+      "total": 0.25,
+      "max": 0.14
+     }
+    ]
+   }
+  },
+  "indextts25": {
+   "status": "ok",
+   "n_triples": 9,
+   "delta_comma_median_s": 0.06,
+   "delta_comma_mean_s": 0.1044,
+   "positive_comma": 6,
+   "sign_p": 0.5078,
+   "pause_effect": 0.3,
+   "v1_same_text_abs_delta_median_s": 0.12,
+   "gate_v2_gt_v1_noise": false,
+   "triples": [
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.310769,
+      "comma": 0.307692,
+      "period": 0.295385
+     },
+     "delta_comma_s": -0.04,
+     "delta_period_s": -0.16
+    },
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.264211,
+      "comma": 0.265263,
+      "period": 0.266316
+     },
+     "delta_comma_s": 0.02,
+     "delta_period_s": 0.02
+    },
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.232632,
+      "comma": 0.248421,
+      "period": 0.241053
+     },
+     "delta_comma_s": 0.3,
+     "delta_period_s": -0.14
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.266154,
+      "comma": 0.28,
+      "period": 0.287692
+     },
+     "delta_comma_s": 0.18,
+     "delta_period_s": 0.1
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.257895,
+      "comma": 0.254737,
+      "period": 0.263158
+     },
+     "delta_comma_s": -0.06,
+     "delta_period_s": 0.16
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.236842,
+      "comma": 0.24,
+      "period": 0.255789
+     },
+     "delta_comma_s": 0.06,
+     "delta_period_s": 0.3
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.26,
+      "comma": 0.270769,
+      "period": 0.26
+     },
+     "delta_comma_s": 0.14,
+     "delta_period_s": -0.14
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.231579,
+      "comma": 0.250526,
+      "period": 0.242105
+     },
+     "delta_comma_s": 0.36,
+     "delta_period_s": -0.16
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.218947,
+      "comma": 0.217895,
+      "period": 0.222105
+     },
+     "delta_comma_s": -0.02,
+     "delta_period_s": 0.08
+    }
+   ],
+   "gap_stats_P1_MALE": {
+    "none": [
+     {
+      "n": 1,
+      "total": 0.29,
+      "max": 0.29
+     },
+     {
+      "n": 1,
+      "total": 0.3,
+      "max": 0.3
+     },
+     {
+      "n": 1,
+      "total": 0.12,
+      "max": 0.12
+     }
+    ],
+    "comma": [
+     {
+      "n": 1,
+      "total": 0.12,
+      "max": 0.12
+     },
+     {
+      "n": 1,
+      "total": 0.38,
+      "max": 0.38
+     },
+     {
+      "n": 1,
+      "total": 0.23,
+      "max": 0.23
+     }
+    ],
+    "period": [
+     {
+      "n": 2,
+      "total": 0.43,
+      "max": 0.25
+     },
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     }
+    ]
+   }
+  },
+  "qwen3tts_base": {
+   "status": "ok",
+   "n_triples": 9,
+   "delta_comma_median_s": 0.06,
+   "delta_comma_mean_s": 0.1489,
+   "positive_comma": 7,
+   "sign_p": 0.1797,
+   "pause_effect": 0.3,
+   "v1_same_text_abs_delta_median_s": 0.2,
+   "gate_v2_gt_v1_noise": false,
+   "triples": [
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.26,
+      "comma": 0.281538,
+      "period": 0.293846
+     },
+     "delta_comma_s": 0.28,
+     "delta_period_s": 0.16
+    },
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.251579,
+      "comma": 0.251579,
+      "period": 0.270526
+     },
+     "delta_comma_s": 0.0,
+     "delta_period_s": 0.36
+    },
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.213684,
+      "comma": 0.233684,
+      "period": 0.227368
+     },
+     "delta_comma_s": 0.38,
+     "delta_period_s": -0.12
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.266154,
+      "comma": 0.267692,
+      "period": 0.281538
+     },
+     "delta_comma_s": 0.02,
+     "delta_period_s": 0.18
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.230526,
+      "comma": 0.248421,
+      "period": 0.254737
+     },
+     "delta_comma_s": 0.34,
+     "delta_period_s": 0.12
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.212632,
+      "comma": 0.215789,
+      "period": 0.22
+     },
+     "delta_comma_s": 0.06,
+     "delta_period_s": 0.08
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.298462,
+      "comma": 0.303077,
+      "period": 0.341538
+     },
+     "delta_comma_s": 0.06,
+     "delta_period_s": 0.5
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.245263,
+      "comma": 0.244211,
+      "period": 0.287368
+     },
+     "delta_comma_s": -0.02,
+     "delta_period_s": 0.82
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.213684,
+      "comma": 0.225263,
+      "period": 0.232632
+     },
+     "delta_comma_s": 0.22,
+     "delta_period_s": 0.14
+    }
+   ],
+   "gap_stats_P1_MALE": {
+    "none": [
+     {
+      "n": 1,
+      "total": 0.12,
+      "max": 0.12
+     },
+     {
+      "n": 2,
+      "total": 0.25,
+      "max": 0.14
+     },
+     {
+      "n": 1,
+      "total": 0.22,
+      "max": 0.22
+     }
+    ],
+    "comma": [
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     }
+    ],
+    "period": [
+     {
+      "n": 2,
+      "total": 0.55,
+      "max": 0.3
+     },
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 2,
+      "total": 0.25,
+      "max": 0.14
+     }
+    ]
+   }
+  },
+  "fireredtts3_base": {
+   "status": "ok",
+   "n_triples": 9,
+   "delta_comma_median_s": 0.38,
+   "delta_comma_mean_s": 0.4778,
+   "positive_comma": 9,
+   "sign_p": 0.0039,
+   "pause_effect": 1.0,
+   "v1_same_text_abs_delta_median_s": 0.0,
+   "gate_v2_gt_v1_noise": true,
+   "triples": [
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.287692,
+      "comma": 0.316923,
+      "period": 0.318462
+     },
+     "delta_comma_s": 0.38,
+     "delta_period_s": 0.02
+    },
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.26,
+      "comma": 0.281053,
+      "period": 0.331579
+     },
+     "delta_comma_s": 0.4,
+     "delta_period_s": 0.96
+    },
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.236842,
+      "comma": 0.255789,
+      "period": 0.283158
+     },
+     "delta_comma_s": 0.36,
+     "delta_period_s": 0.52
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.267692,
+      "comma": 0.295385,
+      "period": 0.3
+     },
+     "delta_comma_s": 0.36,
+     "delta_period_s": 0.06
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.248421,
+      "comma": 0.264211,
+      "period": 0.268421
+     },
+     "delta_comma_s": 0.3,
+     "delta_period_s": 0.08
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.217895,
+      "comma": 0.237895,
+      "period": 0.270526
+     },
+     "delta_comma_s": 0.38,
+     "delta_period_s": 0.62
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.301538,
+      "comma": 0.353846,
+      "period": 0.378462
+     },
+     "delta_comma_s": 0.68,
+     "delta_period_s": 0.32
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.265263,
+      "comma": 0.315789,
+      "period": 0.314737
+     },
+     "delta_comma_s": 0.96,
+     "delta_period_s": -0.02
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.238947,
+      "comma": 0.264211,
+      "period": 0.268421
+     },
+     "delta_comma_s": 0.48,
+     "delta_period_s": 0.08
+    }
+   ],
+   "gap_stats_P1_MALE": {
+    "none": [
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     }
+    ],
+    "comma": [
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 1,
+      "total": 0.17,
+      "max": 0.17
+     },
+     {
+      "n": 1,
+      "total": 0.12,
+      "max": 0.12
+     }
+    ],
+    "period": [
+     {
+      "n": 2,
+      "total": 0.49,
+      "max": 0.25
+     },
+     {
+      "n": 2,
+      "total": 0.33,
+      "max": 0.22
+     },
+     {
+      "n": 2,
+      "total": 0.31,
+      "max": 0.19
+     }
+    ]
+   }
+  },
+  "fireredtts3_instruct": {
+   "status": "ok",
+   "n_triples": 9,
+   "delta_comma_median_s": 0.48,
+   "delta_comma_mean_s": 0.3822,
+   "positive_comma": 7,
+   "sign_p": 0.1797,
+   "pause_effect": 1.0,
+   "v1_same_text_abs_delta_median_s": 0.0,
+   "gate_v2_gt_v1_noise": true,
+   "triples": [
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.301538,
+      "comma": 0.321538,
+      "period": 0.438462
+     },
+     "delta_comma_s": 0.26,
+     "delta_period_s": 1.52
+    },
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.253684,
+      "comma": 0.289474,
+      "period": 0.373684
+     },
+     "delta_comma_s": 0.68,
+     "delta_period_s": 1.6
+    },
+    {
+     "voice_id": "FEMALE",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.226316,
+      "comma": 0.257895,
+      "period": 0.274737
+     },
+     "delta_comma_s": 0.6,
+     "delta_period_s": 0.32
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.289231,
+      "comma": 0.315385,
+      "period": 0.316923
+     },
+     "delta_comma_s": 0.34,
+     "delta_period_s": 0.02
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.251579,
+      "comma": 0.277895,
+      "period": 0.344211
+     },
+     "delta_comma_s": 0.5,
+     "delta_period_s": 1.26
+    },
+    {
+     "voice_id": "MALE",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.24,
+      "comma": 0.24,
+      "period": 0.238947
+     },
+     "delta_comma_s": 0.0,
+     "delta_period_s": -0.02
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P1",
+     "nch": 13,
+     "span_per_char": {
+      "none": 0.301538,
+      "comma": 0.349231,
+      "period": 0.366154
+     },
+     "delta_comma_s": 0.62,
+     "delta_period_s": 0.22
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P2",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.246316,
+      "comma": 0.271579,
+      "period": 0.325263
+     },
+     "delta_comma_s": 0.48,
+     "delta_period_s": 1.02
+    },
+    {
+     "voice_id": "NARRATOR",
+     "base_text_id": "P3",
+     "nch": 19,
+     "span_per_char": {
+      "none": 0.237895,
+      "comma": 0.235789,
+      "period": 0.264211
+     },
+     "delta_comma_s": -0.04,
+     "delta_period_s": 0.54
+    }
+   ],
+   "gap_stats_P1_MALE": {
+    "none": [
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 1,
+      "total": 0.1,
+      "max": 0.1
+     },
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     }
+    ],
+    "comma": [
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 2,
+      "total": 0.53,
+      "max": 0.28
+     },
+     {
+      "n": 2,
+      "total": 0.41,
+      "max": 0.25
+     }
+    ],
+    "period": [
+     {
+      "n": 0,
+      "total": 0,
+      "max": 0
+     },
+     {
+      "n": 2,
+      "total": 0.63,
+      "max": 0.32
+     },
+     {
+      "n": 2,
+      "total": 0.49,
+      "max": 0.27
+     }
+    ]
+   }
+  }
+ },
+ "params": {
+  "primary": "delta_s=(span_per_char_comma-span_per_char_none)*norm_chars",
+  "anchor_s": 0.2,
+  "seeds": [
+   42,
+   43,
+   44
+  ],
+  "gap_detector": "librosa.effects.split(top_db=30)",
+  "note": "gap stats are descriptive; shallow pauses can be missed"
+ }
+}

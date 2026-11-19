@@ -1,0 +1,31 @@
+{
+ "task": {
+  "kind": "intonation",
+  "audio_id": "P2-intonation-voxcpm2-NARRATOR-I1-interrogative",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/voxcpm2/NARRATOR/P2-intonation-voxcpm2-NARRATOR-I1-interrogative.wav",
+  "source_text": "他昨天买了一本新书吗？",
+  "requirements": "目标语气：interrogative。只判断声音本身；不要因为文本里有问号就假定句尾上扬。在 JSON 里加顶级字段 type_choice，取值 陈述/疑问/感叹/无法判断。",
+  "target": "interrogative",
+  "config_id": "voxcpm2"
+ },
+ "raw": "{\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":5,\"pauses_boundaries\":5,\"intonation\":5,\"emotion\":\"平静\",\"naturalness\":5,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"type_choice\":\"疑问\",\"pause_present\":\"有\"}",
+ "ts": 1794569642.7326093,
+ "parsed": {
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 5,
+   "pauses_boundaries": 5,
+   "intonation": 5,
+   "emotion": "平静",
+   "naturalness": 5,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "type_choice": "疑问",
+  "pause_present": "有"
+ },
+ "status": "ok",
+ "tag": "run"
+}

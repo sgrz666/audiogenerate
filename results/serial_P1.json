@@ -1,0 +1,13 @@
+[
+ {
+  "config_id": "fireredtts3_instruct",
+  "phase": "P1",
+  "env": "fireredtts",
+  "exit_code": 0,
+  "wall_s": 766.4,
+  "log": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/logs/P1_fireredtts3_instruct.log",
+  "counts": {
+   "ok": 180
+  }
+ }
+]

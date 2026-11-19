@@ -1,0 +1,33 @@
+{
+ "task": {
+  "kind": "emotion",
+  "audio_id": "P2-emotion-indextts25-FEMALE-E1-happy",
+  "audio_path": "/data/shangguanrz/projectsss/speakgenerate/experiments/model-test/audio/P2/indextts25/FEMALE/P2-emotion-indextts25-FEMALE-E1-happy.wav",
+  "source_text": "这件事终于有了结果。",
+  "requirements": "目标情绪：happy。请判断实际听感，并从 平静/高兴/悲伤/生气/无法判断 中选一个最接近的，在 JSON 里加顶级字段 emotion_choice。",
+  "target": "happy",
+  "config_id": "indextts25"
+ },
+ "raw": "{\"decision\":\"usable\",\"scores\":{\"content_pronunciation\":5,\"speaking_rate\":5,\"pauses_boundaries\":5,\"intonation\":5,\"emotion\":5,\"naturalness\":5,\"audio_quality\":5,\"voice_consistency\":5},\"issues\":[],\"emotion_choice\":\"高兴\",\"type_choice\":\"陈述\",\"pause_present\":\"有\",\"target_reading\":\"结果\"}",
+ "ts": 1794569943.1285288,
+ "parsed": {
+  "decision": "usable",
+  "scores": {
+   "content_pronunciation": 5,
+   "speaking_rate": 5,
+   "pauses_boundaries": 5,
+   "intonation": 5,
+   "emotion": 5,
+   "naturalness": 5,
+   "audio_quality": 5,
+   "voice_consistency": 5
+  },
+  "issues": [],
+  "emotion_choice": "高兴",
+  "type_choice": "陈述",
+  "pause_present": "有",
+  "target_reading": "结果"
+ },
+ "status": "ok",
+ "tag": "run"
+}
