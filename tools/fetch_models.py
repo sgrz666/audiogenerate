@@ -32,6 +32,7 @@ REPOS = [
     ("FunAudioLLM/Fun-CosyVoice3-0.5B-2512", "Fun-CosyVoice3-0.5B-2512"),
     ("Qwen/Qwen3-TTS-12Hz-1.7B-Base", "Qwen3-TTS-12Hz-1.7B-Base"),
     ("FireRedTeam/FireRedTTS3", "FireRedTTS3"),
+    ("openbmb/MiniCPM-o-4_5", "MiniCPM-o-4_5"),
     # required companion for CosyVoice3 text frontend (per its README), not a 6th TTS model
     ("FunAudioLLM/CosyVoice-ttsfrd", "CosyVoice-ttsfrd"),
     # Qwen3-TTS README documents the tokenizer as a separate download; the qwen-tts
